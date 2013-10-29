@@ -1,0 +1,4 @@
+destination: ./_site
+source: ./website
+host: henrylawson.net
+publish: /srv/http/henrylawson.net
