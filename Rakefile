@@ -20,7 +20,7 @@ end
 desc "Runs a local server"
 task :start => [:clean] do
 	puts "Launching website to http://localhost:4000/"
-	execute("jekyll serve --detach -s #{CONFIG["source"]} -d #{CONFIG["destination"]}")
+	execute("jekyll serve -s #{CONFIG["source"]} -d #{CONFIG["destination"]}")
 end
 
 desc "Publishes the website"

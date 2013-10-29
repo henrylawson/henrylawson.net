@@ -1,3 +1,4 @@
 name: henrylawson.net 
 markdown: redcarpet
 pygments: true
+permalink: /:title
