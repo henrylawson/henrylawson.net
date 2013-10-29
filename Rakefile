@@ -14,13 +14,13 @@ end
 desc "Builds the website"
 task :build => [:clean] do
 	puts "Building website to #{CONFIG["destination"]}"
-	execute("jekyll build -s #{CONFIG["source"]} -d #{CONFIG["destination"]}")
+	execute("bundle exec jekyll build -s #{CONFIG["source"]} -d #{CONFIG["destination"]}")
 end
 
 desc "Runs a local server"
 task :start => [:clean] do
 	puts "Launching website to http://localhost:4000/"
-	execute("jekyll serve -s #{CONFIG["source"]} -d #{CONFIG["destination"]}")
+	execute("bundle exec jekyll serve -s #{CONFIG["source"]} -d #{CONFIG["destination"]}")
 end
 
 desc "Publishes the website"
