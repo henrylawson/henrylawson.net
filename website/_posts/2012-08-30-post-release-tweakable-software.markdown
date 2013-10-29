@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Post Release Tweakable Software"
+date:   2012-08-30 21:00:00
+categories: software
+---
+
+Various libraries and frameworks support configuration and tweaking through the use of external configuration parameters. The issue I have with configuration parameters that allow post release tweaking of software is that it enables the _**untested** tweak and tune_ of the software post release. **This post release tweaking is a massive risk to the quality of the software as those changes have skipped the quality assurance phases imposed in a Continuous Integration setup**. In a typical Continuous Integration setup, changes to the software would be promoted through various "pipelines". These pipelines would perform various automated testing and quality assurance analysis tasks over the binaries of the software. On the successful pass of each pipeline the binaries are promoted to the next stage. In a Continuous Delivery environment this final stage may be production. Exposing configuration and various tweaking parameters in an external configuration source facilitates changes to the software that were not promoted through the various phases. Changes to these parameters can often bring down entire systems.
+
+Of course, this does not pose a serious threat to most software systems. In a typical setup those who have access to the production configuration have the discipline to not tweak the software once it is released. This measure however, merely mitigates the threat, _the risk and vulnerability still exist_.
+
+**Whats the solution?** The risk can be mitigated by **only exposing the most minimal amount of environment specific configuration details as possible** and by only allowing access to the production configuration to those with the appropriate discipline and knowledge.
+
+The most important thing is only exposing environment specific configuration parameters. Parameters that affect the running behavior of the software, such as how many connection pools it can use, how many tasks it can run at a given time **should not be configurable externally**. **Parameters that affect the behavior of the application belong in the source code and should require a code change that gets promoted through the Continuous Integration pipeline before it reaches production**.
