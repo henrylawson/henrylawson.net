@@ -1,13 +1,14 @@
 ---
 layout: default
-title: henrylawson.net
+title: Home
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+{% assign post = site.posts[0] %}
+{% assign content = post.content %}
+{% include article.html %}
+
+{% assign post = site.posts[1] %}
+{% assign content = post.content %}
+{% include article.html %}
+
+{% include article_index.html %}

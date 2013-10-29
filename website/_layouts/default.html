@@ -1,24 +1,43 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/css/syntax.css">
-        <link rel="stylesheet" href="/css/main.css">
-    </head>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Henry Lawson {{ page.title }}</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/styles/syntax.css">
+  <link rel="stylesheet" href="/styles/screen.css">
+  <link rel="stylesheet" href="/styles/screen-narrow.css" media="only screen and (max-width:800px)">
+  <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
+</head>
     <body>
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-          {{ content }}
-          <div class="footer">
-						Henry Lawson
-          </div>
+        <div>
+            <div class="container">
+            <div class="header">
+              <div class="title">
+                <h1><a href="/">Henry Lawson</a></h1>
+                <div class="link-area">
+                  <ul class="links">
+                    <li><a href="/all">Index</a></li>
+                    <li><a href="/feed/atom.xml">Atom</a></li>
+                    <li><a href="http://github.com/henrylawson">Github</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+                <div class="content">
+                    {{ content }}
+                </div>
+            <div class="footer">
+              <div class="title">
+                        <h3>Who is Henry Lawson?</h3>
+              </div>
+              <div class="body">
+                        <p>I'm a developer from <a href="https://maps.google.co.in/maps?hl=en&q=brisbane+australia&ie=UTF8&hq=&hnear=Brisbane+Queensland,+Australia&gl=in&t=m&z=14&vpsrc=0&iwloc=A">Brisbane, Australia</a> currently living in <a href="http://goo.gl/maps/l3kzr">Porto Alegre, Brazil</a>. I'm a passionate C#, Java, JavaScript and Ruby programmer. I often struggle to stay on top of all the emerging frameworks and software trends so I try and keep a focus on principles and patterns because as the frameworks fade, the patterns and principles remain. The writtings here are of my own biased, sometimes one sided and a little bit arrogant opinion. I expect to be questioned and scrutinized by you in every way you desire. I currently work at (and love working at) <a href="http://thoughtworks.com">ThoughtWorks</a>. If you would like to pair with me sometime, consider <a href="http://join.thoughtworks.com/">joining</a> or <a href="http://www.thoughtworks.com/services">hiring</a> <a href="http://thoughtworks.com">ThoughtWorks</a>.</p>
+              </div>
+            </div>
+          </div>        
         </div>
-
     </body>
 </html>
