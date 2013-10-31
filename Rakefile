@@ -20,7 +20,7 @@ end
 desc "Runs a local server"
 task :start => [:clean] do
 	puts "Launching website to http://localhost:4000/"
-	execute("bundle exec jekyll serve -s #{CONFIG["source"]} -d #{CONFIG["target"]}")
+	execute("bundle exec jekyll serve --drafts -s #{CONFIG["source"]} -d #{CONFIG["target"]}")
 end
 
 desc "Publishes the website"
