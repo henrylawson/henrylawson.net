@@ -5,7 +5,7 @@ date:   2012-07-14 21:00:00
 categories: software
 ---
 
-A month ago or so, I wrote about [Counting Points at Dev Done]({{ site.url }}/counting-points-at-dev-done) and the discussion my team back then engaged in on the topic. The summary of that article was basically:
+A month ago or so, I wrote about [Counting Points at Dev Done]({% post_url 2012-06-04-counting-points-at-dev-done %}) and the discussion my team back then engaged in on the topic. The summary of that article was basically:
 
 **Counting points at developer done goes against the traditional way of counting points after sign off. However, we felt back then that one of the purposes of counting points is to communicate progress. That said, provided that there are no extreme fluctuations in the amount of work that is required post developer done and everyone has a consistent understanding of how progress is being measured - it should be OK.**
 

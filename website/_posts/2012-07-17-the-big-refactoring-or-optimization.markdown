@@ -7,7 +7,7 @@ categories: software
 
 Every now and then a team will find itself with an architecture that isn't quite right or a system that isn't performing quite as everyone would have hoped so. In these cases the inevitable happens - **The Big Refactoring or Optimization**. Now there is nothing wrong with this, evolving architectures and codebases are a fundamental part of agile software projects. What I'm sharing today are some insights that I gained while recently undertaking this journey with my team:
 
-*   Having a high [unit test](http://c2.com/cgi/wiki?UnitTest) [coverage]({{ site.url }}/the-magic-number) is a requirement **but it isn't enough**
+*   Having a high [unit test](http://c2.com/cgi/wiki?UnitTest) [coverage]({% post_url 2012-06-01-the-magic-number %}) is a requirement **but it isn't enough**
 *   Solid [acceptance and or functional tests](http://www.extremeprogramming.org/rules/functionaltests.html) are a godsend
 
 The biggest learning from this exercise was that even though you might have a high unit level coverage (> 92%) things still manage to sneak through the cracks. **While all those execution paths might be covered, they might not be tested that well**. Furthermore, a good unit test is one that tests itself in isolation of others. The problem then arises that if those isolated unit tests aren't thoroughly testing things at their level, problems don't show themselves until a much higher level - _once everything is integrated_.
