@@ -26,7 +26,10 @@ end
 desc "Publishes the website"
 task :publish => [:build] do
 	puts "Publishing website"
+	puts "Removing and creating temp location"
 	execute("ssh #{CONFIG["host"]} 'rm -rf #{CONFIG["publish_temp"]}/* && mkdir -p #{CONFIG["publish_temp"]}'")
+	puts "Uploading target to temp location"
 	execute("scp -r #{CONFIG["target"]}/* #{CONFIG["host"]}:#{CONFIG["publish_temp"]}")
-	execute("ssh #{CONFIG["host"]} 'rm -rf #{CONFIG["publish"]}/*' && mv -f #{CONFIG["publish_temp"]}/* #{CONFIG["publish"]}")
+	puts "Moving target to production"
+	execute("ssh #{CONFIG["host"]} 'rm -rf #{CONFIG["publish"]}/* && cp -rf #{CONFIG["publish_temp"]}/* #{CONFIG["publish"]}'")
 end
