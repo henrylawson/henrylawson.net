@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Micro Services"
-date:   2013-01-01 21:00:00
+date:   2013-09-15 21:00:00
 categories: software
 ---
 
@@ -9,7 +9,7 @@ Recently I attended a presentation by [James Lewis](http://bovon.org/), a collea
 
 The problem they were setting out to solve would typically be solved with an [Enterprise Service Bus](http://en.wikipedia.org/wiki/Enterprise_service_bus) (ESB). However instead of going down the ESB route they decided to solve the problem using a series of REST based services. Each service was responsible for a single thing and was kept as small as possible. Each had an event store that would collect incoming requests; feeding of the event store in a [Competing Consumer](http://www.eaipatterns.com/CompetingConsumers.html) style was a queue-processing engine that was controlled by the interested service. On completion of a job the service would then create an event that would be picked up by other services to continue on with other actions.
 
-Micro Services draw their fundamental [philosophies from Unix](http://en.wikipedia.org/wiki/Unix_philosophy). More specifically they focus on 3 of [Mike Gancarz's](http://www.amazon.com/Mike-Gancarz/e/B001K8SCRO) famously quoted precepts:
+_Micro Services_ draw their fundamental [philosophies from Unix](http://en.wikipedia.org/wiki/Unix_philosophy). More specifically they focus on 3 of [Mike Gancarz's](http://www.amazon.com/Mike-Gancarz/e/B001K8SCRO) famously quoted precepts:
 
 *   Small is beautiful.
 *   Make each program do one thing well.
@@ -23,3 +23,10 @@ This heavily modularised  [REST](http://www.amazon.com/REST-Practice-Hypermedia-
 *   [Third party components and tools can be easily integrated](http://www.markhneedham.com/blog/2012/12/04/micro-services-plugging-in-3rd-party-components/) in the system using the [Adapter Pattern]({{ site.url }}/the-adapter-pattern), a small _Micro Service_ can be made to wrap over a third party component. This will also minimize the systems dependency on the component as it can be easily replaced or removed at a later date.
 *   The entire system is more resilient to failure as it is broken into many collaborating pieces and services can continue working independently. The system can recover as soon as soon as failed services come back online - demand is met through auto-scaling solutions for the service.
 *   Parallel development is made easy as teams can work independently once interfaces with other services are decided.
+*	Due to the smaller nature of the code base, ramp up time and understanding of a _Micro Service_ is significantly lower then that of typical Services
+
+One of the characteristics that I find most powerful about _Micro Services_ is that they focus on a single thing and do it well. Having small, well composed services provides you wth a lot of flexibility. One of the typical problems in large service oriented achitectures is that services become large and unwieldly, changes become expensive, the domain grows and becomes complicated. _Micro Services_ have a better chance at avoiding these problmes by remaining small. By their design they have a smaller domain, a smaller code base and should be cheaper and easier to modify and extend over time.
+
+One of the caveats of _Micro Services_ is that they can become chatty over the network One means to avoid excessive communication over HTTP is to implement an architecure by slicing _Micro Services_ by User Flow or breaking apart pieces of the Value Stream and not slicing by Domain Verticals. For example, when a user purchases a product from a store, the request **should not** bounce between the User, Product, Inventory and Order services, **it should at most hit a single ProductOrder service** which will handle the order and publish the result to another _Micro Service_ which will propogate the order information by means of publication to other _Micro Services_ in the workflow.
+
+_Micro Services_ are in their infancy, over time more knowledge and experience will be built up around this topic, as it is now though, they are definitely an exciting idea.
