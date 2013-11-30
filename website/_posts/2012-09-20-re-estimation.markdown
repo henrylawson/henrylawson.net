@@ -13,6 +13,6 @@ When the story points were determined, we knew very little about the work needed
 
 Now fast forward a few weeks into the future and we are now working on the story and we have acquired some _after the fact knowledge_. When we re estimate that story and give it a different point estimation, we are in essence, **breaking the consistency and relativity** that we had with those stories when we estimated with our _before the fact knowledge_. This mixing of the priori and posteriori knowledge introduces an in consistency with our estimations.
 
-Now this doesn't mean that all _Re Estimation_ is bad and should be avoided, sometimes it is neccessary. However it should only be done if the original estimate was completely off and the impact has a siginificant change on the relative size of several stories. 
+Now this doesn't mean that all _Re Estimation_ is bad and should be avoided, sometimes it is necessary. However it should only be done if the original estimate was completely off and the impact has a significant change on the relative size of several stories. 
 
-Finally, it should go without saying that, when _Re Estimating_, remember that if you really are trying to be consistent and keep relative sizing then you should also be looking for those stories that are significantly smaller (relatively speaking) and not just the siginificantly larger (relatively speaking) stories.
+Finally, it should go without saying that, when _Re Estimating_, remember that if you really are trying to be consistent and keep relative sizing then you should also be looking for those stories that are significantly smaller (relatively speaking) and not just the significantly larger (relatively speaking) stories.
