@@ -9,7 +9,7 @@ layout: nil
 	<link type="application/atom+xml" href="http://henrylawson.net/feed/atom.xml" rel="self"/>
  	<link type="text" href="http://henrylawson.net" rel="alternate"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://henrylawson.net</id>
+	<id>Henry Hawson (henrylawson.net)</id>
 	<author>
 		<name>Henry Lawson</name>
 	</author>
