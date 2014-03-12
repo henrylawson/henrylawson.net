@@ -18,7 +18,7 @@ public void shouldPersistBusinessLogicResultToTheDataAccessObject() {
 	Result result = new Result();
 	when(businessLogic.handle(query)).thenReturn(result);
 	Response response = controller.doSomethingWith(query);
-	assertThat(response.status(), is(OK))
+	assertThat(response.status(), is(OK));
 	verify(dataAccessObject.persist(result));
 }
 {% endhighlight %}
@@ -36,7 +36,7 @@ public void shouldPersistBusinessLogicResultToTheDataAccessObject() {
 
 	Response response = controller.doSomethingWith(query);
 	
-	assertThat(response.status(), is(OK))
+	assertThat(response.status(), is(OK));
 	verify(dataAccessObject.persist(result));
 }
 {% endhighlight %}
