@@ -23,6 +23,12 @@ task :start => [:clean] do
 	execute("bundle exec jekyll serve --drafts -s #{CONFIG["source"]} -d #{CONFIG["target"]}")
 end
 
+desc "Alias to \"start\", runs a local server"
+task :serve => :start
+
+desc "Alias to \"start\", runs a local server"
+task :server => :start
+
 desc "Publishes the website"
 task :publish => [:build] do
 	puts "Publishing website"
