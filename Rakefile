@@ -18,9 +18,10 @@ task :build => [:clean] do
 end
 
 desc "Runs a local server"
-task :start => [:clean] do
-	puts "Launching website to http://localhost:4000/"
-	execute("bundle exec jekyll serve --drafts -s #{CONFIG["source"]} -d #{CONFIG["target"]}")
+task :start, [:host, :port] => [:clean] do |t, args|
+	args.with_defaults(:host => "localhost", :port => 4000)
+	puts "Launching website to http://#{args.host}:#{args.port}/"
+	execute("bundle exec jekyll serve --host #{args.host} --port #{args.port} --drafts -s #{CONFIG["source"]} -d #{CONFIG["target"]}")
 end
 
 desc "Alias to \"start\", runs a local server"
