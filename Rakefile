@@ -18,17 +18,11 @@ task :build => [:clean] do
 end
 
 desc "Runs a local server"
-task :start, [:host, :port] => [:clean] do |t, args|
+task :serve, [:host, :port] => [:clean] do |t, args|
 	args.with_defaults(:host => "localhost", :port => 4000)
 	puts "Launching website to http://#{args.host}:#{args.port}/"
 	execute("bundle exec jekyll serve --host #{args.host} --port #{args.port} --drafts -s #{CONFIG["source"]} -d #{CONFIG["target"]}")
 end
-
-desc "Alias to \"start\", runs a local server"
-task :serve => :start
-
-desc "Alias to \"start\", runs a local server"
-task :server => :start
 
 desc "Publishes the website"
 task :publish => [:build] do

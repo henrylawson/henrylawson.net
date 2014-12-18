@@ -29,7 +29,7 @@ Running in Cloud9
 In Cloud9, ensure no Apache processes are running and run:
 
 ``
-rake start[$IP,$PORT]
+rake serve[$IP,$PORT]
 ``
 
 So that the required IP and Port are provided by C9.
