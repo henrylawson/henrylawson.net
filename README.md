@@ -23,3 +23,13 @@ Host henrylawson.net
 ``
 
 And that the ~/.ssh/id_rsa.pub is added to the remote hosts ~/.ssh/authorized_keys.
+
+Running in Cloud9
+=================
+In Cloud9, ensure no Apache processes are running and run:
+
+``
+rake serve[$IP,$PORT]
+``
+
+So that the required IP and Port are provided by C9.
