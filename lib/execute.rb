@@ -1,3 +1,3 @@
 def execute(command)
-  system "#{command}"
+  system "#{command}" or exit!(1)
 end
