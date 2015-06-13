@@ -8,8 +8,8 @@ body {
   margin:0;
   padding:0;
   color:#000;
-  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  font-size:120%;
+  font-family:'Open Sans','Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size:130%;
   background: #fff;
 }
 a, a:hover, a:visited {
@@ -21,7 +21,7 @@ a:hover {
 }
 p, li {
   text-align:justify;
-  line-height:170%;
+  line-height:160%;
 }
 p, ul, ol {
   margin-bottom:20px;
@@ -31,7 +31,7 @@ p, ul, ol {
   background:url('../images/light.jpg') #dedede;
 }
 .header {
-  padding:0 40px 0 40px;
+  padding:0 50px 0 40px;
   border-bottom:1px solid #000;
 }
 .header .title {
@@ -73,7 +73,7 @@ p, ul, ol {
   text-transform: uppercase;
 }
 .content {
-  padding:40px 40px 40px 40px;
+  padding:40px 50px 40px 40px;
   background:#fff;
 }
 .content .article .body {
@@ -119,7 +119,7 @@ p, ul, ol {
   font-size:1.2em;
 }
 .footer {
-  padding:40px 40px 20px 40px;
+  padding:40px 50px 20px 40px;
   border-top:1px solid #000;
   border-bottom:1px solid #000;
 }
