@@ -1,40 +1,42 @@
 .container {
-	min-width:252px;
+  min-width:252px;
 }
 .header .title {
-	padding-top:20px;
-}
-.header .title h1 {
-	font-size:70pt;
+  padding-top:20px;
 }
 .header .title .link-area {
-	position:relative;
-	margin-top:40px;
+  position:relative;
+  margin-top:40px;
 }
 .content .article .title h2 {
-	display:block;
-    margin: 0;
+  display:block;
+  margin: 0;
+}
+.content .article ol, .content .article ul {
+  padding-left:0;
+  margin-left:0;
+  list-style-position: inside;
 }
 .content .article .title .date {
-    display: block;
-	position:relative;
+  display: block;
+  position:relative;
 }
 .other-articles ul.indexes .index .date {
-    display: block;
-    float: none;
-    width: auto;
-    border: 0;
+  display: block;
+  float: none;
+  width: auto;
+  border: 0;
 }
 .other-articles ul.indexes .index .right-arrow {
-    display: none;
+  display: none;
 }
 .other-articles ul.indexes .index .title {
-    display: block;
-    float: none;
-    padding-bottom: 0;
-    line-height: 1.2;
-    margin: 5px 0 0 0;
+  display: block;
+  float: none;
+  padding-bottom: 0;
+  line-height: 1.2;
+  margin: 5px 0 0 0;
 }
 p, li {
-	font-size:90%;
+  font-size:90%;
 }

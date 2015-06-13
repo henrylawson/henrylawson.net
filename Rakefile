@@ -45,5 +45,5 @@ task :publish => [:build] do
 	execute("ssh #{CONFIG["host"]} -v " +
           "'sudo su #{CONFIG["wwwuser"]} bash -c \"" + 
           "rm -rf #{CONFIG["publish"]}/* && " +
-          "cp -rf #{CONFIG["publish_temp"]}/* #{CONFIG["publish"]}'\"")
+          "cp -rf #{CONFIG["publish_temp"]}/* #{CONFIG["publish"]} \"")
 end
