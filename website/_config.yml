@@ -2,3 +2,6 @@ name: Henry Lawson
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title
+assets:
+  js_compressor:  uglifier
+  css_compressor: sass
