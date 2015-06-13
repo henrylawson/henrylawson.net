@@ -4,7 +4,7 @@ A simple blog powered by Jekyll.
 
 Getting Started
 ===============
-1. Install RVM
+1. Install rbenv
 2. Make sure correct Ruby version has been loaded (check .ruby-version)
 3. gem install bundler
 4. bundle install
