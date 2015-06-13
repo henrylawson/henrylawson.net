@@ -1,5 +1,6 @@
 target: ./_site
 source: ./website
 host: henrylawson.net
-publish: /srv/http/henrylawson.net
+wwwuser: wwwhln
+publish: /srv/httpd/henrylawson.net
 publish_temp: /tmp/henrylawson.net
