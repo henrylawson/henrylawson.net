@@ -79,6 +79,12 @@ p, ul, ol {
 .content .article .body {
   margin-bottom: 60px;
 }
+.content .article .body .date {
+  color: #777;
+  text-align:right;
+  font-size:0.6em;
+  font-style:italic;
+}
 .content .article .body p, .content .article .body li {
   color: #333;
   text-shadow: 0px 0px 0px #999;
