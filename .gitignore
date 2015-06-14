@@ -4,3 +4,4 @@ _site_deploy
 .DS_Store
 .c9
 website/.jekyll-assets-cache
+site.tar.gz

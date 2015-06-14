@@ -1,7 +1,9 @@
 target: ./_site
 deploy_target: ./_site_deploy
+deploy_target_compress: ./site.tar.gz
 source: ./website
 host: henrylawson.net
 wwwuser: wwwhln
 publish: /srv/httpd/henrylawson.net
+upload_temp: /tmp
 publish_temp: /tmp/henrylawson.net

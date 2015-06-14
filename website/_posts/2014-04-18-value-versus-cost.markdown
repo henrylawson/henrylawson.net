@@ -32,7 +32,7 @@ categories: software
 </script>
 
 Almost everyday during software development we constantly find ourselves
-asking if a story, feature, functionality and or fix is worth doing. A diagram
+asking if a story, feature, functionality and/or fix is worth doing. A diagram
 that helps facilitate this conversation is the **Value versus Cost** diagram.
 
 It is a simple diagram that can be used whenever a decision needs
