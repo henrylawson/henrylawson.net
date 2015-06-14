@@ -7,31 +7,28 @@ categories: software
 
 <div id="value-versus-cost" class="graph"></div>
 <script type="text/javascript">
-  var svg = dimple.newSvg("#value-versus-cost", '100%', 500);
-  var data = [
-    { 'Cost': 'Low', 'Value': 'Low' },
-    { 'Cost': 'Low', 'Value': 'High' },
-    { 'Cost': 'High', 'Value': 'Low' },
-    { 'Cost': 'High', 'Value': 'High' },
-  ];
-  var chart = new dimple.chart(svg, data);
+  $(function() {
+    var svg = dimple.newSvg("#value-versus-cost", '100%', 500);
+    var data = [
+      { 'Cost': 'Low', 'Value': 'Low' },
+      { 'Cost': 'Low', 'Value': 'High' },
+      { 'Cost': 'High', 'Value': 'Low' },
+      { 'Cost': 'High', 'Value': 'High' },
+    ];
+    var chart = new dimple.chart(svg, data);
 
-  var x = chart.addCategoryAxis('x', 'Value');
-  x.addOrderRule(['Low', 'High']);
-  x.fontSize = '0.9em';
-  x.fontFamily = 'inherit';
+    var x = chart.addCategoryAxis('x', 'Value');
+    x.addOrderRule(['Low', 'High']);
+    ChartHelper.setAxisStyle(x);
 
-  var y = chart.addCategoryAxis('y', 'Cost');
-  y.addOrderRule(['Low', 'High']);
-  y.fontSize = '0.9em'
-  y.fontFamily = 'inherit';
+    var y = chart.addCategoryAxis('y', 'Cost');
+    y.addOrderRule(['Low', 'High']);
+    ChartHelper.setAxisStyle(y);
 
-  var series = chart.addSeries('Type', dimple.plot.bubble);
+    var series = chart.addSeries('Type', dimple.plot.bubble);
 
-  chart.draw();
-  window.onresize = function () {
-    chart.draw(0, true);
-  };
+    ChartHelper.draw(chart);
+  });
 </script>
 
 Almost everyday during software development we constantly find ourselves

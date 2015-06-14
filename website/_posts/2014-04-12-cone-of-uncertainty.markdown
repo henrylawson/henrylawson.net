@@ -5,40 +5,37 @@ date:   2014-04-12 21:00:00
 categories: software
 ---
 
-<div id="cone-of-uncertainty" class="graph"></div>
+<div id="cone-of-uncertainty" class="graph" style="width:600"></div>
 <script type="text/javascript">
-  var svg = dimple.newSvg("#cone-of-uncertainty", '100%', 500);
-  var data = [
-    { 'Type':'Positive', 'Project Stage':'Initial Concept', 'Planning Uncertainty':10},
-    { 'Type':'Positive', 'Project Stage':'Discovery', 'Planning Uncertainty':5},
-    { 'Type':'Positive', 'Project Stage':'Inception', 'Planning Uncertainty':2.5},
-    { 'Type':'Positive', 'Project Stage':'Delivery', 'Planning Uncertainty':1.25},
-    { 'Type':'Positive', 'Project Stage':'Completion', 'Planning Uncertainty':0},
+  $(function() {
+    var svg = dimple.newSvg("#cone-of-uncertainty", '100%', 500);
+    var data = [
+      { 'Type':'Positive', 'Project Stage':'Initial Concept', 'Planning Uncertainty':10},
+      { 'Type':'Positive', 'Project Stage':'Discovery', 'Planning Uncertainty':5},
+      { 'Type':'Positive', 'Project Stage':'Inception', 'Planning Uncertainty':2.5},
+      { 'Type':'Positive', 'Project Stage':'Delivery', 'Planning Uncertainty':1.25},
+      { 'Type':'Positive', 'Project Stage':'Completion', 'Planning Uncertainty':0},
 
-    { 'Type':'Negative', 'Project Stage':'Initial Concept', 'Planning Uncertainty':-10},
-    { 'Type':'Negative', 'Project Stage':'Discovery', 'Planning Uncertainty':-5},
-    { 'Type':'Negative', 'Project Stage':'Inception', 'Planning Uncertainty':-2.5},
-    { 'Type':'Negative', 'Project Stage':'Delivery', 'Planning Uncertainty':-1.25},
-    { 'Type':'Negative', 'Project Stage':'Completion', 'Planning Uncertainty':0}
-  ];
-  var chart = new dimple.chart(svg, data);
+      { 'Type':'Negative', 'Project Stage':'Initial Concept', 'Planning Uncertainty':-10},
+      { 'Type':'Negative', 'Project Stage':'Discovery', 'Planning Uncertainty':-5},
+      { 'Type':'Negative', 'Project Stage':'Inception', 'Planning Uncertainty':-2.5},
+      { 'Type':'Negative', 'Project Stage':'Delivery', 'Planning Uncertainty':-1.25},
+      { 'Type':'Negative', 'Project Stage':'Completion', 'Planning Uncertainty':0}
+    ];
+    var chart = new dimple.chart(svg, data);
 
-  var x = chart.addCategoryAxis('x', 'Project Stage');
-  x.addOrderRule(['Initial Concept', 'Discovery', 'Inception', 'Delivery', 'Completion']);
-  x.fontSize = '0.9em';
-  x.fontFamily = 'inherit';
+    var x = chart.addCategoryAxis('x', 'Project Stage');
+    x.addOrderRule(['Initial Concept', 'Discovery', 'Inception', 'Delivery', 'Completion']);
+    ChartHelper.setAxisStyle(x);
 
-  var y = chart.addMeasureAxis('y', 'Planning Uncertainty');
-  y.fontSize = '0.9em'
-  y.fontFamily = 'inherit';
+    var y = chart.addMeasureAxis('y', 'Planning Uncertainty');
+    ChartHelper.setAxisStyle(y);
 
-  var series = chart.addSeries('Type', dimple.plot.line);
-  series.interpolation = 'cardinal';
+    var series = chart.addSeries('Type', dimple.plot.line);
+    series.interpolation = 'cardinal';
 
-  chart.draw();
-  window.onresize = function () {
-    chart.draw(0, true);
-  };
+    ChartHelper.draw(chart);
+  });
 </script>
 
 The **cone of uncertainty** is a great diagram to explain the **level of confidence

@@ -3,17 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!--[if lte IE 9]>
-    {% javascript libs/aight.min.v2.1.1.js %}
-    <![endif]-->
     <title>Henry Lawson: {{ page.title }}</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
-    {% javascript libs/d3.v3.min.js %}
-    {% javascript libs/dimple.v2.1.2.min.js %}
-    {% stylesheet syntax %}
-    {% stylesheet screen %}
+    {% javascript app %}
+    {% stylesheet app %}
     {% stylesheet screen-narrow media="only screen and (max-width:800px)" %}
     <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
   </head>
