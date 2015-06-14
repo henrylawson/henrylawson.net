@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Cone of Uncertainty"
+date:   2014-04-12 21:00:00
+categories: software
+---
+
+<div id="cone-of-uncertainty" class="graph"></div>
+<script type="text/javascript">
+  var svg = dimple.newSvg("#cone-of-uncertainty", '100%', 500);
+  var data = [
+    { 'Type':'Positive', 'Project Stage':'Initial Concept', 'Planning Uncertainty':10},
+    { 'Type':'Positive', 'Project Stage':'Discovery', 'Planning Uncertainty':5},
+    { 'Type':'Positive', 'Project Stage':'Inception', 'Planning Uncertainty':2.5},
+    { 'Type':'Positive', 'Project Stage':'MVP', 'Planning Uncertainty':1.25},
+    { 'Type':'Positive', 'Project Stage':'Completion', 'Planning Uncertainty':0},
+
+    { 'Type':'Negative', 'Project Stage':'Initial Concept', 'Planning Uncertainty':-10},
+    { 'Type':'Negative', 'Project Stage':'Discovery', 'Planning Uncertainty':-5},
+    { 'Type':'Negative', 'Project Stage':'Inception', 'Planning Uncertainty':-2.5},
+    { 'Type':'Negative', 'Project Stage':'MVP', 'Planning Uncertainty':-1.25},
+    { 'Type':'Negative', 'Project Stage':'Completion', 'Planning Uncertainty':0}
+  ];
+  var chart = new dimple.chart(svg, data);
+  var x = chart.addCategoryAxis('x', 'Project Stage');
+  x.addOrderRule(['Initial Concept', 'Discovery', 'Inception', 'MVP', 'Completion']);
+  chart.addMeasureAxis('y', 'Planning Uncertainty');
+  var series = chart.addSeries('Type', dimple.plot.line);
+  series.interpolation = 'cardinal';
+  chart.draw();
+</script>
+
+The **cone of uncertainty** is a great diagram to explain the **level of information
+that a software development team typically has at various stages of a project**.
+What I like the most about the diagram is that it clearly depicts that **at the
+start of the project, a lot is unknown**. The intial learnings and analysis at
+the start of the project assists greatly in reducing that uncertainty
+but it never removes all uncertainty (it never reaches zero). Even after the
+the initial drop of uncertainty during the early analysis phase the graph is
+still far from zero.
+
+The **cone of uncertainty** is a good tool to help explain that perfect
+planning is a fallacy, an unachieveable goal.
+
+What teams often forget and fail to acknowledge is that once the planning or
+**early analysis phase has concluded, there is still a large amount of
+uncertainty that still needs to be managed**.
+
+Presenting this diagram at the start of the project can be helpful to set
+expectations about how confident stakeholders and the team should be with
+estimates around dates, scope and budget. It can also be helpful to
+peridocially revisit the diagram to see how the team is trending. If the
+**project is progressing along the x-axis and certainty is not reducing, this can
+be an early indicator that somehting is going wrong** and there are some issues
+to be addressed, addressing these issues can be done through a Five Why's.
