@@ -5,17 +5,28 @@ task :default => [:build]
 
 CONFIG = YAML.load_file("build.yml")
 
-desc "Cleans the build folder"
+desc "Cleans the target folder"
 task :clean do
 	puts "Cleaning the #{CONFIG["target"]} folder"
 	execute("rm -rf #{CONFIG["target"]}")
 end
 
+desc "Cleans the deploy target folder"
+task :clean_deploy do
+	puts "Cleaning the #{CONFIG["deploy_target"]} folder"
+	execute("rm -rf #{CONFIG["deploy_target"]}")
+end
+
 desc "Builds the website"
-task :build => [:clean] do
+task :build => [:clean_deploy] do
 	puts "Building website to #{CONFIG["target"]}"
 	execute("bundle exec jekyll build " +
           "-s #{CONFIG["source"]} -d #{CONFIG["deploy_target"]}")
+  execute("htmlcompressor " +
+          "--recursive " +
+          "--compress-css " +
+          "--compress-js " +
+          "--output #{CONFIG["deploy_target"]} #{CONFIG["deploy_target"]}")
 end
 
 desc "Runs a local server"

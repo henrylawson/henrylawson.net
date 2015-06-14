@@ -5,11 +5,12 @@ A simple blog powered by Jekyll.
 Getting Started
 ===============
 1. Install rbenv
-2. Make sure correct Ruby version has been loaded (check .ruby-version)
-3. gem install bundler
-4. bundle install
-5. Create SSH config for "henrylawson.net" as referened in build.yml, check ~/.ssh/config or see the "Setting Up SSH" notes below
-6. rake Rakefile --describe
+1. Make sure correct Ruby version has been loaded (check .ruby-version)
+1. gem install bundler
+1. bundle install
+1. Create SSH config for "henrylawson.net" as referened in build.yml, check ~/.ssh/config or see the "Setting Up SSH" notes below
+1. brew install htmlcompressor --with-yuicompressor
+1. rake Rakefile --describe
 
 Setting Up SSH
 ==============

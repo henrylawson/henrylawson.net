@@ -7,7 +7,7 @@ categories: software
 
 <div id="value-versus-cost" class="graph"></div>
 <script type="text/javascript">
-  $(function() {
+  (function() {
     var svg = dimple.newSvg("#value-versus-cost", '100%', 500);
     var data = [
       { 'Cost': 'Low', 'Value': 'Low' },
@@ -28,7 +28,7 @@ categories: software
     var series = chart.addSeries('Type', dimple.plot.bubble);
 
     ChartHelper.draw(chart);
-  });
+  })();
 </script>
 
 Almost everyday during software development we constantly find ourselves

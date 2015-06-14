@@ -1,7 +1,7 @@
 var ChartHelper = (function() {
 
   function resizeForNarrowWindow(chart) {
-    if ($(window).width() < 900) {
+    if (document.body.clientWidth < 900) {
       chart.setMargins('10%', '10%%', '10%', '35%');
     } else {
       chart.setMargins('10%', '10%%', '10%', '10%');
@@ -16,10 +16,13 @@ var ChartHelper = (function() {
     draw: function(chart) {
       chart.draw();
       resizeForNarrowWindow(chart);
-      $(window).resize(function() {
+
+      var prevCallback = window.onresize;
+      window.onresize = function() {
         resizeForNarrowWindow(chart);
         chart.draw(0, true);
-      });
+        prevCallback();
+      };
     }
   };
 })();
