@@ -42,7 +42,7 @@ p, ul, ol {
 .header .title h1 {
   margin:0;
   padding:0;
-  font-family:LeagueGothic;
+  font-family:LeagueGothic, Arial, Helvetica;
   font-size:7em;
   text-transform: uppercase;
 }
@@ -67,7 +67,7 @@ p, ul, ol {
   border-bottom:2px solid #000;
 }
 .header .title .link-area ul.links li a {
-  font-family:LeagueGothic;
+  font-family:LeagueGothic, Arial, Helvetica;
   font-size:1.5em;
   text-decoration:none;
   text-transform: uppercase;
@@ -94,7 +94,7 @@ p, ul, ol {
   padding:10px 0;
 }
 .content .article .title h2, .article-index .other-articles .title h3 {
-  font-family:LeagueGothic, arial;
+  font-family:LeagueGothic, Arial, Helvetica;
   font-size:2.5em;
   font-weight:bold;
   background:#000;
@@ -105,17 +105,6 @@ p, ul, ol {
 .content .article .title h2 a, .article-index .other-articles .title h3 {
   text-decoration: none;
   color:#fff;
-}
-.content .article .title .date {
-  position:absolute;
-  right:0;
-  bottom:0;
-  padding-top:25px;
-  font-weight:bold;
-  font-family:LeagueGothic;
-  font-weight:bold;
-  font-size:1.5em;
-  text-transform: uppercase;
 }
 .content pre {
   padding: 20px 0 20px 0;
@@ -139,7 +128,7 @@ p, ul, ol {
 .footer .title h3 {
   margin: 0;
   padding: 0;
-  font-family:LeagueGothic;
+  font-family:LeagueGothic, Arial, Helvetica;
   font-weight:bold;
   text-transform: uppercase;
   font-size:2.5em;
@@ -154,7 +143,7 @@ p, ul, ol {
   margin-bottom:5px;
 }
 .other-articles .title h3 {
-  font-family: LeagueGothic;
+  font-family: LeagueGothic, Arial, Helvetica;
   font-weight: bold;
   line-height: 100%;
   padding: 0 0 8px 0 ;
@@ -173,18 +162,9 @@ p, ul, ol {
   border-top: 1px dashed #666;
   padding: 10px;
 }
-.other-articles ul.indexes .index .date {
-  display: inline;
-  font-family:LeagueGothic;
-  padding-right: 10px;
-  border-right: 2px solid #000;
-  margin-right: 10px;
-  text-transform: uppercase;
-  font-size: 1.2em;
-}
 .other-articles ul.indexes .index .right-arrow {
   display: inline;
-  font-family:LeagueGothic;
+  font-family:LeagueGothic, Arial, Helvetica;
   font-size: 20pt;
   padding: 0;
   margin: 0 5px 0 0;
@@ -192,7 +172,7 @@ p, ul, ol {
 }
 .other-articles ul.indexes .index .title {
   display: inline;
-  font-family:LeagueGothic;
+  font-family:LeagueGothic, Arial, Helvetica;
   text-transform: uppercase;
   font-size: 1.2em;
 }
@@ -202,7 +182,6 @@ p, ul, ol {
 }
 .other-articles ul.indexes .index a:visited {
   color: #444;
-
 }
 .article-index .other-articles .title {
   margin-bottom: 20px;
