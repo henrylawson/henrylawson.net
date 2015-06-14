@@ -3,5 +3,6 @@ markdown: redcarpet
 highlighter: pygments
 permalink: /:title
 assets:
+  cache: true
   js_compressor:  uglifier
   css_compressor: sass
