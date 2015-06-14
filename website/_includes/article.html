@@ -5,7 +5,17 @@
   <div class="body">
     {{ content }}
     <div class="date">
-      This article was first noted down on the, {{ post.date | date_to_long_string }}.
+      This article was first noted down on the
+      {% assign d = post.date | date: "%-d"  %}
+      {% case d %}
+      {% when '1' or '21' or '31' %}{{ d }}st
+      {% when '2' or '22' %}{{ d }}nd
+      {% when '3' or '23' %}{{ d }}rd
+      {% else %}{{ d }}th
+      {% endcase %}
+      of
+      {{ post.date | date: "%B" }},
+      {{ post.date | date: "%Y" }}.
     </div>
   </div>
 </div>
