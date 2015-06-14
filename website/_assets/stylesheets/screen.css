@@ -120,6 +120,7 @@ p, ul, ol {
 }
 .content .graph {
   margin-top:20px;
+  padding: 10px 0 20px 0;
   border-top: 1px dashed #333;
   border-bottom: 1px dashed #333;
   width:100%;
