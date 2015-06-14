@@ -1,4 +1,5 @@
 target: ./_site
+deploy_target: ./_site_deploy
 source: ./website
 host: henrylawson.net
 wwwuser: wwwhln

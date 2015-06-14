@@ -15,7 +15,7 @@ desc "Builds the website"
 task :build => [:clean] do
 	puts "Building website to #{CONFIG["target"]}"
 	execute("bundle exec jekyll build " +
-          "-s #{CONFIG["source"]} -d #{CONFIG["target"]}")
+          "-s #{CONFIG["source"]} -d #{CONFIG["deploy_target"]}")
 end
 
 desc "Runs a local server"
@@ -41,7 +41,8 @@ task :publish => [:build] do
 
 	puts "Uploading target to temp location"
 	execute("scp -r " +
-          "#{CONFIG["target"]}/* #{CONFIG["host"]}:#{CONFIG["publish_temp"]}")
+          "#{CONFIG["deploy_target"]}/* " +
+          "#{CONFIG["host"]}:#{CONFIG["publish_temp"]}")
 
 	puts "Moving target to production"
 	execute("ssh #{CONFIG["host"]} -v " +

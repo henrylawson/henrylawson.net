@@ -1,4 +1,5 @@
 _site
+_site_deploy
 *.swp
 .DS_Store
 .c9
