@@ -3,6 +3,7 @@ layout: post
 title:  "Value versus Cost"
 date:   2014-04-18 21:00:00
 categories: software
+is_js_needed: true
 ---
 
 <div id="value-versus-cost" class="graph"></div>

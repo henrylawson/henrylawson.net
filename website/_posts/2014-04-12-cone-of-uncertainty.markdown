@@ -3,6 +3,7 @@ layout: post
 title:  "Cone of Uncertainty"
 date:   2014-04-12 21:00:00
 categories: software
+is_js_needed: true
 ---
 
 <div id="cone-of-uncertainty" class="graph" style="width:600"></div>
