@@ -3,12 +3,9 @@ layout: default
 is_js_needed: true
 ---
 
-{% assign post = site.posts[0] %}
-{% assign content = post.content %}
-{% include article.html %}
-
-{% assign post = site.posts[1] %}
-{% assign content = post.content %}
-{% include article.html %}
+{% for post in site.posts limit: site.front_post_count %}
+  {% assign content = post.content %}
+  {% include article.html %}
+{% endfor %}
 
 {% include recent_article_index.html %}

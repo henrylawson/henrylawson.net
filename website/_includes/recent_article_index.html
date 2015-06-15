@@ -3,7 +3,7 @@
     <h3>Recent Articles</h3>
   </div>
   <ul class="indexes">
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts limit: site.recent_article_count %}
     <li>
       <div class="index">
         <div class="right-arrow">

@@ -8,7 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     {% if page.is_js_needed %}
-      {% javascript app %}
+      <script type="text/javascript">
+        {% asset onload %}
+      </script>
+      {% javascript app async %}
     {% endif %}
     <style type="text/css">
       {% asset app.css %}
@@ -16,7 +19,7 @@
     {% stylesheet screen-narrow media="only screen and (max-width:800px)" %}
     <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
   </head>
-  <body>
+  <body {% if page.is_js_needed %} onload="OnLoad.execute()" {% endif %}>
     <div>
       <div class="container">
         <div class="header">

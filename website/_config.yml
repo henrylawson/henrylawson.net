@@ -2,6 +2,8 @@ name: Henry Lawson
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title
+front_post_count: 2
+recent_article_count: 10
 assets:
   cache: true
   js_compressor:  uglifier

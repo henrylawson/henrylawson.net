@@ -8,7 +8,7 @@ is_js_needed: true
 
 <div id="cone-of-uncertainty" class="graph" style="width:600"></div>
 <script type="text/javascript">
-  (function() {
+  OnLoad.call(function() {
     var svg = dimple.newSvg("#cone-of-uncertainty", '100%', 500);
     var data = [
       { 'Type':'Positive', 'Project Stage':'Initial Concept', 'Planning Uncertainty':10},
@@ -36,7 +36,7 @@ is_js_needed: true
     series.interpolation = 'cardinal';
 
     ChartHelper.draw(chart);
-  })();
+  });
 </script>
 
 The **cone of uncertainty** is a great diagram to explain the **level of confidence

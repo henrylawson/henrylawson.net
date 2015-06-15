@@ -8,7 +8,7 @@ is_js_needed: true
 
 <div id="value-versus-cost" class="graph"></div>
 <script type="text/javascript">
-  (function() {
+  OnLoad.call(function() {
     var svg = dimple.newSvg("#value-versus-cost", '100%', 500);
     var data = [
       { 'Cost': 'Low', 'Value': 'Low' },
@@ -29,7 +29,7 @@ is_js_needed: true
     var series = chart.addSeries('Type', dimple.plot.bubble);
 
     ChartHelper.draw(chart);
-  })();
+  });
 </script>
 
 Almost everyday during software development we constantly find ourselves
