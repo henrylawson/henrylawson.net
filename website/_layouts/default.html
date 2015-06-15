@@ -12,7 +12,7 @@
       {% assign page_title = "Henry Lawson" %}
     {% endif %}
     {% if page.excerpt %}
-      {% capture page_description %}{{ page.excerpt | strip_html | strip_newlines }}{% endcapture %}
+      {% capture page_description %}{{ page.excerpt | strip_html }}{% endcapture %}
     {% else %}
       {% capture page_description %}HenryLawson.net is a repository of articles about software development, management and delivery.{% endcapture %}
     {% endif %}
