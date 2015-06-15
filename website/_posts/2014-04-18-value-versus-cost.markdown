@@ -36,6 +36,8 @@ Almost everyday during software development we constantly find ourselves
 asking if a story, feature, functionality and/or fix is worth doing. A diagram
 that helps facilitate this conversation is the **Value versus Cost** diagram.
 
+<!--more-->
+
 It is a simple diagram that can be used whenever a decision needs
 to be made. On one axis we depict Value, from High to Low. On the other axis
 we depict Cost, from High to Low. Items that are Low Cost/High Value should be

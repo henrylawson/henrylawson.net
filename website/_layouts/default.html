@@ -1,12 +1,41 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Henry Lawson{% if page.title %}: {{ page.title }}{% endif %}</title>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="author" href="https://plus.google.com/117420814347348419892"/>
+    <link rel="publisher" href="https://plus.google.com/117420814347348419892"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    {% if page.title %}
+      {% capture page_title %}Henry Lawson: {{ page.title }}{% endcapture %}
+    {% else %}
+      {% assign page_title = "Henry Lawson" %}
+    {% endif %}
+    {% if page.excerpt %}
+      {% capture page_description %}{{ page.excerpt | strip_html | strip_newlines }}{% endcapture %}
+    {% else %}
+      {% capture page_description %}HenryLawson.net is a repository of articles about software development, management and delivery.{% endcapture %}
+    {% endif %}
+
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}"/>
+
+    <meta property="og:title" content="{{ page_title }}"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:image" content="https://gravatar.com/avatar/aa56f33f54e4a32ab6ec54cd59c5df07?s=400"/>
+    <meta property="og:url" content="https://henrylawson.net{{ page.url }}"/>
+    <meta property="og:description" content="{{ page_description }}"/>
+    <meta property="fb:admins" content="hen3rz"/>
+
+    <meta name="twitter:title" content="{{ page_title }}"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:url" content="https://henrylawson.net{{ page.url }}"/>
+    <meta name="twitter:site" content="@henryglawson"/>
+    <meta name="twitter:description" content="{{ page_description }}"/>
+    <meta name=”twitter:image” content="https://gravatar.com/avatar/aa56f33f54e4a32ab6ec54cd59c5df07?s=400"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
     {% if page.is_js_needed %}
       <script type="text/javascript">
         {% asset onload %}
@@ -42,8 +71,8 @@
           </div>
           <div class="body">
             <p>I'm a developer from
-              <a href="https://maps.google.co.in/maps?hl=en&q=brisbane+australia&ie=UTF8&hq=&hnear=Brisbane+Queensland,+Australia&gl=in&t=m&z=14&vpsrc=0&iwloc=A">Brisbane, Australia</a>
-              currently residing in <a href="https://www.google.com/maps/place/Singapore">Singapore</a>.
+              <a href="https://goo.gl/maps/eT9uO">Brisbane, Australia</a>
+              currently residing in <a href="https://goo.gl/maps/eYcnj">Singapore</a>.
               I'm a passionate C#, Java, JavaScript and Ruby programmer. I often struggle to stay on top of all the emerging frameworks and software trends so I try and keep a focus on principles and patterns because as the frameworks fade, the patterns and principles remain. The writtings here are of my own biased, sometimes one sided and a little bit arrogant opinion. I expect to be questioned and scrutinized by you in every way you desire. I currently work at (and love working at)
               <a href="http://thoughtworks.com">ThoughtWorks</a>.
             </p>
@@ -54,7 +83,7 @@
               <li><a href="https://keybase.io/hlawson">Keybase</a></li>
               <li><a href="https://www.linkedin.com/in/hglawson">LinkedIn</a></li>
               <li><a href="https://twitter.com/henryglawson">Twitter</a></li>
-            <ul>
+            </ul>
           </div>
         </div>
       </div>
