@@ -16,23 +16,25 @@
     {% else %}
       {% capture page_description %}HenryLawson.net is a repository of articles about software development, management and delivery.{% endcapture %}
     {% endif %}
+    {% capture page_url %}https://henrylawson.net{{ page.url }}{% endcapture %}
+    {% capture page_image %}https://gravatar.com/avatar/aa56f33f54e4a32ab6ec54cd59c5df07?s=400{% endcapture %}
 
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}"/>
 
     <meta property="og:title" content="{{ page_title }}"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content="https://gravatar.com/avatar/aa56f33f54e4a32ab6ec54cd59c5df07?s=400"/>
-    <meta property="og:url" content="https://henrylawson.net{{ page.url }}"/>
+    <meta property="og:image" content="{{ page_image }}"/>
+    <meta property="og:url" content="{{ page_url }}"/>
     <meta property="og:description" content="{{ page_description }}"/>
     <meta property="fb:admins" content="hen3rz"/>
 
     <meta name="twitter:title" content="{{ page_title }}"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:url" content="https://henrylawson.net{{ page.url }}"/>
+    <meta name="twitter:url" content="{{ page_url }}"/>
     <meta name="twitter:site" content="@henryglawson"/>
     <meta name="twitter:description" content="{{ page_description }}"/>
-    <meta name=”twitter:image” content="https://gravatar.com/avatar/aa56f33f54e4a32ab6ec54cd59c5df07?s=400"/>
+    <meta name=”twitter:image” content="{{ page_image }}"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" href="/favicon.ico"/>
