@@ -10,7 +10,9 @@
     {% if page.is_js_needed %}
       {% javascript app %}
     {% endif %}
-    {% stylesheet app %}
+    <style type="text/css">
+      {% asset app.css %}
+    </style>
     {% stylesheet screen-narrow media="only screen and (max-width:800px)" %}
     <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
   </head>
