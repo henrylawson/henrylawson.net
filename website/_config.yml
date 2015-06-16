@@ -5,6 +5,10 @@ permalink: /:title/
 front_post_count: 2
 recent_article_count: 10
 excerpt_separator: <!--more-->
+hostname: https://henrylawson.net
+meta:
+  image: https://henrylawson.net/images/henry_lawson.jpg
+  description: A repository of articles about software development, management and delivery. Sometimes thoughtful, somtimes random - hopefully informative and insightful.
 assets:
   cache: true
   js_compressor:  uglifier
