@@ -21,7 +21,9 @@ var ChartHelper = (function() {
       window.onresize = function() {
         resizeForNarrowWindow(chart);
         chart.draw(0, true);
-        prevCallback();
+        if (typeof(prevCallback) === 'function') {
+          prevCallback();
+        }
       };
     }
   };
