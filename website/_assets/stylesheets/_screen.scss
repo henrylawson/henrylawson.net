@@ -179,15 +179,17 @@ p, ul, ol {
   margin-bottom:5px;
 }
 .footer ul.social-media-list {
-  margin:0;
+  margin:20px 0 20px 0;
   padding:0;
   list-style:none;
 }
 .footer ul.social-media-list li {
   margin:0;
   padding:0 40px 0 0;
-  line-height:90px;
   display:inline;
+}
+.footer p.rights {
+  font-size:0.8em;
 }
 .other-articles .title h3 {
   font-family: LeagueGothic, Arial, Helvetica;
