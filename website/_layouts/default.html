@@ -17,13 +17,14 @@
       {% assign page_description = site.meta.description %}
     {% endif %}
     {% capture page_url %}{{ site.hostname }}{{ page.url }}{% endcapture %}
+    {% capture page_image %}{% asset_path 'henry_lawson.jpg' %}{% endcapture %}
 
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}"/>
 
     <meta property="og:title" content="{{ page_title }}"/>
     <meta property="og:type" content="article"/>
-    <meta property="og:image" content="{{ site.meta.image }}"/>
+    <meta property="og:image" content="{{ page_image }}"/>
     <meta property="og:url" content="{{ page_url }}"/>
     <meta property="og:description" content="{{ page_description }}"/>
     <meta property="fb:admins" content="hen3rz"/>
@@ -33,7 +34,7 @@
     <meta name="twitter:url" content="{{ page_url }}"/>
     <meta name="twitter:site" content="@henryglawson"/>
     <meta name="twitter:description" content="{{ page_description }}"/>
-    <meta name=”twitter:image” content="{{ site.meta.image }}"/>
+    <meta name=”twitter:image” content="{{ page_image }}"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" href="/favicon.ico"/>
@@ -78,11 +79,11 @@
             </p>
             <p class="list">Find more of me at:</p>
             <ul class="social-media-list">
-              <li><a href="https://github.com/henrylawson"><img src="/images/social-media/github.png" alt="Github" title="Github" class="social-media"/></a></li>
-              <li><a href="http://flickr.com/photos/hen3rz"><img src="/images/social-media/flickr.png" alt="Flickr" title="Flickr" class="social-media"/></a></li>
-              <li><a href="https://keybase.io/hlawson"><img src="/images/social-media/keybase.png" alt="Keybase" title="Keybase" class="social-media"/></a></li>
-              <li><a href="https://www.linkedin.com/in/hglawson"><img src="/images/social-media/linkedin.png" alt="LinkedIn" title="LinkedIn" class="social-media"/></a></li>
-              <li><a href="https://twitter.com/henryglawson"><img src="/images/social-media/twitter.png" alt="Twitter" title="Twitter" class="social-media"/></a></li>
+              <li><a href="https://github.com/henrylawson">{% image social-media/github.png alt="Github" title="Github" class="social-media" %}</a></li>
+              <li><a href="http://flickr.com/photos/hen3rz">{% image social-media/flickr.png alt="Flickr" title="Flickr" class="social-media" %}</a></li>
+              <li><a href="https://keybase.io/hlawson">{% image social-media/keybase.png alt="Keybase" title="Keybase" class="social-media" %}</a></li>
+              <li><a href="https://www.linkedin.com/in/hglawson">{% image social-media/linkedin.png alt="LinkedIn" title="LinkedIn" class="social-media" %}</a></li>
+              <li><a href="https://twitter.com/henryglawson">{% image social-media/twitter.png alt="Twitter" title="Twitter" class="social-media" %}</a></li>
             </ul>
           </div>
         </div>

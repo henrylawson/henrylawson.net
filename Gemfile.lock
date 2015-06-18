@@ -102,6 +102,8 @@ DEPENDENCIES
   jekyll-assets
   rake
   sass
+  sprockets-helpers
+  sprockets-sass
   uglifier
 
 BUNDLED WITH

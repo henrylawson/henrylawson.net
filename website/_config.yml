@@ -10,6 +10,12 @@ meta:
   image: https://henrylawson.net/images/henry_lawson.jpg
   description: A repository of articles about software development, management and delivery. Sometimes thoughtful, somtimes random - hopefully informative and insightful.
 assets:
+  sources:
+    - _assets
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+    - _assets/fonts
   cache: true
   js_compressor:  uglifier
   css_compressor: sass
