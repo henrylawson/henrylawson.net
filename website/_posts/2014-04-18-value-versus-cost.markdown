@@ -9,7 +9,7 @@ is_js_needed: true
 <div id="value-versus-cost" class="graph"></div>
 <script type="text/javascript">
   OnLoad.call(function() {
-    var svg = dimple.newSvg("#value-versus-cost", '100%', 500);
+    var svg = dimple.newSvg("#value-versus-cost", '100%', 510);
     var data = [
       { 'Cost': 'Low', 'Value': 'Low' },
       { 'Cost': 'Low', 'Value': 'High' },
