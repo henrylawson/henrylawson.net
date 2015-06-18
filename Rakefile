@@ -56,7 +56,7 @@ task :publish => [:build] do
           "mkdir -p #{CONFIG["publish_temp"]}'")
 
   puts "Creating tar gz of target site"
-  execute("tar -zcvf " +
+  execute("GZIP=-9 tar -zcvf " +
           "#{CONFIG["deploy_target_compress"]} " +
           "-C #{CONFIG["deploy_target"]} .")
 
