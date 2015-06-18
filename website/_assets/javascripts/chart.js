@@ -4,7 +4,7 @@ var ChartHelper = (function() {
     if (document.body.clientWidth < 900) {
       chart.setMargins('10%', '10%%', '10%', '35%');
     } else {
-      chart.setMargins('10%', '10%%', '10%', '10%');
+      chart.setMargins('10%', '10%%', '10%', '15%');
     }
   }
 
