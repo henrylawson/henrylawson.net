@@ -60,9 +60,10 @@ task :publish => [:build] do
           "#{CONFIG["deploy_target_compress"]} " +
           "-C #{CONFIG["deploy_target"]} .")
 
-	puts "Uploading target to temp location"
-	execute("scp -r " +
-          "#{CONFIG["deploy_target_compress"]} " +
+  puts "Uploading target to temp location"
+	execute("rsync -v " +
+          "-e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' " +
+          "--progress #{CONFIG["deploy_target_compress"]} " +
           "#{CONFIG["host"]}:#{CONFIG["upload_temp"]}")
 
 	puts "Extracting target on server to temp location"
