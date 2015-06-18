@@ -20,9 +20,11 @@ end
 desc "Builds the website"
 task :build => [:clean_deploy] do
 	puts "Building website to #{CONFIG["deploy_target"]}"
-	execute("bundle exec jekyll build " +
-          "-s #{CONFIG["source"]} -d #{CONFIG["deploy_target"]}")
-  execute("htmlcompressor " +
+	execute("JEKYLL_LOG_LEVEL=debug " +
+          "bundle exec jekyll build " +
+          "-s #{CONFIG["source"]} -d #{CONFIG["deploy_target"]} " +
+          "--verbose")
+  execute("java -jar bin/htmlcompressor-1.5.3.jar " +
           "--recursive " +
           "--compress-css " +
           "--compress-js " +

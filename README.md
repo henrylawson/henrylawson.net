@@ -9,7 +9,6 @@ Getting Started
 1. gem install bundler
 1. bundle install
 1. Create SSH config for "henrylawson.net" as referened in build.yml, check ~/.ssh/config or see the "Setting Up SSH" notes below
-1. brew install htmlcompressor --with-yuicompressor
 1. rake Rakefile --describe
 
 Setting Up SSH
