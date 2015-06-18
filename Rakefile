@@ -19,7 +19,7 @@ end
 
 desc "Builds the website"
 task :build => [:clean_deploy] do
-	puts "Building website to #{CONFIG["target"]}"
+	puts "Building website to #{CONFIG["deploy_target"]}"
 	execute("bundle exec jekyll build " +
           "-s #{CONFIG["source"]} -d #{CONFIG["deploy_target"]}")
   execute("htmlcompressor " +
