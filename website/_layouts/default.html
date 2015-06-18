@@ -17,7 +17,7 @@
       {% assign page_description = site.meta.description %}
     {% endif %}
     {% capture page_url %}{{ site.hostname }}{{ page.url }}{% endcapture %}
-    {% capture page_image %}{% asset_path 'henry_lawson.jpg' %}{% endcapture %}
+    {% capture page_image %}{{ site.hostname }}{% asset_path 'henry_lawson.jpg' %}{% endcapture %}
 
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}"/>
