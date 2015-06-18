@@ -9,21 +9,36 @@
 }
 @font-face {
   font-family: 'SourceSansPro';
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  src: url('../fonts/League_Gothic/SourceSansPro-Regular.woff2') format('woff2'),
+       url('../fonts/League_Gothic/SourceSansPro-Regular.woff') format('woff'),
+       url('../fonts/League_Gothic/SourceSansPro-Regular.eot') format('eot'),
+       url('../fonts/League_Gothic/SourceSansPro-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'SourceSansPro';
   src: url("../fonts/Source_Sans_Pro/SourceSansPro-Italic.ttf");
+  src: url('../fonts/League_Gothic/SourceSansPro-Italic.woff2') format('woff2'),
+       url('../fonts/League_Gothic/SourceSansPro-Italic.woff') format('woff'),
+       url('../fonts/League_Gothic/SourceSansPro-Italic.eot') format('eot'),
+       url('../fonts/League_Gothic/SourceSansPro-Italic.ttf') format('truetype');
   font-style: italic;
 }
 @font-face {
   font-family: 'SourceSansPro';
   src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+  src: url('../fonts/League_Gothic/SourceSansPro-Bold.woff2') format('woff2'),
+       url('../fonts/League_Gothic/SourceSansPro-Bold.woff') format('woff'),
+       url('../fonts/League_Gothic/SourceSansPro-Bold.eot') format('eot'),
+       url('../fonts/League_Gothic/SourceSansPro-Bold.ttf') format('truetype');
   font-weight: bold;
 }
 @font-face {
   font-family: 'SourceSansPro';
   src: url("../fonts/Source_Sans_Pro/SourceSansPro-BoldItalic.ttf");
+  src: url('../fonts/League_Gothic/SourceSansPro-BoldItalic.woff2') format('woff2'),
+       url('../fonts/League_Gothic/SourceSansPro-BoldItalic.woff') format('woff'),
+       url('../fonts/League_Gothic/SourceSansPro-BoldItalic.eot') format('eot'),
+       url('../fonts/League_Gothic/SourceSansPro-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }

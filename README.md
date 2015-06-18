@@ -25,12 +25,9 @@ Host henrylawson.net
 
 And that the ~/.ssh/id_rsa.pub is added to the remote hosts ~/.ssh/authorized_keys.
 
-Running in Cloud9
+Updating Fonts
 =================
-In Cloud9, ensure no Apache processes are running and run:
+find . -iname "*.ttf" -exec woff2_compress "{}" \;
+find . -iname "*.ttf" -exec sfnt2woff "{}" \;
+find . -iname "*.ttf" -exec 'ttf2eot < {} > {}.eot' \;
 
-``
-rake serve[$IP,$PORT]
-``
-
-So that the required IP and Port are provided by C9.
