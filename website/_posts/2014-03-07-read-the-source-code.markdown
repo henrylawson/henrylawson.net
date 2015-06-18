@@ -7,6 +7,8 @@ categories: software
 
 A while back I heavily leveraged the SolrNet library to interact with a Solr instance for searching capabilities from a .Net application. At that time the library was in it's early stages and the state of it's documentation was growing. **Many of the APIs we ended up leveraging were undocumented.** 
 
+<!--more-->
+
 Our only way to find out how to make use of all of Solr's features, using SolrNet, was to **grep the source code and do a deep dive into the implementation**. Fortunately for us, the library was well unit tested and we were able to **determine most of the functionality from what unit tests had been written**. 
 
 Reading the source code gave great advantages, we were able to:

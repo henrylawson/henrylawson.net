@@ -7,6 +7,8 @@ categories: software
 
 Java and many other languages allow you to assert that the input parameters to a method meet certain conditions, if these parameters do not satisfy the assertions requirements, the method call will fail. The requirements are usually defined by the usage of the parameter in the method. These assertions are a technique that is employed as part of Defensive Programming. A programming mantra were the author of a library method performs aggressive validation of all input parameters to a method call and fails if the required conditions are not met.
 
+<!--more-->
+
 A typical usage of assertions on a method parameter looks like the following:
 {% highlight java %}
 public double divideEvenNumberAndAddFive(int numerator, int denominator) {

@@ -7,6 +7,8 @@ categories: software
 
 Counting points at developer done is a controversial topic. I recently engaged in this discussion with my team and we reached an interesting conclusion. The typical way to count points for a story is when the story has:
 
+<!--more-->
+
 1.  Been completed by the developers
 2.  QA, automated functional or acceptance tests are written and passing
 3.  All outstanding bugs found by QA/client have been resolved and fixed

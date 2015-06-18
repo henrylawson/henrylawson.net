@@ -7,6 +7,8 @@ categories: software
 
 [The Adapter Pattern](http://www.oodesign.com/adapter-pattern.html) is probably the most commonly used pattern of all the [famous patterns in computer science](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612). It's also, not surprisingly one of the handiest to have to in your tool belt.
 
+<!--more-->
+
 The primary purpose of the adapter pattern is to do what adapters do in the real world. Just as power adapters provide a wrapper around a power plug for use in a foreign wall socket, an implementation of a software adapter will wrap around a class to provide it with a more common interface that consumers would expect. One of the other benefits of the Adapter Pattern is that it can increase encapsulation and reduce coupling of classes being used in your software system. As a side affect of this, it can also make mocking dependencies from your SUT a lot easier when unit testing in isolation.
 
 Some typical cases for the use of the Adapter Pattern are:

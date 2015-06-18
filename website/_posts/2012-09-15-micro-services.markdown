@@ -7,6 +7,8 @@ categories: software
 
 Recently I attended a presentation by [James Lewis](http://bovon.org/), a colleague of mine. [James's presentation was titled _Micro Services_](http://www.slideshare.net/jamesalewis/java-microservices). I was quite impressed with the ideas being presented, I found _Micro Services_ to be a very simple solution to complex problems - which in my opinion is what you want every solution to be.
 
+<!--more-->
+
 The problem they were setting out to solve would typically be solved with an [Enterprise Service Bus](http://en.wikipedia.org/wiki/Enterprise_service_bus) (ESB). However instead of going down the ESB route they decided to solve the problem using a series of REST based services. Each service was responsible for a single thing and was kept as small as possible. Each had an event store that would collect incoming requests; feeding of the event store in a [Competing Consumer](http://www.eaipatterns.com/CompetingConsumers.html) style was a queue-processing engine that was controlled by the interested service. On completion of a job the service would then create an event that would be picked up by other services to continue on with other actions.
 
 _Micro Services_ draw their fundamental [philosophies from Unix](http://en.wikipedia.org/wiki/Unix_philosophy). More specifically they focus on 3 of [Mike Gancarz's](http://www.amazon.com/Mike-Gancarz/e/B001K8SCRO) famously quoted precepts:

@@ -7,6 +7,8 @@ categories: software
 
 _Whitespace_ in our code is something that many developers don't spend much time thinking about, however it is a powerful aspect that can have a large impact on the readability of code. [Kent Beck] (http://en.wikipedia.org/wiki/Kent_Beck) talks about this topic quite briefly in his book [Implementation Patterns] (http://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091).
 
+<!--more-->
+
 He breaks the problem up into three topics; **Conceptual Affinity**, **Vertical Spacing** and **Horizontal Openness and Density**.
 
 A place where effective use of whitespace can be most powerful is in [Unit Tests] (http://en.wikipedia.org/wiki/Unit_testing). Consider the below, made up, [JUnit] (http://junit.org/) test using [Mockito] (https://code.google.com/p/mockito/). It creates some value objects, configures some mocks, executes some code and does some asserts and verifies. A typical test case when writing [Mockist Unit Tests] (http://martinfowler.com/articles/mocksArentStubs.html) using these frameworks.

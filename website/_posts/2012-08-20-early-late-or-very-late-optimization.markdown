@@ -7,6 +7,8 @@ categories: software
 
 Optimization is a topic that is guaranteed to come up at least once during the course of a project or even perhaps once an iteration, or once every story if your project is performance critical. When working in an agile [TDD](http://c2.com/cgi/wiki?TestDrivenDevelopment) environment the following questions often arise - **Do we optimize from the beginning? Do we optimize at the end? Is this optimization something that comes under [KISS and YAGNI](http://www.codinghorror.com/blog/2004/10/kiss-and-yagni.html)?** Unfortunately like almost everything, there is never one perfect answer and it always comes down to context and requirements.
 
+<!--more-->
+
 From my perspective there are three opportunities for optimization during agile TDD style development, these are appropriately named:
 
 1.  Early Optimization

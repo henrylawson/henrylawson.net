@@ -7,6 +7,8 @@ categories: software
 
 Recently I was apart of a software project that was creating a replacement to a legacy application. This legacy application **contained a significant but not not outrageous amount of data**. As part of this replacement we had to migrate all of the existing data into our new data model. This task was **thoughtlessly left until the end of the project**, an iteration before the release. The reasoning for this decision was that it wasn't seen as a big overhead and that we were **testing our system with production like quantities of data**. That is, our generated data had around the same amount of records that the legacy application had for certain entities. The following issues were observed once the data was completely migrated:
 
+<!--more-->
+
 1.  Certain areas of the application performed terribly
 2.  The legacy data did not contain various records that we expected to exist
 3.  Our search re-indexing system performed worse

@@ -7,6 +7,8 @@ categories: software
 
 A month ago or so, I wrote about [Counting Points at Dev Done]({% post_url 2012-06-04-counting-points-at-dev-done %}) and the discussion my team back then engaged in on the topic. The summary of that article was basically:
 
+<!--more-->
+
 **Counting points at developer done goes against the traditional way of counting points after sign off. However, we felt back then that one of the purposes of counting points is to communicate progress. That said, provided that there are no extreme fluctuations in the amount of work that is required post developer done and everyone has a consistent understanding of how progress is being measured - it should be OK.**
 
 Having now delivered and released the software its interesting how my opinion on this topic has shifted. I still believe that the above statement is 100% correct and that there is no problem with counting points at developer done. However the clause that is attached to the above statement is hard to ensure.

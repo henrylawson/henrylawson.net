@@ -9,6 +9,8 @@ I can't remember where I first heard this awesome piece of knowledge so full cre
 
 **In my experience, estimation sessions are not for estimating.**
 
+<!--more-->
+
 What on earth is meant by this? Well it's simple, _it means exactly that_. The estimations gathered during an estimation session are merely a tiny artifact of the whole exercise. **The biggest benefit from an estimation session is the gain in _shared understanding_ that everyone on the team receives**.
 
 Some of the key outcomes I have seen from estimation sessions are:

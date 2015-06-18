@@ -7,6 +7,8 @@ categories: software
 
 During the initial phase of a project, it is very common for a team to develop an initial story list. From this list of stories, estimates are created and from these estimates, some sort of plan is created. In this plan, delivery dates will be specified, with specific dates for different milestones.
 
+<!--more-->
+
 **As scope and delivery velocity becomes clearer, this initial plan needs to be revised, milestones need to reviewed, brought forward were necessary** or conversations initiated and action taken to address issues that will prevent milestones or delivery dates from being met.
 
 What happens too often in agile projects is the scope and budget are _sometimes_ revised on the completion of an iteration - as further clarity is made about what is feasible, sometimes time is revised as part of this discussion. 

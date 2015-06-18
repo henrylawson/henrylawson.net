@@ -9,6 +9,8 @@ Software developers and stakeholders have to be brave enough to make the call to
 
 Too often software is valued by it's feature set. The bigger the list of features that the software contains the more valueable it is perceived to be as it appears to be a more richer application to a client.  But what if no one actually uses any of those features? How much value do they provide now? 
 
+<!--more-->
+
 Well the answer to that question is that they are probably provding a net negative value. That is the cost to maintain and extend that feature far outways it's overall value and hence it's value is net negative. Now you might read that and think, well that feature is done and tested - development for it finished many releases ago, it costs nothing to stay in the application. 
 
 **The truth is that while most of that is correct you also have to consider the added complexity that that feature introduces to the code base of the application.** 

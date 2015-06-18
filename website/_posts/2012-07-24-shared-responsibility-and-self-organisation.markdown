@@ -7,6 +7,8 @@ categories: software
 
 A common element that exists in successful agile teams is that they are self organizing and have a mentality of shared responsibility. Typically these attributes are displayed when the following can be observed:
 
+<!--more-->
+
 *   Everyone signs up in sign-up
 *   A single person is never apologizing for a call he or she made on behalf of the team - decisions are made on behalf of the team, by the team
 *   Everyone gets involved and has an equal voice during estimation

@@ -7,6 +7,8 @@ categories: software
 
 A common trend in software teams is that over time team members start to acquire niche pieces of knowledge about the software system they are developing. These typical pieces of information are things like, but not limited too:
 
+<!--more-->
+
 *   Ensuring certain settings on the Database are enabled
 *   Ensuring some third party component or dependency is installed on the application running the machine
 *   Ensuring the correct version of a dependency is installed

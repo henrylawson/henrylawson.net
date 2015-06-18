@@ -7,6 +7,8 @@ categories: software
 
 **Any problem in computer science can be solved with one additional layer of indirection. But that usually will create another problem.** - [David Wheeler](http://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)).
 
+<!--more-->
+
 This quote is true for almost every architectural problem I have ever come across or heard about. By increasing the level of [abstraction](http://en.wikipedia.org/wiki/Abstraction_(computer_science)), a problem can be better understood and resolved. There is obviously a breaking point with this though. At some stage those abstraction layers make the solution less extensible and more difficult to understand. The [OSI](http://en.wikipedia.org/wiki/OSI_model) model is a perfect example of how at an architectural level, having the right amount of abstraction can make a complex problem seem simple.
 
 The OSI Model provides abstraction layers to characterize and standardize the functions of a communication system. Each layer in the model is responsible for serving the layer above and operating on the layer below it. This same idea of abstraction is applied to solve large scale enterprise systems problems through the principles guiding [SOA](http://en.wikipedia.org/wiki/Service-oriented_architecture). At a more micro level, levels of indirection can be seen in the use of [ORM's](http://en.wikipedia.org/wiki/Object-relational_mapping), [MVC](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) and the [Adapter Pattern]({% post_url 2012-07-26-the-adapter-pattern %}).

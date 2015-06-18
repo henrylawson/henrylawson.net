@@ -12,6 +12,8 @@ When replacing a legacy application there are typically two approaches:
 
 There are advantages and disadvantages to both approaches. The names given to each approach provides insight into how the legacy application is replaced.
 
+<!--more-->
+
 **The Big Bang approach, as its name suggests, involves replacing the legacy application in one shot**. That is, on a given date the legacy application is retired and the new application is fired up. Some _Big Bang_ replacements might have a transition period where both applications are running at the same time. However, a typical _Big Bang_ approach will retire and start up the new application at almost the exact same time. This is done to avoid synchronizing data between the transition period when both legacy and new applications are available.
 
 **The Piecemeal Replacement involves splitting the legacy application into several smaller applications (if it isn't already) and releasing these applications as they are completed. On each release, the relevant parts of the legacy application are then retired**. By a certain date, all parts of the legacy application will have been replaced, at this time the legacy application is retired.

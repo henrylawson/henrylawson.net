@@ -7,6 +7,8 @@ categories: software
 
 When pairing with other people I always find it interesting to see what their programming workflow is like. Most people I know [TDD](http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530) out their code and like to follow some form of the _Boy Scout Rule_:
 
+<!--more-->
+
 **You should always leave the campground cleaner than you found it** - [Robert C. Martin](http://www.objectmentor.com/omTeam/martin_r.html) ([quoted in the context of programming](http://www.infoq.com/presentations/Robert-C.-Martin-Bad-Code))
 
 When this common _Boy Scout Rule_ is applied to computer programming, the camp ground becomes your code base and cleanness typically refers to the traits that [Bob Martin](http://www.objectmentor.com/omTeam/martin_r.html) talks about in his book [Clean Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). That is, code that does not violate [YAGNI](http://c2.com/cgi/wiki?YouArentGonnaNeedIt), [KISS](http://catb.org/jargon/html/K/KISS-Principle.html), is well [refactored](http://c2.com/cgi/wiki?WhatIsRefactoring), pleasant to read and easy to understand. When working on an existing code base it doesn't take long to find an area of the code that could be improved, following the _Boy Scout Rule_ means that it is now your responsibility to leave the "camp ground" cleaner then you found it. So it is time to roll up your sleeves and refactor the existing code until it is clean.

@@ -7,6 +7,8 @@ categories: software
 
 Recently on my team it was suggested that we start using the [Service Locator](http://martinfowler.com/articles/injection.html) pattern to load up our fields instead of using the [Constructor Injection](http://martinfowler.com/articles/injection.html) pattern that we had been using heavily in our project. The main reasoning for the move was that **our MVC controller constructors were starting to get really bloated** with parameters and this was becoming painful to mock in tests.
 
+<!--more-->
+
 The [Service Locator vs. Dependency Injection](http://martinfowler.com/articles/injection.html) debate is a never ending one and here are my thoughts on it. The main problems I see with using a Service Locator to provide instances to consuming classes are:
 
 1.  It means every class is tightly coupled to the Service Locator which I don't see as a very good coupling. You would also have to ensure that you use an adapter so as not to couple the entire code-base to your [IOC](http://martinfowler.com/articles/injection.html) tool.

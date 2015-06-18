@@ -7,6 +7,8 @@ categories: software
 
 [Retrospectives](http://retrospectivewiki.org) are a great opportunity to find ways to improve your processes. However for it to be really successful you need to have an environment where people can be completely open and express their opinions freely. One way to do this is by having a Closed Retrospective.
 
+<!--more-->
+
 A Closed Retrospective is basically the same as any old retrospective. The **difference being that people prepare their discussion points before hand and present them on the discussion board all at the same time** - _with no talking_. Some teams probably already do this as part of their Retrospectives and there is no need to distinguish the difference. However if you're not, then read on.
 
 If people are allowed to talk during the pre-discussion period, or are placing their points on the boards as they think of them, I have noticed that following often happens:
