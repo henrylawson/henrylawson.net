@@ -26,7 +26,6 @@ layout: null
       <link href="{{ site.hostname }}{{ post.url }}"/>
 			<updated>{{ post.date | date_to_xmlschema }}</updated>
       <id>{{ site.hostname }}{{ post.id }}</id>
-      <summary>{{ post.excerpt | strip_html }}</summary>
       <content type="html">{{ post.content | xml_escape }}</content>
       <rights>Copyright (c) 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.</rights>
 		</entry>
