@@ -2,7 +2,7 @@ var ChartHelper = (function() {
 
   function resizeForNarrowWindow(chart) {
     if (document.body.clientWidth < 900) {
-      chart.setMargins('10%', '10%%', '10%', '35%');
+      chart.setMargins('10%', '10%%', '10%', '15%');
     } else {
       chart.setMargins('10%', '10%%', '10%', '15%');
     }

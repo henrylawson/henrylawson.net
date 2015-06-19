@@ -1,4 +1,4 @@
-@media only screen and (max-width:800px) {
+@media #{$media-narrow} {
   .container {
     min-width:252px;
   }
@@ -40,8 +40,5 @@
     padding-bottom: 0;
     line-height: 1.2;
     margin: 5px 0 0 0;
-  }
-  p, li {
-    font-size:90%;
   }
 }

@@ -6,7 +6,7 @@ categories: software
 is_js_needed: true
 ---
 
-<div id="cone-of-uncertainty" class="graph" style="width:600"></div>
+<div id="cone-of-uncertainty" class="graph"></div>
 <script type="text/javascript">
   OnLoad.call(function() {
     var svg = dimple.newSvg("#cone-of-uncertainty", '100%', 500);

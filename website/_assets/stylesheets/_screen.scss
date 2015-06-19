@@ -1,3 +1,13 @@
+$media-narrow: "only screen and (max-width:600px)";
+$font-body: 'OpenSans', Helvetica, Arial;
+$font-header: 'LeagueGothic', Impact, Helvetica, Arial;
+$font-body-size: 130%;
+$font-body-size-narrow: 100%;
+$right-padding: 50px;
+$left-padding: 40px;
+$right-padding-narrow: 20px;
+$left-padding-narrow: 10px;
+
 @font-face {
   font-family: 'LeagueGothic';
   src: url(asset_path('fonts/League_Gothic/League_Gothic-webfont.woff2')) format('woff2'),
@@ -8,14 +18,14 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: 'OpenSans';
   src: url(asset_path('fonts/Open_Sans/OpenSans-Light.woff2')) format('woff2'),
        url(asset_path('fonts/Open_Sans/OpenSans-Light.woff')) format('woff'),
        url(asset_path('fonts/Open_Sans/OpenSans-Light.eot')) format('eot'),
        url(asset_path('fonts/Open_Sans/OpenSans-Light.ttf')) format('truetype');
 }
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: 'OpenSans';
   src: url(asset_path('fonts/Open_Sans/OpenSans-LightItalic.woff2')) format('woff2'),
        url(asset_path('fonts/Open_Sans/OpenSans-LightItalic.woff')) format('woff'),
        url(asset_path('fonts/Open_Sans/OpenSans-LightItalic.eot')) format('eot'),
@@ -23,7 +33,7 @@
   font-style: italic;
 }
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: 'OpenSans';
   src: url(asset_path('fonts/Open_Sans/OpenSans-Bold.woff2')) format('woff2'),
        url(asset_path('fonts/Open_Sans/OpenSans-Bold.woff')) format('woff'),
        url(asset_path('fonts/Open_Sans/OpenSans-Bold.eot')) format('eot'),
@@ -31,7 +41,7 @@
   font-weight: bold;
 }
 @font-face {
-  font-family: 'SourceSansPro';
+  font-family: 'OpenSans';
   src: url(asset_path('fonts/Open_Sans/OpenSans-BoldItalic.woff2')) format('woff2'),
        url(asset_path('fonts/Open_Sans/OpenSans-BoldItalic.woff')) format('woff'),
        url(asset_path('fonts/Open_Sans/OpenSans-BoldItalic.eot')) format('eot'),
@@ -39,13 +49,17 @@
   font-weight: bold;
   font-style: italic;
 }
+
 body {
   margin:0;
   padding:0;
   color:#000;
-  font-family:'SourceSansPro', Arial, Helvetica;
+  font-family:$font-body;
   font-style:normal;
-  font-size:130%;
+  font-size:$font-body-size;
+  @media #{$media-narrow} {
+    font-size:$font-body-size-narrow;
+  }
   background: #fff;
 }
 a, a:hover, a:visited {
@@ -67,7 +81,11 @@ p, ul, ol {
   background:url(asset_path('images/light.jpg')) #dedede;
 }
 .header {
-  padding:0 50px 0 40px;
+  font-size:$font-body;
+  padding:0 $right-padding 0 $left-padding;
+  @media #{$media-narrow} {
+    padding:0 $right-padding-narrow 0 $left-padding-narrow;
+  }
   border-bottom:1px solid #000;
 }
 .header .title {
@@ -78,7 +96,7 @@ p, ul, ol {
 .header .title h1 {
   margin:0;
   padding:0;
-  font-family:LeagueGothic, Arial, Helvetica;
+  font-family:$font-header;
   font-size:7em;
   text-transform: uppercase;
 }
@@ -103,13 +121,16 @@ p, ul, ol {
   border-bottom:2px solid #000;
 }
 .header .title .link-area ul.links li a {
-  font-family:LeagueGothic, Arial, Helvetica;
+  font-family:$font-header;
   font-size:1.5em;
   text-decoration:none;
   text-transform: uppercase;
 }
 .content {
-  padding:40px 50px 40px 40px;
+  padding:40px $right-padding 40px $left-padding;
+  @media #{$media-narrow} {
+    padding:40px $right-padding-narrow 40px $left-padding-narrow;
+  }
   background:#fff;
 }
 .content .article .body {
@@ -130,7 +151,7 @@ p, ul, ol {
   padding:10px 0;
 }
 .content .article .title h2, .article-index .other-articles .title h3 {
-  font-family:LeagueGothic, Arial, Helvetica;
+  font-family:$font-header;
   font-size:2.5em;
   font-weight:bold;
   background:#000;
@@ -157,14 +178,17 @@ p, ul, ol {
   width:100%;
 }
 .footer {
-  padding:40px 50px 0px 40px;
+  padding:40px $right-padding 0px $left-padding;
+  @media #{$media-narrow} {
+    padding:40px $right-padding-narrow 0px $left-padding-narrow;
+  }
   border-top:1px solid #000;
   border-bottom:1px solid #000;
 }
 .footer .title h3 {
   margin: 0;
   padding: 0;
-  font-family:LeagueGothic, Arial, Helvetica;
+  font-family:$font-header;
   font-weight:bold;
   text-transform: uppercase;
   font-size:2.5em;
@@ -192,7 +216,7 @@ p, ul, ol {
   font-size:0.8em;
 }
 .other-articles .title h3 {
-  font-family: LeagueGothic, Arial, Helvetica;
+  font-family: $font-header;
   font-weight: bold;
   line-height: 100%;
   padding: 0 0 8px 0 ;
@@ -213,7 +237,7 @@ p, ul, ol {
 }
 .other-articles ul.indexes .index .right-arrow {
   display: inline;
-  font-family:LeagueGothic, Arial, Helvetica;
+  font-family:$font-header;
   font-size: 20pt;
   padding: 0;
   margin: 0 5px 0 0;
@@ -221,7 +245,7 @@ p, ul, ol {
 }
 .other-articles ul.indexes .index .title {
   display: inline;
-  font-family:LeagueGothic, Arial, Helvetica;
+  font-family:$font-header;
   text-transform: uppercase;
   font-size: 1.2em;
 }
