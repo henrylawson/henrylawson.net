@@ -211,6 +211,9 @@ p, ul, ol {
   margin:0;
   padding:0 40px 0 0;
   display:inline;
+  @media #{$media-narrow} {
+    line-height: 5;
+  }
 }
 .footer p.rights {
   font-size:0.8em;
