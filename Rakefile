@@ -41,6 +41,7 @@ task :serve, [:host, :port, :posts] => [:clean] do |t, args|
           "--host #{args.host} " +
           "--port #{args.port} " +
           "--drafts " +
+          "--future " +
           "--limit_posts #{args.posts} " +
           "--watch " +
           "-s #{CONFIG["source"]} -d #{CONFIG["target"]}")
