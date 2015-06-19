@@ -47,7 +47,7 @@ task :serve, [:host, :port, :posts] => [:clean] do |t, args|
 end
 task :s => :serve
 
-desc "Publishes the website"
+desc "Publishes the website to PROD"
 task :publish => [:build] do
 	puts "Publishing website"
 	puts "Removing and creating temp location"
@@ -79,3 +79,39 @@ task :publish => [:build] do
           "cp -rf #{CONFIG["publish_temp"]}/* #{CONFIG["publish"]}\"'")
 end
 task :p => :publish
+
+desc 'Create a new draft post'
+task :draft, [:date, :title] do |_t, args|
+  args.with_defaults(
+    :date => Date.today.to_s,
+    :title => 'New Post')
+
+  slug = "#{args.date}-#{args.title.downcase.gsub(/[^\w]+/, '-')}"
+  file = File.join(
+      '.',
+      'website',
+      '_drafts',
+      "#{slug}.markdown")
+
+  File.open(file, "w") do |f|
+      f << <<-EOS.gsub(/^      /, '')
+      ---
+      layout: post
+      title: #{args.title}
+      date: #{args.date}
+      ---
+
+      Text above here will become the excerpt.
+
+      <!--more-->
+
+      The article will continue here.
+      EOS
+  end
+
+  puts "Created draft article (for date #{args.date}):"
+  puts file
+end
+task :d, [:date, :title] do |_t, args|
+  Rake::Task[:draft].invoke(args.date, args.title)
+end

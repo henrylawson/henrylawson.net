@@ -2,7 +2,6 @@
 layout: post
 title:  "Over Asserting"
 date:   2014-03-12 21:00:00
-categories: software
 ---
 
 An observed anti pattern during automated testing both at the unit and application layers is the **over use of asserts to test state being configured during the setup of a test**.
