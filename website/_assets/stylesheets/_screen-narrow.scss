@@ -1,9 +1,6 @@
-@media #{$media-narrow} {
+@media #{$media-fat} {
   .container {
     min-width:252px;
-  }
-  .header .title h1 {
-    font-size:5em;
   }
   .header .title {
     padding-top:20px;
