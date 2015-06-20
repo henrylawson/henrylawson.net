@@ -138,10 +138,10 @@ p, ul, ol {
   margin-bottom: 60px;
 }
 
-.content .article .body ol li {
+.content .article .body ol li, .content .article .body ul li {
   padding:8px 8px 8px 15px;
 }
-.content .article .body ol li em strong {
+.content .article .body ol li em strong, .content .article .body ul li em strong {
   font-style:normal;
   display:block;
 }
