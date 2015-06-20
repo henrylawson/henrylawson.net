@@ -137,6 +137,19 @@ p, ul, ol {
 .content .article .body {
   margin-bottom: 60px;
 }
+.content .article .body blockquote {
+  border-left: 5px solid #000;
+  margin:0px;
+  padding:0px 0px 0px 30px;
+  font-style:italic;
+  font-size:0.85em;
+}
+.content .article .body blockquote strong {
+  font-style:normal;
+  display:block;
+  font-size:0.85em;
+  text-align:right;
+}
 .content .article .body ol li, .content .article .body ul li {
   padding:8px 8px 8px 15px;
 }
