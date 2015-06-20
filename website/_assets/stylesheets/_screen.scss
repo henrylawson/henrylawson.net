@@ -137,6 +137,14 @@ p, ul, ol {
 .content .article .body {
   margin-bottom: 60px;
 }
+
+.content .article .body ol li {
+  padding:8px 8px 8px 15px;
+}
+.content .article .body ol li em strong {
+  font-style:normal;
+  display:block;
+}
 .content .article .body .date {
   color: #777;
   text-align:right;
