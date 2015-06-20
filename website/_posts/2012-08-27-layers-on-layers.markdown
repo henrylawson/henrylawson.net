@@ -5,7 +5,8 @@ date:   2012-08-27 21:00:00
 categories: software
 ---
 
-**Any problem in computer science can be solved with one additional layer of indirection. But that usually will create another problem.** - [David Wheeler](http://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist)).
+> Any problem in computer science can be solved with one additional layer of indirection. But that usually will create another problem.
+> **[David Wheeler](http://en.wikipedia.org/wiki/David_Wheeler_(computer_scientist))**
 
 <!--more-->
 
