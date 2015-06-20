@@ -71,7 +71,7 @@ a:hover {
   color:#666;
 }
 p, li {
-  text-align:justify;
+  text-align:left;
   line-height:160%;
 }
 p, ul, ol {
@@ -137,7 +137,6 @@ p, ul, ol {
 .content .article .body {
   margin-bottom: 60px;
 }
-
 .content .article .body ol li, .content .article .body ul li {
   padding:8px 8px 8px 15px;
 }
