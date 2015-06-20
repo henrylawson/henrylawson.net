@@ -36,7 +36,7 @@ is a well formed and understand principle, the benefits of Microservices are
 being quantified by drawing parallels with this similar practice.
 
 **There is nothing wrong with this**, it is perfectly reasonable to conclude that
-**if a practice is similar to another best practice than it too is most likely a
+**if a practice is similar to another best practice, than it too is most likely a
 best practice**. **Anecdotal evidence and casual experiences are also the only
 forms of evidence a new innovation has**. The most important take away is to not
 be dogmatic when following any principle, always carry a bag of salt and use
