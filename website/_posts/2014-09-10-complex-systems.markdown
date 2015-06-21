@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Complex Systems
-date: 2024-09-10
+date: 2014-09-10
 ---
 
 I recently watched a short talk by [Richard
