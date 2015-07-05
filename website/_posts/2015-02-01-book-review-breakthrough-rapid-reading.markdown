@@ -4,8 +4,8 @@ title: Book Review - Breakthrough Rapid Reading
 date: 2015-02-01
 ---
 
-Breakthrough Rapid Reading by Peter Kump was a great read. Reading is a skill
-that if you invest in and learn well, will pay you back many times over. What I
+Breakthrough Rapid Reading by Peter Kump was a great read. **Reading is a skill
+that if you invest in and learn well, will pay you back many times over**. What I
 have found most beneficial from investing in my reading is that my massive list
 of articles and books I'd like to read no longer feel unsurmountable. I now
 have the skills to get through that list in a reasonable time. And as
@@ -30,9 +30,9 @@ Within the book there are several great tips - some of my key takeaways were:
   moving fast - ensuring you are comprehending what you are seeing. After a
   short period of time it is worth stopping and reflecting back about what you
   just read - did you remember it? Quiz yourself, try draw a mind map of what
-  you have just seen. For me it helps to think that I am "seeing" the text and
-  not "reading" it, however when I am seeing it, I am comprehending it.
+  you have just seen. **For me it helps to think that I am "seeing" the text and
+  not "reading" it, however when I am seeing it, I am comprehending it**.
 
 Apart from those above take aways, the book had a lot of exercises that are
-worth working through and internalizing. Rapid reading doesn't happen over
-night but with quality practice can get a lot faster over time.
+worth working through and internalizing. **Rapid reading doesn't happen over
+night but with quality practice can get a lot faster over time**.
