@@ -18,7 +18,7 @@ vendors. When the term integration is used, it can refer to:
 1. Legacy Database Integration (Sync scripts)
 
 **Late Integration is a problem as it usually results in the last minute
-discovery of valuable information. The learnings that are gained from
+discovery of valuable information. The learning's that are gained from
 integrating at the end of the project are often deprioritized in favour of
 fixing critical defects before go-live. This usually results in a sub optimal
 integration between two systems.**

@@ -18,7 +18,7 @@ A common element that exists in successful agile teams is that they are self org
 
 **Shared Responsibility** in an agile team is when the team is able to make calls together as a team and acknowledge that it is their decision and are happy to carry the consequences of that decision. **Shared Responsibility isn't a leader making a call on behalf of the team and the team _sharing the responsibility_ of that decision**.
 
-**Self Organizing** is pretty self explanatory. A team should be able to get tasks done without a clear leader waving their hand and delegating tasks to team members. At any time all the team members should be aware of what tasks need to be done, the priority of those tasks and should be able to work amongst themselves in an effective way that sees those tasks completed.
+**Self Organizing** is pretty self explanatory. A team should be able to get tasks done without a clear leader waving their hand and delegating tasks to team members. At any time all the team members should be aware of what tasks need to be done, the priority of those tasks and should be able to work among themselves in an effective way that sees those tasks completed.
 
 With people rolling off and ramping up on project teams all the time it is hard to have the right amount of stability for long enough to see all of the above happen. This instability typically results in there being a handful of people who know the ins and outs of the application, are extremely familiar with the domain and typically become the people who start to take on the leadership roles within the team. While sometimes teams do need leaders, I believe that the ideal team shouldn't.
 

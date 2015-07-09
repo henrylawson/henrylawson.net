@@ -13,7 +13,7 @@ helpful:
 1. Play [vimtutor](http://linuxcommand.org/man_pages/vimtutor1.html), finish
    it, it doesn't take too long
 1. Start with a blank vimrc, slowly customize the basic settings to your liking
-1. Once you are happy with your basic customizations, start learning various
+1. Once you are happy with your basic customization's, start learning various
    movements to allow you to get around
 1. Use Vim in all opportunities, have your old editor available to fall back
    to but try use Vim as much as possible, if you get stuck there is no harm in

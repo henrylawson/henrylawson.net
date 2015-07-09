@@ -40,6 +40,6 @@ being quantified by drawing parallels with this similar practice.
 best practice**. **Anecdotal evidence and casual experiences are also the only
 forms of evidence a new innovation has**. The most important take away is to not
 be dogmatic when following any principle, always carry a bag of salt and use
-your best judgement (which coincidently is predominately based on unquantified
+your best judgment (which coincidentally is predominately based on unquantified
 evidence).
 

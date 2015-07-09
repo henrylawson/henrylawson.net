@@ -6,7 +6,7 @@ date: 2014-08-18
 
 [Feedback]({% post_url 2012-07-29-feedback-cycles %}) is best when it is given
 timely and regularly. Our tests are a form of feedback. Below are some methods
-I have learnt over the years to speed up tests so that they can give faster
+I have leaned over the years to speed up tests so that they can give faster
 feedback.
 
 <!--more-->
@@ -44,7 +44,7 @@ Failures](http://www.rubydoc.info/github/rspec/rspec-expectations/RSpec%2FMatche
    Customer or Employee, if these entities are expensive to create, perhaps a
 set of tests can share one? Typically it is best practice to avoid coupling
 test data to ensure the result of a test is deterministic, sharing test data
-carries state across tests and can result in nondeterministic behaviour as it
+carries state across tests and can result in non-deterministic behavior as it
 is could now be dependent on the order scenarios are executed. When determining
 if test data entities can be shared it is best to use entities that don't store
 state or data that is immutable.
@@ -60,7 +60,7 @@ integration, functional or exploratory. Of course, certain methods don't make
 sense at some levels - such as mocking when doing integration testing so some
 common sense is required.
 
-Also remember that the above methods are optimizations. Avoid prematurely
+Also remember that the above methods are optimization's. Avoid prematurely
 optimizing your test suite. The primary focus should be to have a test suite
 that is valuable, simple, explicit and cheap to maintain. Applying some of
 these techniques too early and prematurely optimizing may result in a less

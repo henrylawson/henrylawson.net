@@ -9,7 +9,7 @@ Kump](http://www.amazon.com/Breakthrough-Rapid-Reading-Peter-Kump/dp/073520019X)
 was a great read. **Reading is a skill that if you invest in and learn well,
 will pay you back many times over**. What I have found most beneficial from
 investing in my reading is that my massive list of articles and books I'd like
-to read no longer feel unsurmountable. I now have the skills to get through
+to read no longer feel insurmountable. I now have the skills to get through
 that list in a reasonable time. And as experience from the last few months has
 proven to me, it has really helped.
 
@@ -35,6 +35,6 @@ Within the book there are several great tips - some of my key takeaways were:
   you have just seen. **For me it helps to think that I am "seeing" the text and
   not "reading" it, however when I am seeing it, I am comprehending it**.
 
-Apart from those above take aways, the book had a lot of exercises that are
+Apart from those above take always, the book had a lot of exercises that are
 worth working through and internalizing. **Rapid reading doesn't happen over
 night but with quality practice can get a lot faster over time**.

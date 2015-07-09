@@ -9,11 +9,11 @@ Working on a distributed agile team between India and the United Kingdom I've le
 
 <!--more-->
 
-Practices such as IPM's, estimation sessions and even paring can be be done quite effectively over the wire, however some things don't work as well. **One thing that we've struggled to be successful with in my opinion is our [Technical Debt](http://c2.com/cgi/wiki?TechnicalDebt) [Wall](http://fabiopereira.me/blog/2009/09/01/technical-debt-retrospective/)**.
+Practices such as Iteration Planning Meeting's, estimation sessions and even paring can be be done quite effectively over the wire, however some things don't work as well. **One thing that we've struggled to be successful with in my opinion is our [Technical Debt](http://c2.com/cgi/wiki?TechnicalDebt) [Wall](http://fabiopereira.me/blog/2009/09/01/technical-debt-retrospective/)**.
 
-One of the main advantages of having a Technical Debt Wall is that i_t is up on wall_, visible and obvious to everyone. It's a simpletons version of an [Information Radiator](http://martinfowler.com/bliki/CommunalDashboard.html). The problem with the distributed teams version is that it usually lives online, hidden and tucked away from everyones constant gaze. Having it online makes it easy for everyone to update but it hides it from everyones gaze. _Noting things end at that, it gets noted and usually forgotten_.
+One of the main advantages of having a Technical Debt Wall is that _it is up on wall_, visible and obvious to everyone. It's a simpletons version of an [Information Radiator](http://martinfowler.com/bliki/CommunalDashboard.html). The problem with the distributed teams version is that it usually lives online, hidden and tucked away from everyone's constant gaze. Having it online makes it easy for everyone to update but it hides it from everyone's gaze. _Noting things end at that, it gets noted and usually forgotten_.
 
-Now this also presents a problem with the team, it is the teams job to pay down that debt and it should be everyones responsibility to keep on top of it, however I feel that the lack of physical wall doesn't help the cause either.
+Now this also presents a problem with the team, it is the teams job to pay down that debt and it should be everyone's responsibility to keep on top of it, however I feel that the lack of physical wall doesn't help the cause either.
 
 Well whats the solution? Quite simply, **I don't know** but here are some potential solutions:
 

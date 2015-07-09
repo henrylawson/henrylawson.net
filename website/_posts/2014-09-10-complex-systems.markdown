@@ -13,10 +13,10 @@ presented his research on **how complex systems don't fail**.
 <!--more-->
 
 **A typical system that we develop on and extend is a Complex System**. We try to
-describe these systems using Flow Diagrams, Universal Modelling Language
+describe these systems using Flow Diagrams, Universal Modeling Language
 Diagrams and typical System Architecture Diagrams. In his talk Richard
 challenges this idea and explains that **most systems are stochastic**. A
-stochastic system is one where the behaviour **can be measured statistically and
+stochastic system is one where the behavior **can be measured statistically and
 not predicted precisely**.
 
 Now a typical system has lots of moving parts, databases, message queues,
@@ -56,7 +56,7 @@ To design to be resilient we can:
 1. Accept that systems continue to evolve and grow beyond delivery and need to
    be developed with processes in place to continue the evolution of the system
 over time
-1. Recognise the role of operations and maintenance people, build systems that
+1. Recognize the role of operations and maintenance people, build systems that
    expose controls and tools to these groups to support the system
 1. Envision operating failures and build systems that can recover
 1. Allow for simulation in the application so that the affect that operator
@@ -69,4 +69,4 @@ reliability is still a characteristic I think is worth building for - however
 for a complex system to be available it is now clear that resilience needs to
 be designed for as well. Accepting that failures do happen and designing systems
 to be easily recoverable is also a very important characteristic. A characteristic
-that I have learnt many times over by doing production support.
+that I have learned many times over by doing production support.

@@ -7,7 +7,7 @@ categories: software
 
 One of the best quotes I have come across was from Robert C. Martin. **For me
 this quote reemphasizes the ideal to keep things simple and stop when a concept
-is working, simple and explicit.** It might not be perfect, but some times ok,
+is working, simple and explicit.** It might not be perfect, but some times OK,
 is good enough.
 
 <!--more-->

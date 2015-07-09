@@ -41,7 +41,7 @@ is_js_needed: true
 The **cone of uncertainty** is a great diagram to explain the **level of confidence
 that a software development team typically has at various stages of a project**.
 What I like the most about the diagram is that it clearly depicts that **at the
-start of the project, a lot is unknown**. The initial learnings and analysis at
+start of the project, a lot is unknown**. The initial learning's and analysis at
 the start of the project assists greatly in reducing that uncertainty
 but it never removes all uncertainty (it never reaches zero). Even after the
 initial drop of uncertainty during the early analysis phase the graph is
@@ -61,6 +61,6 @@ expectations about how confident stakeholders and the team should be with
 estimates around dates, scope and budget. It can also be helpful to
 periodically revisit the diagram to see how the team is trending. If the
 **project is progressing along the x-axis and certainty is not reducing, this can
-be an early indicator that somehting is going wrong** and there are some issues
+be an early indicator that something is going wrong** and there are some issues
 to be addressed, addressing these issues can be done through a Five Why
 activity.

@@ -45,7 +45,7 @@ probably avoid for now.
 
 Over time this diagram has proved to be extremely valuable as it **helps teams
 understand the different trade offs that need to be weighed up before
-comitting to something**. Plotting items on this diagram as a team also helps the
+committing to something**. Plotting items on this diagram as a team also helps the
 team reach a shared understanding of why some items need to be done or why
 some items can be avoided.
 

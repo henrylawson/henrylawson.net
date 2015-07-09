@@ -10,6 +10,7 @@ Getting Started
 1. bundle install
 1. Create SSH config for "henrylawson.net" as referened in build.yml, check ~/.ssh/config or see the "Setting Up SSH" notes below
 1. Install LinkChecker `pip install linkchecker`
+1. Install aspell `brew install aspell`
 1. rake Rakefile --describe
 
 Setting Up SSH

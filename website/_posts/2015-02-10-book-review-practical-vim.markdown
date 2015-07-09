@@ -13,7 +13,7 @@ and moving around.
 
 What I found most helpful is that by leveraging Drew's experience and knowledge
 in Vim I could learn quickly what the basic and fundamental ways to use Vim
-are. The same learnings can be gained by reading the manual, watching screen
+are. The same learning's can be gained by reading the manual, watching screen
 casts but I enjoyed the written format as I could read a chapter, let it
 digest, and continue using Vim. After some time and having become comfortable
 with what was taught I would then move onto the next concept.
