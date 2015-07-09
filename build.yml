@@ -10,3 +10,4 @@ publish_temp: /tmp/henrylawson.net
 link_checker_log: linkchecker.log
 default_host: localhost
 default_port: 4000
+posts: ./website/_posts
