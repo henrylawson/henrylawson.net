@@ -19,6 +19,12 @@ task :clean_deploy do
 end
 task :cd => :clean_deploy
 
+desc "Cleans the deploy target folder"
+task :spelling do
+  execute("find ./website/_posts -name '*.markdown' -exec aspell -d en_US -c '{}' \\;")
+end
+task :sp => :spelling
+
 desc "Checks all the links against local instance"
 task :link_check, [:host, :port] do |t, args|
   args.with_defaults(:host => CONFIG["default_host"], :port => CONFIG["default_port"])

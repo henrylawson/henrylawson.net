@@ -35,7 +35,7 @@ helpful:
    and build your base knowledge stronger
 1. Get by with the basic motions and shortcuts but once comfortable always
    search and look for a better way to do it, you can get by with the arrow
-   keys, i and esc but you need to keep looking for better ways to improve your
+   keys, i and ESC but you need to keep looking for better ways to improve your
    process
 1. Once you are more comfortable, remove your fear of the default Vim
    documentation, it really is the best resource
