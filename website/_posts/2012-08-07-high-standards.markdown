@@ -5,7 +5,7 @@ date:   2012-08-07 21:00:00
 categories: software
 ---
 
-I recently attended a short talk by a colleague of mine [Darren Smith](http://www.drnsmth.com/). He told the story about how a few years ago on a project he was on, him and his team got together at the start of the project and set a series of extremely **high coding standards that would break the build if they were not adhered too**. These high standards, while being awkward at times resulted in a relatively high quality code base. As the software system grew in size and various problems were being resolved, they slowly loosened the high standards until they eventually reached a _comfort zone_ or a _sweet spot_. The _comfort zone_ was a level of standard that all team members were comfortable with and were able to work within, without feeling restricted by the standards.
+I recently attended a short talk by a colleague of mine [Darren Smith](https://twitter.com/drnsmth). He told the story about how a few years ago on a project he was on, him and his team got together at the start of the project and set a series of extremely **high coding standards that would break the build if they were not adhered too**. These high standards, while being awkward at times resulted in a relatively high quality code base. As the software system grew in size and various problems were being resolved, they slowly loosened the high standards until they eventually reached a _comfort zone_ or a _sweet spot_. The _comfort zone_ was a level of standard that all team members were comfortable with and were able to work within, without feeling restricted by the standards.
 
 <!--more-->
 

@@ -45,7 +45,7 @@ come across.
 What I find interesting when pairing is when people decide to do their cleanup.
 Do you do it at the end of the task you were starting? Or do you do it at the
 end? I once read somewhere (can't remember where) that [Kent
-Beck](http://www.threeriversinstitute.org/blog/) and [Martin
+Beck](https://twitter.com/kentbeck) and [Martin
 Fowler](http://martinfowler.com/) like to keep a list of cleanups or debts that
 they discover while they are developing a story. They prefer to keep them on a
 list, and only refactor what is needed to get their functionality working. Once

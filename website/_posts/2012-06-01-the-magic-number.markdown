@@ -4,7 +4,6 @@ title:  "The Magic Number"
 date:   2012-06-01 21:00:00
 categories: software
 ---
-
 There is no magic number for [test coverage](http://martinfowler.com/bliki/TestCoverage.html) but this doesn't mean a magic number shouldn't be set. **Setting a project wide minimum coverage standard that breaks the build can be useful in a [Continuous Integration](http://martinfowler.com/articles/continuousIntegration.html) environment**.
 
 <!--more-->

@@ -26,7 +26,7 @@ task :link_check, [:host, :port] do |t, args|
   execute("linkchecker " +
           "#{url} " +
           "--check-extern " +
-          "-v " + 
+          "-v " +
           "&> #{CONFIG['link_checker_log']}; " +
           "cat #{CONFIG['link_checker_log']} " +
           "| grep 'Error:' -B6")
