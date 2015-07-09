@@ -1,5 +1,5 @@
 def execute(command)
-  puts "Executing: #{command}"
+  puts "#{DateTime.now} | Executing: #{command}"
   system "#{command}" or exit_with_error
 end
 

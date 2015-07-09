@@ -27,9 +27,11 @@ task :link_check, [:host, :port] do |t, args|
           "#{url} " +
           "--check-extern " +
           "-v " +
+          "-t 10 " +
           "&> #{CONFIG['link_checker_log']}; " +
           "cat #{CONFIG['link_checker_log']} " +
-          "| grep 'Error:' -B6")
+          "| grep 'Error:' -B6; " +
+          "tail -2 #{CONFIG['link_checker_log']}")
 end
 task :lc => :link_check
 
