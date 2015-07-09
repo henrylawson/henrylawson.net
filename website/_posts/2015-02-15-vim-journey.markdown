@@ -15,7 +15,7 @@ helpful:
 1. Start with a blank vimrc, slowly customize the basic settings to your liking
 1. Once you are happy with your basic customizations, start learning various
    movements to allow you to get around
-1. Use Vim in all opportunities, have your old editor available to to fall back
+1. Use Vim in all opportunities, have your old editor available to fall back
    to but try use Vim as much as possible, if you get stuck there is no harm in
    stopping, using your old editor and returning back to Vim when you are more
    patient and not feeling pressured

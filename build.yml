@@ -7,3 +7,6 @@ wwwuser: www-hln
 publish: /srv/www/henrylawson.net
 upload_temp: /tmp
 publish_temp: /tmp/henrylawson.net
+link_checker_log: linkchecker.log
+default_host: localhost
+default_port: 4000
