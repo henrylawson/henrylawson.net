@@ -21,7 +21,7 @@ task :cd => :clean_deploy
 
 desc "Cleans the deploy target folder"
 task :spelling do
-  execute("find ./website/_posts -name '*.markdown' -exec aspell -d en_US -c '{}' \\;")
+  execute("find ./website/_posts -name '*.markdown' -exec aspell --home-dir=./ -d en_US -c '{}' \\;")
 end
 task :sp => :spelling
 
