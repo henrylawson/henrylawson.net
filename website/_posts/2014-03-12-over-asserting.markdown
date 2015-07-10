@@ -9,19 +9,22 @@ An observed anti pattern during automated testing both at the unit and applicati
 <!--more-->
 
 A code example is provided of this phenomenon:
+
+<nospellcheck>
 {% highlight java %}
 @Test
 public void shouldQuerySoldItemsFroSalesRepository() {
-	supportCode.insertItems(ItemFixture.availableItems());
-	assertThat(salesTable.all().contains(ItemFixture.availableItems())); // not needed
-	supportCode.insertItems(ItemFixture.soldItems());
-	assertThat(salesTable.all().contains(ItemFixture.soldItems())); // not needed
+  supportCode.insertItems(ItemFixture.availableItems());
+  assertThat(salesTable.all().contains(ItemFixture.availableItems())); // not needed
+  supportCode.insertItems(ItemFixture.soldItems());
+  assertThat(salesTable.all().contains(ItemFixture.soldItems())); // not needed
 
-	Collection<Item> soldItems = salesRepository.allSold();
+  Collection<Item> soldItems = salesRepository.allSold();
 
-	assertThat(response.status(), is(OK));
+  assertThat(response.status(), is(OK));
 }
 {% endhighlight %}
+</nospellcheck>
 
 **When an author feels the need to assert on the state that should be configured by support code** in the test, **it implies that the support code is buggy** and does not work every time. So to ensure that the support code achieved its claimed goal, the author of the test feels they must assert the end state after calling the library method. **This lack of confidence in the support code is understandable however the solution is not solving the root problem.**
 
