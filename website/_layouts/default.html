@@ -2,9 +2,11 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="author" href="https://plus.google.com/117420814347348419892"/>
     <link rel="publisher" href="https://plus.google.com/117420814347348419892"/>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="google-site-verification" content="LNHJ48nFZKxsjYl4l_akZErpMWkf3lCL6LXPA0xVS5c"/>
 
     {% if page.title %}
       {% capture page_title %}{{ site.name }}: {{ page.title }}{% endcapture %}
@@ -18,9 +20,13 @@
     {% endif %}
     {% capture page_url %}{{ site.hostname }}{{ page.url }}{% endcapture %}
     {% capture page_image %}{{ site.hostname }}{% asset_path 'henry_lawson_bw.jpg' %}{% endcapture %}
+    {% capture copyright %}Copyright &copy; 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.{% endcapture %}
 
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}"/>
+    <meta name="robots" content="index,folow"/>
+    <meta name="copyright" content="{{ copyright }}"/>
+    <meta name="revisit-after" content="3 days">
 
     <meta property="og:title" content="{{ page_title }}"/>
     <meta property="og:type" content="article"/>
@@ -91,7 +97,7 @@
               <li><a href="https://www.linkedin.com/in/hglawson">{% image outbound-links/ldn.png alt="LinkedIn" title="LinkedIn" class="outbound-links" width="32" height="32" %}</a></li>
               <li><a href="https://twitter.com/henryglawson">{% image outbound-links/twr.png alt="Twitter" title="Twitter" class="outbound-links" width="32" height="32" %}</a></li>
             </ul>
-            <p class="rights">Copyright &copy; 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.</p>
+            <p class="rights">{{ copyright }}</p>
           </div>
         </div>
       </div>
