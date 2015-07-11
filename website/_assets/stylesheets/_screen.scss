@@ -130,7 +130,7 @@ p, ul, ol {
 .content {
   padding:20px $right-padding 40px $left-padding;
   @media #{$media-narrow} {
-    padding:40px $right-padding-narrow 40px $left-padding-narrow;
+    padding:20px $right-padding-narrow 40px $left-padding-narrow;
   }
   background:#fff;
 }
