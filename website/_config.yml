@@ -10,7 +10,7 @@ url: https://henrylawson.net
 exclude: ["*.bak", "*.swp"]
 meta:
   image: https://henrylawson.net/images/henry_lawson.jpg
-  description: The home and blog of Software Consultant, Developer and Business Management enthusiast, Henry Lawson. This site serves as a repository of articles about software development, management and delivery. Sometimes thoughtful, sometimes random - hopefully informative and insightful.
+  description: The home and blog of Software Consultant, Developer and Business Management enthusiast, Henry Lawson. This site serves as a repository of articles of my learnings and insights about Software Development, Business Management and Software Delivery. Sometimes thoughtful, sometimes random - hopefully informative and insightful.
 assets:
   sources:
     - _assets
