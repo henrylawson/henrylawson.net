@@ -34,6 +34,7 @@ find . -iname "*.ttf" -exec bash -c 'ttf2eot < {} > {}.eot' \;
 
 Deploying
 =========
+1. Review posts and articles, check grammar `rake s`
 1. Checking spelling `rake sp`
 1. Check hyperlinks `rake lc`
 1. Make a commit and push
