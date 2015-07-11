@@ -10,17 +10,17 @@
     <meta name="msvalidate.01" content="6E276F27A71009C0541D41F0A6C20D51"/>
 
     {% if page.title %}
-      {% capture page_title %}{{ site.name }}: {{ page.title }}{% endcapture %}
+      {% capture page_title %}{{ page.title }} | {{ site.name }}{% endcapture %}
     {% else %}
-      {% assign page_title = site.name %}
+      {% capture page_title %}{{ site.meta.title }}{% endcapture %}
     {% endif %}
     {% if page.excerpt %}
       {% capture page_description %}{{ page.excerpt | strip_html }}{% endcapture %}
     {% else %}
       {% assign page_description = site.meta.description %}
     {% endif %}
-    {% capture page_url %}{{ site.hostname }}{{ page.url }}{% endcapture %}
-    {% capture page_image %}{{ site.hostname }}{% asset_path 'henry_lawson_bw.jpg' %}{% endcapture %}
+    {% capture page_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+    {% capture page_image %}{{ site.url }}{% asset_path 'henry_lawson_bw.jpg' %}{% endcapture %}
     {% capture copyright %}Copyright &copy; 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.{% endcapture %}
 
     <title>{{ page_title }}</title>
@@ -54,7 +54,7 @@
     <style type="text/css">
       {% asset app.css %}
     </style>
-    <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.hostname }}/feed/atom.xml">
+    <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -70,11 +70,11 @@
       <div class="container">
         <div class="header">
           <div class="title">
-            <h1><a href="/">Henry Lawson</a></h1>
+            <h1><a href="/" title="Return to Home">Henry Lawson</a></h1>
             <div class="link-area">
               <ul class="links">
                 <li><a href="/all" title="All Articles">All</a></li>
-                <li><a href="/feed/atom.xml" title="Atom Feed">Atom</a></li>
+                <li><a href="/feed/atom.xml" title="Atom Subscription Feed">Atom</a></li>
               </ul>
             </div>
           </div>

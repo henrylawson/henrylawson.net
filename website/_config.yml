@@ -5,12 +5,12 @@ permalink: /:title
 front_post_count: 2
 recent_article_count: 10
 excerpt_separator: <!--more-->
-hostname: https://henrylawson.net
 url: https://henrylawson.net
 exclude: ["*.bak", "*.swp"]
 meta:
   image: https://henrylawson.net/images/henry_lawson.jpg
-  description: The home and blog of Software Consultant, Developer and Business Management enthusiast, Henry Lawson. This site serves as a repository of articles of my learnings and insights about Software Development, Business Management and Software Delivery. Sometimes thoughtful, sometimes random - hopefully informative and insightful.
+  title: Henry Lawson's Blog on Software Development and Business Management
+  description: The home and blog of Software Consultant, Developer and Business Management enthusiast, Henry Lawson. A repository of articles and blog posts that cover Agile Principles, Agile Practices, Software Development, Business Management and Software Delivery. The articles posted here aim to be great references of thoughtful, sometimes random but hopefully informative, valuable and insightful information.
 assets:
   sources:
     - _assets
