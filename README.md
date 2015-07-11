@@ -27,8 +27,14 @@ Host henrylawson.net
 And that the ~/.ssh/id_rsa.pub is added to the remote hosts ~/.ssh/authorized_keys.
 
 Updating Fonts
-=================
+==============
 find . -iname "*.ttf" -exec woff2_compress "{}" \;
 find . -iname "*.ttf" -exec sfnt2woff-zopfli "{}" \;
 find . -iname "*.ttf" -exec bash -c 'ttf2eot < {} > {}.eot' \;
 
+Deploying
+=========
+1. Checking spelling `rake sp`
+1. Check hyperlinks `rake lc`
+1. Make a commit and push
+1. Publish the content `rake p`
