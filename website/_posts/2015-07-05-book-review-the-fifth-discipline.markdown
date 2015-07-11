@@ -7,18 +7,18 @@ date: 2015-07-05
 Having heard a lot recently about [Systems
 Thinking](https://en.wikipedia.org/wiki/Systems_thinking), I thought it best to re
 prioritize my reading list and place some popular Systems thinking books at the
-top of my list. Once of those books was the fifth Discipline by Peter
-Senge.
+top of my list. One of those books was 
+[The Fifth
+Discipline by Peter Senge](http://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/B0000640E9).
 
 <!--more-->
 
-[The Fifth
-Discipline](http://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/B0000640E9)
-was a light and practical read. It described in detail what [Systems
-Thinking](https://en.wikipedia.org/wiki/Systems_thinking) is, how it relates to
-the learning organization and the other 4 key disciplines (noted below) of a
-[Learning
-Organization](https://hbr.org/2008/03/is-yours-a-learning-organization).
+The Fifth Discipline was a light and practical read. It described in detail what Systems
+Thinking is, how it relates to
+the [Learning Organization](
+https://hbr.org/2008/03/is-yours-a-learning-organization)
+and the other 4 key disciplines (noted below) of a Learning Organization.
+
 Reading through the book I did feel that many of the ideas in Systems Thinking
 overlaps greatly with what I had learned from lean principles, I didn't feel
 that the ideas were new to me but I did find it very valuable to see similar

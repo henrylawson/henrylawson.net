@@ -30,4 +30,4 @@ to the system. An example might be a failed change program in an organisation -
 a change program typically fails because there is a strong balancing feedback
 loop present in the system that is auto correcting itself to maintain the
 current state. This may be due to the attitudes and goals of the system and a
-failure for the change program to target the correct causes.
+failure of the change program to target the correct causes.
