@@ -128,11 +128,23 @@ p, ul, ol {
   text-transform: uppercase;
 }
 .content {
-  padding:40px $right-padding 40px $left-padding;
+  padding:20px $right-padding 40px $left-padding;
   @media #{$media-narrow} {
     padding:40px $right-padding-narrow 40px $left-padding-narrow;
   }
   background:#fff;
+}
+.content .breadcrumbs ol.breadcrumbs {
+  padding: 0px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.content .breadcrumbs ol.breadcrumbs li {
+  display:inline;
+}
+.content .breadcrumbs ol.breadcrumbs li a {
+  text-decoration: none;
+  font-size:0.8em;
 }
 .content .article .body {
   margin-bottom: 60px;
@@ -163,7 +175,7 @@ p, ul, ol {
   color: #333;
   text-shadow: 0px 0px 0px #999;
 }
-.content .article .title {
+.content .article .title, .content .article-index .title {
   position:relative;
   padding:10px 0;
 }
