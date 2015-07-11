@@ -55,15 +55,7 @@
       {% asset app.css %}
     </style>
     <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
-        "name": "Henry Lawson",
-        "alternateName": "HenryLawson.net",
-        "url": "https://henrylawson.net"
-      }
-    </script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Henry Lawson","alternateName":"HenryLawson.net","url":"https://henrylawson.net"}</script>
   </head>
   <body {% if page.is_js_needed %} onload="OnLoad.execute()" {% endif %}>
     <div>
