@@ -28,7 +28,7 @@ task :spelling do
 end
 task :sp => :spelling
 
-desc "Provides the writing statistics of the article"
+desc "Provides the reading statistics of the article, ./website/_posts/{article}.markdown"
 task :writing_stats, [:article] do |t, args|
   article_path = File.join(CONFIG['posts'], args.article + '.markdown')
   puts "Calculating statistics of #{article_path}"
