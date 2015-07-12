@@ -10,6 +10,7 @@ Getting Started
 1. bundle install
 1. Create SSH config for "henrylawson.net" as referened in build.yml, check ~/.ssh/config or see the "Setting Up SSH" notes below
 1. Install LinkChecker `pip install linkchecker`
+1. Install Readability `pip install readability`
 1. Install brew dependencies `brew tap Homebrew/brewdler && brew brewdle`
 1. rake Rakefile --describe
 

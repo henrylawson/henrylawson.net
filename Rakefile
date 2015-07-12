@@ -1,5 +1,7 @@
 require 'yaml'
 require './lib/execute.rb'
+require 'kramdown'
+require './lib/plain_text.rb'
 
 task :default => [:build]
 
@@ -26,6 +28,23 @@ task :spelling do
 end
 task :sp => :spelling
 
+desc "Provides the writing statistics of the article"
+task :writing_stats, [:article] do |t, args|
+  article_path = File.join(CONFIG['posts'], args.article + '.markdown')
+  puts "Calculating statistics of #{article_path}"
+
+  article_file = File.open(article_path)
+  contents = article_file.read.gsub(/---.*---\n/m, '')
+  text = Kramdown::Document.new(contents)
+    .to_plain_text
+    .gsub(/\n/m, ' ')
+    .gsub(/\.\s*/, ".\n")
+    .gsub(/\n$/, '')
+
+  execute("echo -e '#{text}' | readability")
+end
+task :ws, [:article] => :writing_stats
+
 desc "Checks all the links against local instance"
 task :link_check, [:host, :port] do |t, args|
   args.with_defaults(:host => CONFIG["default_host"], :port => CONFIG["default_port"])
@@ -40,7 +59,7 @@ task :link_check, [:host, :port] do |t, args|
           "| grep 'Error:' -B6; " +
           "tail -2 #{CONFIG['link_checker_log']}")
 end
-task :lc => :link_check
+task :lc, [:host, :port] => :link_check
 
 desc "Builds the website"
 task :build => [:clean_deploy] do
@@ -69,7 +88,7 @@ task :serve, [:host, :port] => [:clean] do |t, args|
           "--watch " +
           "-s #{CONFIG["source"]} -d #{CONFIG["target"]}")
 end
-task :s => :serve
+task :s, [:host, :port] => :serve
 
 desc "Publishes the website to PROD"
 task :publish => [:build] do
@@ -137,6 +156,4 @@ task :draft, [:date, :title] do |_t, args|
   puts "Created draft article (for date #{args.date}):"
   puts file
 end
-task :d, [:date, :title] do |_t, args|
-  Rake::Task[:draft].invoke(args.date, args.title)
-end
+task :d, [:date, :title] => :draft
