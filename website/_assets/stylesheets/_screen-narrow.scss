@@ -1,3 +1,11 @@
+@media #{$media-wide} {
+  .about-splash .body .text p {
+    font-size:2em;
+  }
+  .about-splash .body .portrait img {
+    width: 200px;
+  }
+}
 @media #{$media-fat} {
   .container {
     min-width:252px;
@@ -22,11 +30,33 @@
   .other-articles ul.indexes .index .right-arrow {
     display: none;
   }
+  .content .article-index .title {
+    padding:0;
+  }
   .other-articles ul.indexes .index .title {
     display: block;
     float: none;
-    padding-bottom: 0;
+    padding-bottom:0;
+    padding-top:0
     line-height: 1.2;
-    margin: 5px 0 0 0;
+    margin: 0px 0 0 0;
+  }
+  .about-splash .body .text p {
+    font-size:1.5em;
+  }
+  .excerpts .inner .article {
+    width:100%;
+    float:clear;
+    display:block;
+    font-size:0.9em;
+  }
+}
+@media #{$media-narrow} {
+  .about-splash .body .text p {
+    font-size:1.2em;
+  }
+  .about-splash .body .portrait {
+    margin:0px;
+    float:none;
   }
 }

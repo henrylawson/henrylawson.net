@@ -62,47 +62,52 @@
     <div>
       <div class="container">
         <div class="header">
-          <div class="title">
-            <h1><a href="/" title="Return to Home">Henry Lawson</a></h1>
-            <div class="link-area">
-              <ul class="links">
-                <li><a href="/all" title="All Articles">All</a></li>
-                <li><a href="/feed/atom.xml" title="Atom Subscription Feed">Atom</a></li>
-              </ul>
+          <div class="wrapper">
+            <div class="title">
+              <h1><a href="/" title="Return to Home">Henry Lawson</a></h1>
+              <div class="link-area">
+                <ul class="links">
+                  <li><a href="/all" title="All Articles">All</a></li>
+                  <li><a href="/feed/atom.xml" title="Atom Subscription Feed">Atom</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
         <div class="content">
-          {{ content }}
+          <div class="wrapper">
+            {{ content }}
+          </div>
         </div>
         <div class="footer">
-          <div class="title">
-            <h3>Who is Henry Lawson?</h3>
-          </div>
-          <div class="body">
-            <p>I'm a Software Consultant (with <a
-                href="http://thoughtworks.com">ThoughtWorks</a>) who has a
-              broad set of skills and interests, from Programming Languages
-              (I'm a passionate C#, Java, JavaScript and Ruby programmer) to
-              Business Management. As I often struggle to stay on top of all
-              the emerging frameworks, tools and trends, I try and keep a focus
-              on principles, patterns and established theories because as the
-              frameworks and tools fade, the patterns, principles and
-              established theories remain.</p>
-            <p>The writings here are of my
-              own biased, sometimes one sided opinion.  I am always up for a
-              healthy discussion on interesting topics, feel free to get in
-              contact below.<p>
-            </p>
-            <p class="list">Find more of me at:</p>
-            <ul class="outbound-links-list">
-              <li><a href="https://github.com/henrylawson">{% image outbound-links/github.png alt="Github" title="Github" class="outbound-links" width="32" height="32" %}</a></li>
-              <li><a href="http://flickr.com/photos/hen3rz">{% image outbound-links/fkr.png alt="Flickr" title="Flickr" class="outbound-links" width="32" height="32" %}</a></li>
-              <li><a href="https://keybase.io/hlawson">{% image outbound-links/keybase.png alt="Keybase" title="Keybase" class="outbound-links" width="32" height="32" %}</a></li>
-              <li><a href="https://www.linkedin.com/in/hglawson">{% image outbound-links/ldn.png alt="LinkedIn" title="LinkedIn" class="outbound-links" width="32" height="32" %}</a></li>
-              <li><a href="https://twitter.com/henryglawson">{% image outbound-links/twr.png alt="Twitter" title="Twitter" class="outbound-links" width="32" height="32" %}</a></li>
-            </ul>
-            <p class="rights">{{ copyright }}</p>
+          <div class="wrapper">
+            <div class="title">
+              <h3>Who is Henry Lawson?</h3>
+            </div>
+            <div class="body">
+              <p>I'm a Software Consultant with <a
+                  href="http://thoughtworks.com">ThoughtWorks</a>. I've had the
+                privlege of consulting for clients around the world in Australia,
+                India, UK, USA, Brazil and Singapore. I have a broad set of
+                skills and interests, from Programming Languages (C#, Ruby, Java,
+                JavaScript, Python and Clojure) to Business Management. As I
+                often struggle to stay on top of all the emerging frameworks,
+                tools and trends, I try and keep a focus on principles, patterns
+                and established theories because as the frameworks and tools
+                fade, the patterns, principles and established theories
+                remain.</p> <p class="list">The writings here are of my own biased, sometimes
+                one sided opinion.  I am always up for a healthy discussion on
+                interesting topics, feel free to get in contact below:<p>
+              </p>
+              <ul class="outbound-links-list">
+                <li><a href="https://github.com/henrylawson">{% image outbound-links/github.png alt="Github" title="Github" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="http://flickr.com/photos/hen3rz">{% image outbound-links/fkr.png alt="Flickr" title="Flickr" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="https://keybase.io/hlawson">{% image outbound-links/keybase.png alt="Keybase" title="Keybase" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="https://www.linkedin.com/in/hglawson">{% image outbound-links/ldn.png alt="LinkedIn" title="LinkedIn" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="https://twitter.com/henryglawson">{% image outbound-links/twr.png alt="Twitter" title="Twitter" class="outbound-links" width="32" height="32" %}</a></li>
+              </ul>
+              <p class="rights">{{ copyright }}</p>
+            </div>
           </div>
         </div>
       </div>

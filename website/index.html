@@ -3,9 +3,31 @@ layout: default
 is_js_needed: true
 ---
 
-{% for post in site.posts limit: site.front_post_count %}
-  {% assign content = post.content %}
-  {% include article.html %}
-{% endfor %}
+<div class="about-splash">
+  <div class="body">
+    <div class="inner">
+      <div class="portrait">
+        {% image "henry_lawson.jpg" alt="Henry Lawson" title="Henry Lawson" %}
+        <div class="blurb">A photo of me</div>
+      </div>
+      <div class="text">
+        <p>I'm Henry Lawson, a Software Consultant with <a
+            href="https://www.thoughtworks.com" alt="ThoughtWorks"
+            title="ThoughtWorks">ThoughtWorks</a>. You've landed on my blog, a
+          repository of articles and thoughts on Software and Business.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="excerpts">
+  <div class="inner">
+    {% assign excerpt = 1 %}
+    {% for post in site.posts limit: site.front_post_count %}
+      {% assign content = post.excerpt %}
+      {% include article.html %}
+    {% endfor %}
+  </div>
+</div>
 
 {% include recent_article_index.html %}

@@ -8,10 +8,12 @@ date: 2015-07-05
 {% post_url 2015-07-05-book-review-the-fifth-discipline %}) defines two types 
 of complexity. Dynamic and Detail complexity.
 
+Detail Complexity is defined in the book as 'the complexity in which there
+are many variables'.
+
 <!--more-->
 
-Detail Complexity is defined in the book as 'the complexity in which there
-are many variables'. The whole quote is below:
+The whole quote is below:
 
 > The reason that sophisticated tools of forecasting and business analysis, as
 > well as elegant strategic plans, usually fail to produce dramatic

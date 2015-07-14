@@ -4,6 +4,11 @@
   </div>
   <div class="body">
     {{ content }}
+    {% if excerpt == 1 %}
+    <div class="read-more">
+      <p><a href="{{ post.url }}" title="Read more">...Continued</a></p>
+    </div>
+    {% else %}
     <div class="date">
       This article was first noted down on the
       {% assign d = post.date | date: "%-d"  %}
@@ -17,5 +22,6 @@
       {{ post.date | date: "%B" }},
       {{ post.date | date: "%Y" }}.
     </div>
+    {% endif %}
   </div>
 </div>

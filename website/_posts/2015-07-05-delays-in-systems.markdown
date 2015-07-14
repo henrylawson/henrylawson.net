@@ -8,12 +8,13 @@ date: 2015-07-05
 received from a system can be delayed.**  As humans we are great at reacting to
 to a problem if the cause and effect immediately follow one another. If we
 touch a hot stove, immediately our hand is burnt and we retract, we then look
-for the appropriate tools and handle the situation accordingly. Our hand was
-burnt because we touched the hot stove, the effect of the burnt hand was easily
-attributed to the cause of touching the hot stove as there was no delay in the
-system returning the effect of a burnt hand.
+for the appropriate tools and handle the situation accordingly.
 
 <!--more-->
+
+Our hand was burnt because we touched the hot stove, the effect of the burnt
+hand was easily attributed to the cause of touching the hot stove as there was
+no delay in the system returning the effect of a burnt hand.
 
 **With large complex systems, the feedback is often delayed. An action is taken
 and the result of the action is often not immediately observable. It may take

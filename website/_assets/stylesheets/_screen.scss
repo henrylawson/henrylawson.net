@@ -1,5 +1,7 @@
-$media-fat: "only screen and (max-width:800px)";
+$media-wide: "only screen and (max-width:1400px)";
+$media-fat: "only screen and (max-width:900px)";
 $media-narrow: "only screen and (max-width:600px)";
+$max-width:1600px;
 $font-body: 'OpenSans', Helvetica, Arial;
 $font-header: 'LeagueGothic', Impact, Helvetica, Arial;
 $font-body-size: 130%;
@@ -81,6 +83,11 @@ p, ul, ol {
   margin: 0 auto;
   background:url(asset_path('images/light.jpg')) #dedede;
 }
+.wrapper {
+  max-width:$max-width;
+  margin-left:auto;
+  margin-right:auto;
+}
 .header {
   font-size:$font-body;
   padding:0 $right-padding 0 $left-padding;
@@ -134,7 +141,7 @@ p, ul, ol {
   }
   background:#fff;
 }
-.content .breadcrumbs ol.breadcrumbs {
+.content div.breadcrumbs ol.breadcrumbs {
   padding: 0px;
   margin-bottom: 10px;
   margin-top: 0px;
@@ -145,6 +152,10 @@ p, ul, ol {
 .content .breadcrumbs ol.breadcrumbs li a {
   text-decoration: none;
   font-size:0.8em;
+  color:#333;
+}
+.content .breadcrumbs ol.breadcrumbs li a:hover {
+  color:#000;
 }
 .content .article .body {
   margin-bottom: 60px;
@@ -297,3 +308,57 @@ p, ul, ol {
 .article-index .other-articles ul.indexes .index {
   background: #fff;
 }
+.excerpts {
+  width:100%;
+}
+.inner {
+  width:101%;
+  overflow:hidden;
+}
+.excerpts .inner .article {
+  width:33.33333%;
+  float:left;
+  font-size:0.9em;
+}
+.excerpts .inner .article .body {
+  padding-right:30px;
+  margin-bottom:20px;
+}
+.excerpts .inner .article .body .date {
+  display: none;
+}
+.excerpts .inner .article .body .read-more p {
+  text-align:right;
+}
+.excerpts .inner .article .body .read-more a {
+  text-decoration:none;
+  font-style:italic;
+  font-size:0.8em
+}
+.about-splash {
+  padding-bottom:20px;
+  margin-bottom:50px;
+  border-bottom:2px solid #000;
+}
+.about-splash .body .text p {
+  margin-top:20px;
+  text-align:left;
+  font-size:2.8em;
+}
+.about-splash .body .portrait {
+  border: 1px solid #000;
+  padding: 10px;
+  margin:10px;
+  box-shadow: 0px 0px 10px 0px grey;
+  display:inline-block;
+  float:right;
+  margin-left:30px;
+}
+.about-splash .body .portrait .blurb {
+  font-size:0.7em;
+  font-style:italic;
+}
+.about-splash .body .portrait img {
+  width: 300px;
+}
+
