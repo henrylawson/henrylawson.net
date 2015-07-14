@@ -4,7 +4,7 @@ $media-narrow: "only screen and (max-width:700px)";
 $media-very-narrow: "only screen and (max-width:500px)";
 $max-width:1200px;
 $font-body: 'OpenSans', Helvetica, Arial;
-$font-header: 'LeagueGothic', Impact, Helvetica, Arial;
+$font-header: 'LeagueGothic', 'Arial Narrow', Helvetica, Arial;
 $font-body-size: 130%;
 $font-body-size-narrow: 100%;
 $right-padding: 50px;
@@ -252,6 +252,9 @@ p, ul, ol {
   @media #{$media-narrow} {
     line-height: 5;
   }
+}
+.footer ul.outbound-links-list li a img {
+  border:0;
 }
 .footer p.rights {
   font-size:0.8em;
