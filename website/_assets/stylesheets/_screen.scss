@@ -1,7 +1,8 @@
-$media-wide: "only screen and (max-width:1400px)";
+$media-wide: "only screen and (max-width:1100px)";
 $media-fat: "only screen and (max-width:900px)";
-$media-narrow: "only screen and (max-width:600px)";
-$max-width:1600px;
+$media-narrow: "only screen and (max-width:700px)";
+$media-very-narrow: "only screen and (max-width:500px)";
+$max-width:1200px;
 $font-body: 'OpenSans', Helvetica, Arial;
 $font-header: 'LeagueGothic', Impact, Helvetica, Arial;
 $font-body-size: 130%;
@@ -60,10 +61,7 @@ body {
   font-family:$font-body;
   font-style:normal;
   font-size:$font-body-size;
-  @media #{$media-narrow} {
-    font-size:$font-body-size-narrow;
-  }
-  background: #fff;
+  background:#fff;
 }
 a, a:hover, a:visited {
   color:#000;
@@ -143,7 +141,7 @@ p, ul, ol {
 }
 .content div.breadcrumbs ol.breadcrumbs {
   padding: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 0px;
 }
 .content .breadcrumbs ol.breadcrumbs li {
@@ -343,7 +341,7 @@ p, ul, ol {
 .about-splash .body .text p {
   margin-top:20px;
   text-align:left;
-  font-size:2.8em;
+  font-size:2em;
 }
 .about-splash .body .portrait {
   border: 1px solid #000;

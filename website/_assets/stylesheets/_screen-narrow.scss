@@ -1,12 +1,26 @@
 @media #{$media-wide} {
   .about-splash .body .text p {
-    font-size:2em;
+    font-size:1.5em;
+  }
+  .about-splash .body .portrait img {
+    width: 250px;
+  }
+}
+@media #{$media-fat} {
+  body {
+    font-size:100%;
   }
   .about-splash .body .portrait img {
     width: 200px;
   }
 }
-@media #{$media-fat} {
+@media #{$media-narrow} {
+  .about-splash .body .text p {
+    font-size:1.2em;
+  }
+  .about-splash .body .portrait img {
+    width: 150px;
+  }
   .container {
     min-width:252px;
   }
@@ -37,12 +51,9 @@
     display: block;
     float: none;
     padding-bottom:0;
-    padding-top:0
+    padding-top:0;
     line-height: 1.2;
     margin: 0px 0 0 0;
-  }
-  .about-splash .body .text p {
-    font-size:1.5em;
   }
   .excerpts .inner .article {
     width:100%;
@@ -51,12 +62,11 @@
     font-size:0.9em;
   }
 }
-@media #{$media-narrow} {
-  .about-splash .body .text p {
-    font-size:1.2em;
-  }
+@media #{$media-very-narrow} {
   .about-splash .body .portrait {
-    margin:0px;
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
     float:none;
   }
 }
