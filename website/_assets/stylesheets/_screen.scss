@@ -196,6 +196,9 @@ p, ul, ol {
   padding:3px 10px 3px 10px;
   display:inline;
   text-transform: uppercase;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .content .article .title h2 a, .article-index .other-articles .title h3 {
   text-decoration: none;
