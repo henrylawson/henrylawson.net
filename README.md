@@ -54,6 +54,7 @@ Writing Process
   1. Write fast (write don't edit)
   1. Let it incubate
   1. Revise and copy edit
+1. Move the article to be live `mv ./website/_drafts/*.markdown ./website/_posts/`
 1. Review the article deployed `rake s`
 1. Run the spelling check `rake sp`
 1. Run the static analysis `rake ws`
