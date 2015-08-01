@@ -3,7 +3,7 @@ henrylawson.net
 A simple blog powered by Jekyll.
 
 Getting Started
-===============
+---------------
 1. Install rbenv
 1. Make sure correct Ruby version has been loaded (check .ruby-version)
 1. gem install bundler
@@ -15,7 +15,7 @@ Getting Started
 1. rake Rakefile --describe
 
 Setting Up SSH
-==============
+--------------
 Ensure the ~/.ssh/config has an entry like below:
 ``
 Host henrylawson.net
@@ -28,13 +28,13 @@ Host henrylawson.net
 And that the ~/.ssh/id_rsa.pub is added to the remote hosts ~/.ssh/authorized_keys.
 
 Updating Fonts
-==============
+--------------
 find . -iname "*.ttf" -exec woff2_compress "{}" \;
 find . -iname "*.ttf" -exec sfnt2woff-zopfli "{}" \;
 find . -iname "*.ttf" -exec bash -c 'ttf2eot < {} > {}.eot' \;
 
 Deploying
-=========
+---------
 1. Review posts and articles, check grammar `rake s`
 1. Checking spelling `rake sp`
 1. Check hyperlinks `rake lc`
@@ -43,7 +43,7 @@ Deploying
 1. Publish the content `rake p`
 
 Writing Process
-===============
+---------------
 1. Pick a topic
 1. Create a draft `rake 'd[date,title]'`
 1. Create the article
