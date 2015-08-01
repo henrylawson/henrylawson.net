@@ -41,3 +41,21 @@ Deploying
 1. Check the readability statistics 'rake ws'
 1. Make a commit and push
 1. Publish the content `rake p`
+
+Writing Process
+===============
+1. Pick a topic
+1. Create a draft `rake d[date,title]`
+1. Create the article
+  1. Plan
+  1. Research
+  1. Rethink
+  1. Find a lede
+  1. Write fast (write don't edit)
+  1. Let it incubate
+  1. Revise and copy edit
+1. Review the article deployed `rake s`
+1. Run the spelling check `rake sp`
+1. Run the static analysis `rake ws`
+1. Review the article AGAIN deployed `rake s`
+1. Deploy it `rake p`
