@@ -17,13 +17,13 @@ Getting Started
 Setting Up SSH
 --------------
 Ensure the ~/.ssh/config has an entry like below:
-``
+```
 Host henrylawson.net
   HostName henrylawson.net
   Port 22
   IdentityFile ~/.ssh/id_rsa
   User ubuntu
-``
+```
 
 And that the ~/.ssh/id_rsa.pub is added to the remote hosts ~/.ssh/authorized_keys.
 
