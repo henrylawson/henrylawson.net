@@ -5,7 +5,7 @@ date: 2015-07-05
 ---
 
 **Systems typically fail or run into trouble because the effect that is
-received from a system can be delayed.**  As humans we are great at reacting to
+received from a system can be delayed.**  As humans we are great at reacting
 to a problem if the cause and effect immediately follow one another. If we
 touch a hot stove, immediately our hand is burnt and we retract, we then look
 for the appropriate tools and handle the situation accordingly.
