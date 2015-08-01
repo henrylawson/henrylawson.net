@@ -45,7 +45,7 @@ Deploying
 Writing Process
 ===============
 1. Pick a topic
-1. Create a draft `rake d[date,title]`
+1. Create a draft `rake 'd[date,title]'`
 1. Create the article
   1. Plan
   1. Research
@@ -58,4 +58,5 @@ Writing Process
 1. Run the spelling check `rake sp`
 1. Run the static analysis `rake ws`
 1. Review the article AGAIN deployed `rake s`
+1. Push the changes to remote
 1. Deploy it `rake p`
