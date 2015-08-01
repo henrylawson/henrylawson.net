@@ -29,9 +29,11 @@ And that the ~/.ssh/id_rsa.pub is added to the remote hosts ~/.ssh/authorized_ke
 
 Updating Fonts
 --------------
+```
 find . -iname "*.ttf" -exec woff2_compress "{}" \;
 find . -iname "*.ttf" -exec sfnt2woff-zopfli "{}" \;
 find . -iname "*.ttf" -exec bash -c 'ttf2eot < {} > {}.eot' \;
+```
 
 Deploying
 ---------
