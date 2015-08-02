@@ -16,7 +16,7 @@ processes are sometimes even more complexly expressed in code.
 
 Working as a consultant, you get the opportunity to work in various domains and
 industries, the advantages being that you get great exposure to how these
-business work and how they use technology to solve their problems.  One of the
+businesses work and how they use technology to solve their problems.  One of the
 major downsides though is that you often find yourself having to ramp up on
 legacy complex code bases in a limited time frame.
 
@@ -45,14 +45,14 @@ business around it as it is the actual code.
    team is facing and solving, you can't possibly know that what worked on your
    last project will work here unless you stop talking, listen and allow the
    existing team members to explain the context to you.
-1. **Understand what your are doing there,** hopefully someone has already
-   taken the time to on board you, welcome you to the team, explain the current
-   environment and why it is they have brought you onto the team, if they
-   haven't, now is a good time to clarify those items and understand what your
-   stakeholders' and your team's expectations are of you. Clearing up these
-   expectations at the start will allow you to align for success
-   immediately or to reset expectations if you do not think you will be able
-   to meet them.
+1. **Understand why you're here and what is expected of you,** hopefully
+   someone has already taken the time to on board you, welcome you to the team,
+   explain the current environment and why it is they have brought you onto the
+   team, if they haven't, now is a good time to clarify those items and
+   understand what your stakeholders' and your team's expectations are of you.
+   Clearing up these expectations at the start will allow you to align for
+   success immediately or to reset expectations if you do not think you will be
+   able to meet them.
 1. **Meet the team and remember their names.** When you first join a project
    or a team it is important to try meet all the right people and remember
    their names, draw a stakeholder map and note down peoples roles and
