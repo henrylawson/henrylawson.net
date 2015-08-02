@@ -59,7 +59,8 @@ Writing Process
 1. Move the article to be live `mv ./website/_drafts/*.markdown ./website/_posts/`
 1. Review the article deployed `rake s`
 1. Run the spelling check `rake sp`
-1. Run the static analysis `rake ws`
+1. Run the static analysis `rake ws[full-article-name]`
+1. Check for dead links `rake lc`
 1. Review the article AGAIN deployed `rake s`
 1. Push the changes to remote
 1. Deploy it `rake p`
