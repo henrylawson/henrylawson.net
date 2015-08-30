@@ -40,13 +40,13 @@ Successful sales people often use a mix questions from each of those categories
 and move between them during the sales conversation. The key takeaway for me is
 that the questioning is used to help direct the customer towards identifying
 and addressing their needs, through this style of questioning you lead the
-customer to realise their problems and potential solutions.
+customer to realize their problems and potential solutions.
 
-The book also identifies other behaviours and actions of successful sales
+The book also identifies other behaviors and actions of successful sales
 people these are in the areas of identifying customer needs, successful actions
 and how they define success.
 
-Further details on the SPIN Selling technique and these successful behaviours
+Further details on the SPIN Selling technique and these successful behaviors
 are captured in the Mind Map below.
 
 [{% image articles/SpinSelling.png alt="SPIN Selling Mind Map" title="SPIN Selling Mind Map" class="article-image" %}](

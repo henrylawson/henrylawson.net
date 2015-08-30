@@ -1,9 +1,10 @@
-personal_ws-1.1 en 71 
+personal_ws-1.1 en 76 
 refactoring
 SolrNet
 refactored
 runnable
 NFR's
+Rackham
 UI
 url
 Github
@@ -30,7 +31,9 @@ Solr
 composable
 variabilities
 workflow
+Sandi
 ProductOrder
+Huthwaite
 vimrc
 README's
 OSI
@@ -45,6 +48,7 @@ foundational
 runtime
 organisation
 JUnit
+Metz
 deterministically
 modularized
 posteriori
@@ -62,6 +66,7 @@ SUT
 Tweakable
 sellable
 readme
+Situational
 Solr's
 Microservices
 favour
