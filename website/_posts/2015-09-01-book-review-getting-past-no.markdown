@@ -6,8 +6,8 @@ date: 2015-09-01
 
 [Getting Past No by William
 Ury](http://www.amazon.com/Getting-Past-Negotiating-Difficult-Situations/dp/0553371312)
-built on some of the ideas presented in [Getting To Yes]({% post_url
-2015-08-31-book-review-getting-to-yes %}). The book went deeper on the topic of
+built on some of the ideas presented in [Getting To Yes]({% post_url 2015-08-31-book-review-getting-to-yes %}).
+The book went deeper on the topic of
 dealing with a difficult counter party who has immediately taken the position
 of "No" in an argument.
 
@@ -25,8 +25,8 @@ Once collected, begin **disarming your opponent** by stepping to their side.
 Listen to them, ask clarifying questions, paraphrase statements and focus on
 areas of agreement, build on common ground.
 
-Once the conversation has returned to a productive level, **change the game**.
-Start understanding what their interests area. Most likely they have only
+After the conversation has returned to a productive level, **change the game**.
+Start understanding what their interests are. Most likely they have only
 shared their problems. Now it is time to understand what their underlying
 interests are. Ask clarifying questions, the "Why" and "Why not".
 
