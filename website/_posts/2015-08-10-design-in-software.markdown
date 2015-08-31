@@ -11,7 +11,7 @@ excerpt: >
 > achieving perfection.  **Practical Object-Oriented Design in Ruby by Sandi
 > Metz**
 
-To often when refactoring it can be easy to get carried away trying to refactor
+Too often when refactoring it can be easy to get carried away trying to refactor
 and optimize to  structure that is perfect, expressive, concise and readable.
 
 The quote above is a good reminder that while those above items are important
