@@ -35,6 +35,14 @@ find . -iname "*.ttf" -exec sfnt2woff-zopfli "{}" \;
 find . -iname "*.ttf" -exec bash -c 'ttf2eot < {} > {}.eot' \;
 ```
 
+Updating Images
+---------------
+```
+find . -name "*.png" -exec optipng -o7 -zm1-9 {} \;
+mogrify -format gif *.png
+mogrify -background white -alpha remove -resize '1400x1400' -format gif *.png
+```
+
 Deploying
 ---------
 1. Review posts and articles, check grammar `rake s`
