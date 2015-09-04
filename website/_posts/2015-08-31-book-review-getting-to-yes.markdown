@@ -54,5 +54,5 @@ finally, by using **objective criteria** you can be assured that you are both
 reaching an agreement that is fair and unbiased to personal opinion or
 preference.
 
-[{% image articles/GettingToYes.png alt="Getting To Yes Mind Map" title="Getting To Yes Mind Map" class="article-image" %}](
+[{% image articles/GettingToYes.png alt="Getting To Yes Mind Map" title="Getting To Yes Mind Map" class="article-image webfeedsFeaturedVisual" %}](
 {% asset_path 'articles/GettingToYes.png' %})

@@ -38,5 +38,5 @@ they continue to show resistance, reemphasize the importance to reach an
 agreement, share previous agreed upon items and consider sharing your BATNA in
 a none threatening way.
 
-[{% image articles/GettingPastNo.png alt="Getting Past No Mind Map" title="Getting Past No Mind Map" class="article-image" %}](
+[{% image articles/GettingPastNo.png alt="Getting Past No Mind Map" title="Getting Past No Mind Map" class="article-image webfeedsFeaturedVisual" %}](
 {% asset_path 'articles/GettingPastNo.png' %})

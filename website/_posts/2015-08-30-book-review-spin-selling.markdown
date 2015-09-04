@@ -49,5 +49,5 @@ and how they define success.
 Further details on the SPIN Selling technique and these successful behaviors
 are captured in the Mind Map below.
 
-[{% image articles/SpinSelling.png alt="SPIN Selling Mind Map" title="SPIN Selling Mind Map" class="article-image" %}](
+[{% image articles/SpinSelling.png alt="SPIN Selling Mind Map" title="SPIN Selling Mind Map" class="article-image webfeedsFeaturedVisual" %}](
 {% asset_path 'articles/SpinSelling.png' %})
