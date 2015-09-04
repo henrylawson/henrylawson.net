@@ -16,7 +16,7 @@ layout: null
   <webfeeds:cover image="{{ site.url }}{% asset_path 'kuala-lumpur.jpg' %}" />
   <webfeeds:icon>{{ site.url }}{% asset_path 'henry_lawson.jpg' %}</webfeeds:icon>
   <webfeeds:logo>{{ site.url }}{% asset_path 'henry_lawson.jpg' %}</webfeeds:logo>
-  <webfeeds:accentColor>000000</webfeeds:accentColor>
+  <webfeeds:accentColor>00FF00</webfeeds:accentColor>
 
   <rights>Copyright (c) 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.</rights>
   <category term="software"/>
