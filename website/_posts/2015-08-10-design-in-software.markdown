@@ -16,6 +16,6 @@ refactor and optimize to a structure that is perfect, expressive, concise and
 readable.
 
 The quote above is a good reminder that what we really need to design for is
-something that preserves our ability to change it. I have learnt this the hard
+something that preserves our ability to change it. I have learned this the hard
 way. More times than I'd like to admit, I've refactored to a solution that is
 more difficult to change than if it was just left untouched.
