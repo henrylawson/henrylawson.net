@@ -7,7 +7,7 @@ date: 2015-09-05
 Dan Pink's book on what motivates us, Drive, has been an insightful read.
 Having seen the [RSA Animate video on what motivates us](https://youtu.be/u6XAPnuFjJc)
 and his [TED talk](http://www.ted.com/talks/dan_pink_on_motivation?language=en)
-I have already had a small taste of what to expect. The book solidified a lot
+I already had a small taste of what to expect. The book solidified a lot
 his thoughts and research on the topic and I found it quite informative.
 
 His passion and interest in the topic comes out in the book and it has left me
