@@ -11,9 +11,10 @@ an elephant and it's rider. In their metaphor, the rider represents our
 logically thinking mind, the elephant our internal _do-what-I-feel_ like
 subconscious mind.
 
-The metaphor plays well with itself as it is easy to imagine our logical mind
-dealing with our sometimes sporadic and uncontrollable subconscious wanting to
-do things on a whim or how they were always done.
+The metaphor plays well with itself, a person atop a large animal. It is easy
+to imagine our logical mind (the rider) dealing with our sometimes sporadic and
+uncontrollable subconscious wanting to do things on a whim or how they were
+always done (the elephant).
 
 <!--more-->
 
