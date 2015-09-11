@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Book Review - Switch
-date: 2015-09-11
+date: 2015-09-10
 ---
 
 [Switch by Chip and Dan
