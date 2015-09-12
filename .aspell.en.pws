@@ -1,4 +1,4 @@
-personal_ws-1.1 en 99 
+personal_ws-1.1 en 100 
 runtime
 cyclomatic
 NFR's
@@ -15,6 +15,7 @@ favour
 dev
 refactorings
 deprioritized
+Cialdini
 Solr
 RSA
 sellable
