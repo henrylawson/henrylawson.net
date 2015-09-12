@@ -8,7 +8,7 @@ date: 2015-09-10
 Heath](www.amazon.com/Switch-Change-Things-When-Hard/dp/0385528752) is a book
 on influencing and driving changes in behavior. The book uses the metaphor of
 an elephant and it's rider. In their metaphor, the rider represents our
-logically thinking mind, the elephant our internal _do-what-I-feel_ like
+logically thinking mind, the elephant our internal _do-what-I-feel-like_
 subconscious mind.
 
 The metaphor plays well with itself, a person atop a large animal. It is easy

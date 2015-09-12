@@ -42,9 +42,9 @@ highly recommend reading that first.
   - Is Mutual Respect at risk
 - Apologize if appropriate
 - Contrast to fix misunderstanding
-  - What you don’t intend or mean
+  - What you don't intend or mean
   - What you do intend or mean
-- When you are cross purposes, use CRIB to get back to mutual purpose
+- When you are at cross purposes, use CRIB to get back to mutual purpose
   - **Commit** to seek Mutual Purpose - state that we need to find a mutual
     purpose, bring the dialogue back to identify one
   - **Recognize** the purpose behind the strategy - Ask people why they want
@@ -76,7 +76,7 @@ highly recommend reading that first.
 
 - When you have a tough message to share
 - When you are convinced of your own rightness
-- Don’t push too hard
+- Don't push too hard
 - Remember to STATE your Path:
   - **Share** your facts - State your persuasive, true and non controversial
     facts, not your opinion!
