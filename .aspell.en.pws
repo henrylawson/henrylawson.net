@@ -1,4 +1,4 @@
-personal_ws-1.1 en 100 
+personal_ws-1.1 en 103 
 runtime
 cyclomatic
 NFR's
@@ -12,6 +12,7 @@ GettingToYes
 stochastically
 SpinSelling
 favour
+influencer
 dev
 refactorings
 deprioritized
@@ -43,12 +44,14 @@ foundational
 ProductOrder
 variabilities
 imple
+StrategicSelling
 refactor
 Pirsig
 unquantified
 redible
 unrelatable
 WhatGreatSalesPeopleDo
+ChallengerSale
 priori
 SUT
 oncrete
