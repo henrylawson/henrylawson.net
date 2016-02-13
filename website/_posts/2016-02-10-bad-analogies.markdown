@@ -59,5 +59,5 @@ These constantly changing variables require a different process and different
 methodology to engineering.
 
 When we draw parallels between other engineering practices and software, we
-underplay these variables and such create the expectation that software can
+underplay these variables and as such create the expectation that software can
 be predictably and uniformly executed like other disciplines.
