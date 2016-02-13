@@ -4,9 +4,10 @@ title: Down Migrations
 date: 2016-02-07
 ---
 
-Having worked with database migration tools for several years, some important
-learning's have become clearer over time. This article aims to capture some
-core ideas on best practices when using these tools.
+Having worked with database migration tools in anger for several years, some
+best practices have become clearer over time. The most important is with the
+usage of down migrations. In this article I'll provide some learning's that
+have resulted in my devaluing the purpose of such scripts.
 
 <!--more-->
 
