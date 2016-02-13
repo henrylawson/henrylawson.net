@@ -1,4 +1,4 @@
-personal_ws-1.1 en 107 
+personal_ws-1.1 en 111 
 runtime
 cyclomatic
 NFR's
@@ -11,7 +11,9 @@ unachievable
 GettingToYes
 stochastically
 SpinSelling
+TBD
 favour
+de
 influencer
 dev
 refactorings
@@ -77,6 +79,7 @@ Situational
 GettingPastNo
 MVC
 Bosworth
+VM's
 vimrc
 IDE
 Ury
@@ -87,6 +90,7 @@ Dan's
 Ohno
 BDD
 webfeedsFeaturedVisual
+app's
 Zoldan
 Mockist
 Mockito

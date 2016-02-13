@@ -24,7 +24,7 @@ test VM's to free up before they were deployed, by the time the functional VM's
 were free there would typically be at least 1 other app bundled up with that
 pipeline run.
 
-The above while not an ideal setup is typical in most organisations as they
+The above while not an ideal setup is typical in most organizations as they
 don't have the budget to provision enough infrastructure to support running
 each commit in isolation through the entire pipeline. If each commit can run
 through the entire pipeline in isolation, it might make some of the points
@@ -72,7 +72,7 @@ to do when it is broken. Another way to look at the problem of a red build is
 through preventative solutions, try asking the team what can we do to avoid
 this situation?
 
-**Acknowledgements:**
+**Acknowledgments:**
 
 - [andrewcare](https://www.reddit.com/user/andrewcare) for his insightful
   feedback on

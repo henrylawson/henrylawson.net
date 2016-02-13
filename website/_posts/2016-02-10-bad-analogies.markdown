@@ -52,9 +52,9 @@ disciplines is:
    even though they asked for a kitchen, they have since learned that everyone
    eats out, no one uses the kitchen , so they'd like it replaced with another
    bathroom. This however is a common story with software systems.
-1. Software is easier to change than physical infrastructure which de
-   emphasises the need to "get everything right at the start". If you design a
-   software solution with the expectation that it will not be easy to change
+1. Software is easier to change than physical infrastructure which
+   de-emphasizes the need to "get everything right at the start". If you design
+   a software solution with the expectation that it will not be easy to change
    (like a house or bridge) you build in unneeded, excess complexity. Which is
    not required as software is more malleable and can be changed to adapt.
 
@@ -67,7 +67,7 @@ When we draw parallels between other engineering practices and software, we
 underplay these variables and as such create the expectation that software can
 be predictably and uniformly executed like other disciplines.
 
-**Acknowledgements:**
+**Acknowledgments:**
 
 - [norwegianwood](https://www.reddit.com/user/norwegianwood) for his insightful
   feedback on
