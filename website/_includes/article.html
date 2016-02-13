@@ -31,6 +31,22 @@
       <a href="http://www.reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" rel="nofollow" target="_blank" title="Share on Reddit">Reddit</a> or
       <a href="http://news.ycombinator.com/submitlink?u={{ site.url }}{{ page.url }}&t={{ page.title }}" rel="nofollow" target="_blank" title="Share on Hacker News">Hacker News</a>.
     </div>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = "{{ site.url }}{{ page.url }}";
+        this.page.identifier = "{{ page.url }}";
+      };
+      (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = '//henrylawsonnet.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
     {% endif %}
   </div>
 </div>
