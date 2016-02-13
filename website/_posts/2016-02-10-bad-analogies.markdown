@@ -52,12 +52,23 @@ disciplines is:
    even though they asked for a kitchen, they have since learned that everyone
    eats out, no one uses the kitchen , so they'd like it replaced with another
    bathroom. This however is a common story with software systems.
+1. Software is easier to change than physical infrastructure which de
+   emphasises the need to "get everything right at the start". If you design a
+   software solution with the expectation that it will not be easy to change
+   (like a house or bridge) you build in unneeded, excess complexity. Which is
+   not required as software is more malleable and can be changed to adapt.
 
 The common theme between the above points is that when building a software
-system, variables external and internal to the system are constantly changing.
-These constantly changing variables require a different process and different
-methodology to engineering.
+system, variables external and internal to the system are constantly and
+sometimes rapidly changing.  These constantly changing variables require a
+different process and different methodology to engineering.
 
 When we draw parallels between other engineering practices and software, we
 underplay these variables and as such create the expectation that software can
 be predictably and uniformly executed like other disciplines.
+
+**Acknowledgements:**
+
+- [norwegianwood](https://www.reddit.com/user/norwegianwood) for his insightful
+  feedback on
+  [reddit](https://www.reddit.com/r/programming/comments/45lcg8/bad_software_analogies/).
