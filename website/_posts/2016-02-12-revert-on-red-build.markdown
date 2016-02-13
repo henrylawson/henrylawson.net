@@ -13,6 +13,25 @@ red build should be reverted.
 
 <!--more-->
 
+It should be noted that these points are specific to a particular team's setup
+and not all of these challenges are present in all TBD setups. For the project
+in question, there were multiple apps, each with their own repository, the team
+was doing TBD for each app. An app's pipeline ran in isolation up until it
+produced and published an RPM. The team had limited VM's to deploy and run
+functional tests against the integrated apps. So it was typical for a
+change in one app to be published to an RPM and then wait for the functional
+test VM's to free up before they were deployed, by the time the functional VM's
+were free there would typically be at least 1 other app bundled up with that
+pipeline run.
+
+The above while not an ideal setup is typical in most organisations as they
+don't have the budget to provision enough infrastructure to support running
+each commit in isolation through the entire pipeline. If each commit can run
+through the entire pipeline in isolation, it might make some of the points
+below moot. However, when reverting (if the team is large) it is likely that
+subsequent commits have been pushed before the build turned red, making the
+revert slightly more complicated.
+
 A revert may not be appropriate when:
 
 1. It is a simple fix to address the problem, time to do the fix and push is
@@ -52,3 +71,9 @@ A final note is that "Reverting on Red" is a reactive solution, that is, what
 to do when it is broken. Another way to look at the problem of a red build is
 through preventative solutions, try asking the team what can we do to avoid
 this situation?
+
+**Acknowledgements:**
+
+- [andrewcare](https://www.reddit.com/user/andrewcare) for his insightful
+  feedback on
+  [reddit](https://www.reddit.com/r/programming/comments/45l0fp/revert_on_red_build/).
