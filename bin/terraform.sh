@@ -5,7 +5,7 @@ DIR=$( cd $(dirname $0) ; pwd -P )
 TERRAFORM_COMMAND=$1
 TERRAFORM_COMMANDS=$@
 ROOT_DIR=$DIR/..
-TERRAFORM_CREDS=$ROOT_DIR/keys/creds.tfvars.crypt
+TERRAFORM_CREDS=$ROOT_DIR/infra/creds.tfvars.key
 
 cd $ROOT_DIR/infra
 
