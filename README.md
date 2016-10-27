@@ -60,6 +60,8 @@ Manual Review
 1. [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
 1. [Google Mobile Friendly Testing Tool](https://search.google.com/search-console/mobile-friendly)
 1. [Google Page Speed Tool](https://developers.google.com/speed/pagespeed/insights/)
+1. [Hubpsot Website Grader](https://website.grader.com/results/henrylawson.net)
+1. [Pingdom](https://tools.pingdom.com)
 
 Writing Process
 ---------------
