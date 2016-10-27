@@ -52,6 +52,15 @@ Deploying
 1. Make a commit and push
 1. Publish the content `rake p`
 
+Manual Review
+-------------
+1. [Google Analytics](https://www.google.com/analytics/)
+1. [Disqus](https://disqus.com/admin)
+1. [Google Webmaster Tools (Search Console)](https://www.google.com/webmasters/tools/home)
+1. [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
+1. [Google Mobile Friendly Testing Tool](https://search.google.com/search-console/mobile-friendly)
+1. [Google Page Speed Tool](https://developers.google.com/speed/pagespeed/insights/)
+
 Writing Process
 ---------------
 1. Pick a topic
