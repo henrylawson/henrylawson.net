@@ -98,12 +98,14 @@ task :deploy => [:build] do
   execute("find _site_deploy -name 'index.html' -type f -exec bash -c 'cp -f $1 \"s3/$(dirname $1)\"' -- {} \\\;")
   execute("find _site_deploy -not -name 'index.html' -type f -exec bash -c 'mkdir -p $(dirname \"s3\/$1\") && cp $1 \"s3/$1\"' -- {} \\\;")
 
+  execute("rm -rf _site_deploy_s3")
   execute("mv s3/_site_deploy _site_deploy_s3")
   execute("rm -rf s3")
 
-  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --content-type \"text/html\"")
-  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\"")
+  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --cache-control \"max-age = 1209600\" --content-type \"text/html\"")
+  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\" --cache-control \"max-age = 1209600\"")
 end
+task :dep => :deploy
 
 desc "Publishes the website to PROD"
 task :publish => [:build] do
