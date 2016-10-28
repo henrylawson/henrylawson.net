@@ -1,5 +1,6 @@
 _site
 _site_deploy
+_site_deploy_s3
 *.swp
 .DS_Store
 .c9

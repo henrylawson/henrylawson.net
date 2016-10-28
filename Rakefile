@@ -90,6 +90,21 @@ task :serve, [:host, :port] => [:clean] do |t, args|
 end
 task :s, [:host, :port] => :serve
 
+desc "Deploy the website to PROD on S3"
+task :deploy => [:build] do
+  puts "#{Time.new}: Publishing website"
+
+  execute("mkdir -p s3/_site_deploy")
+  execute("find _site_deploy -name 'index.html' -type f -exec bash -c 'cp -f $1 \"s3/$(dirname $1)\"' -- {} \\\;")
+  execute("find _site_deploy -not -name 'index.html' -type f -exec bash -c 'mkdir -p $(dirname \"s3\/$1\") && cp $1 \"s3/$1\"' -- {} \\\;")
+
+  execute("mv s3/_site_deploy _site_deploy_s3")
+  execute("rm -rf s3")
+
+  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --content-type \"text/html\"")
+  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\"")
+end
+
 desc "Publishes the website to PROD"
 task :publish => [:build] do
   puts "#{Time.new}: Publishing website"
