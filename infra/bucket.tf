@@ -33,6 +33,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   enabled             = true
   comment             = "henrylawson.net"
   default_root_object = "index.html"
+  aliases             = ["henrylawson.net"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD", "OPTIONS"]
@@ -84,5 +85,21 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   viewer_certificate {
     cloudfront_default_certificate = true
+  }
+}
+
+resource "aws_route53_zone" "henrylawson" {
+  name = "henrylawson.net"
+}
+
+resource "aws_route53_record" "root" {
+  zone_id = "${aws_route53_zone.henrylawson.zone_id}"
+  name = "henrylawson.net"
+  type = "A"
+
+  alias {
+    name = "${aws_cloudfront_distribution.s3_distribution.domain_name}"
+    zone_id = "${aws_cloudfront_distribution.s3_distribution.hosted_zone_id}"
+    evaluate_target_health = false
   }
 }
