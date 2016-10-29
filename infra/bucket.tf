@@ -20,11 +20,11 @@ resource "aws_s3_bucket" "s3_bucket" {
    policy = "${data.aws_iam_policy_document.s3_policy.json}"
 }
 
-resource "aws_iam_server_certificate" "iam_cert" {
-    name = "some_test_cert"
-      certificate_body = "${file("self-ca-cert.pem")}"
-        private_key = "${file("test-key.pem")}"
-
+resource "aws_iam_server_certificate" "cert" {
+  name = "henrylawson.net-production"
+  certificate_body = "${file("../ssl/2016-03-12/fullchain.pem.gitcrypt")}"
+  private_key = "${file("../ssl/2016-03-12/privkey.key.gitcrypt")}"
+  path = "/cloudfront/henrylawsonnet/"
 }
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
@@ -91,7 +91,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   viewer_certificate {
-    acm_certificate_arn = "${var.acm-certificate-arn}"
+    iam_certificate_id = "${aws_iam_server_certificate.cert.id}"
     ssl_support_method = "sni-only"
     minimum_protocol_version = "TLSv1"
   }

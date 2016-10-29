@@ -4,7 +4,7 @@ set -xeuo pipefail
 DIR=$( cd $(dirname $0) ; pwd -P )
 TERRAFORM_COMMANDS=$@
 ROOT_DIR=$DIR/..
-TERRAFORM_CREDS=$ROOT_DIR/infra/creds.tfvars.key
+TERRAFORM_CREDS=$ROOT_DIR/infra/creds.tfvars.gitcrypt
 
 cd $ROOT_DIR/infra
 
