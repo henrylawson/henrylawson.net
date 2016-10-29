@@ -20,6 +20,13 @@ resource "aws_s3_bucket" "s3_bucket" {
    policy = "${data.aws_iam_policy_document.s3_policy.json}"
 }
 
+resource "aws_iam_server_certificate" "iam_cert" {
+    name = "some_test_cert"
+      certificate_body = "${file("self-ca-cert.pem")}"
+        private_key = "${file("test-key.pem")}"
+
+}
+
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = "${aws_s3_bucket.s3_bucket.bucket}.s3.amazonaws.com"
@@ -84,7 +91,9 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn = "${var.acm-certificate-arn}"
+    ssl_support_method = "sni-only"
+    minimum_protocol_version = "TLSv1"
   }
 }
 
