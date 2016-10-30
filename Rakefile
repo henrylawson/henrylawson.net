@@ -111,41 +111,7 @@ task :deploy => [:build] do
   execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --cache-control \"max-age = 1209600\" --content-type \"text/html\"")
   execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\" --cache-control \"max-age = 1209600\"")
 end
-task :dep => :deploy
-
-desc "Publishes the website to PROD"
-task :publish => [:build] do
-  puts "#{Time.new}: Publishing website"
-  puts "#{Time.new}: Removing and creating temp location"
-  execute("ssh #{CONFIG["host"]} -v '" +
-          "rm -rf #{CONFIG["publish_temp"]}/* && " +
-          "mkdir -p #{CONFIG["publish_temp"]}'")
-
-  puts "#{Time.new}: Creating tar gz of target site"
-  execute("GZIP=-9 tar -zcvf " +
-          "#{CONFIG["deploy_target_compress"]} " +
-          "-C #{CONFIG["deploy_target"]} .")
-
-  puts "#{Time.new}: Uploading target to temp location"
-  execute("rsync -v " +
-          "-e 'ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null' " +
-          "--progress #{CONFIG["deploy_target_compress"]} " +
-          "#{CONFIG["host"]}:#{CONFIG["upload_temp"]}")
-
-  puts "#{Time.new}: Extracting target on server to temp location"
-  execute("ssh #{CONFIG["host"]} -v " +
-          "'tar -zxvf " +
-          "#{CONFIG["upload_temp"]}/#{CONFIG["deploy_target_compress"]} " +
-          "-C #{CONFIG["publish_temp"]}'")
-
-  puts "#{Time.new}: Moving target to production"
-  execute("ssh #{CONFIG["host"]} -v " +
-          "'sudo su #{CONFIG["wwwuser"]} bash -c \"" +
-          "rm -rf #{CONFIG["publish"]}/* && " +
-          "cp -rf #{CONFIG["publish_temp"]}/* #{CONFIG["publish"]}\"'")
-  puts "#{Time.new}: Deployment complete"
-end
-task :p => :publish
+task :dp => :deploy
 
 desc 'Create a new draft post'
 task :draft, [:date, :title] do |_t, args|
