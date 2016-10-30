@@ -42,6 +42,7 @@ Deploying
 Manual Review
 -------------
 1. [Google Analytics](https://www.google.com/analytics/)
+1. [Google Custom Search](https://cse.google.com/)
 1. [Disqus](https://disqus.com/admin)
 1. [Google Webmaster Tools (Search Console)](https://www.google.com/webmasters/tools/home)
 1. [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
