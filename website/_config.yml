@@ -12,6 +12,13 @@ meta:
   image: henry_lawson_bw.jpg
   title: Henry Lawson | A Blog on Software and Business Management
   description: Henry Lawson - Software Consultant, Developer and Business Management enthusiast. A repository of articles and blog posts that cover Agile Principles and Practices, Software Delivery, Programming Languages (C#, Ruby, Java, JavaScript, Python and Clojure). The articles posted here aim to be great references of thoughtful, sometimes random but hopefully informative and insightful information.
+social:
+  twitter: https://twitter.com/henryglawson
+  github: https://github.com/henrylawson
+  keybase: https://keybase.io/hlawson
+  linkedin: https://www.linkedin.com/in/hglawson
+  feedly: https://feedly.com/henrylawson
+  feedly_feed: http://feedly.com/i/subscription/feed/https://henrylawson.net/feed/atom.xml
 assets:
   sources:
     - _assets
