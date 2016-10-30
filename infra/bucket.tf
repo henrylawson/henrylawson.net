@@ -113,3 +113,11 @@ resource "aws_route53_record" "root" {
     evaluate_target_health = false
   }
 }
+
+resource "aws_route53_record" "keybase" {
+  zone_id = "${aws_route53_zone.henrylawson.zone_id}"
+  name = "henrylawson.net"
+  type = "TXT"
+  ttl = "5"
+  records = ["keybase-site-verification=yQ3pkNN338azY9m8cXQv8Qbna1X9JDgNUo6IOvp78mM"]
+}
