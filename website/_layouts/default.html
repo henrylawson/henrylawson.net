@@ -31,6 +31,8 @@
     {% capture page_image %}{{ site.url }}{% asset_path 'henry_lawson_bw.jpg' %}{% endcapture %}
     {% capture copyright %}Copyright &copy; 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.{% endcapture %}
 
+    <link rel="canonical" href="{{ page_url }}" />
+
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}"/>
     <meta name="author" content="{{ site.name }}">
@@ -65,6 +67,16 @@
     </style>
     <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
     <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Henry Lawson","alternateName":"HenryLawson.net","url":"https://henrylawson.net"}</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-20045516-3', 'auto');
+      ga('require', 'linkid');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body {% if page.is_js_needed %} onload="OnLoad.execute()" {% endif %}>
     <div>
@@ -121,16 +133,5 @@
         </div>
       </div>
     </div>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-20045516-3', 'auto');
-      ga('require', 'linkid');
-      ga('send', 'pageview');
-
-    </script>
   </body>
 </html>
