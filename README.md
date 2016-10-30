@@ -51,6 +51,7 @@ Manual Review
 1. [Pingdom](https://tools.pingdom.com)
 1. [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/)
 1. [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+1. [Google+ Snippets](https://developers.google.com/+/web/snippet/)
 
 Testing
 -------
@@ -69,6 +70,7 @@ Testing
 1. Social Sharing
   1. Facebook
   1. Twitter
+  1. Google+
 
 Writing Process
 ---------------
