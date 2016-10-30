@@ -16,6 +16,9 @@
     <link rel="apple-touch-startup-image" href="{{ site.meta.image | asset_path }}">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    {% if page.path contains '_posts' %}
+      <link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: '/' | prepend: site.baseurl | prepend: site.url  }}">
+    {% endif %}
 
     {% if page.title %}
       {% capture page_title %}{{ page.title }} | {{ site.name }}{% endcapture %}
@@ -148,6 +151,8 @@
                 one sided opinion.  I am always up for a healthy discussion on
                 interesting topics, feel free to get in contact below:<p>
               </p>
+            </div>
+            <div class="body">
               <ul class="outbound-links-list">
                 <li><a href="{{ site.social.github }}">{% image outbound-links/github.png alt="Github" title="Github" class="outbound-links" width="32" height="32" %}</a></li>
                 <li><a href="{{ site.social.keybase }}">{% image outbound-links/keybase.png alt="Keybase" title="Keybase" class="outbound-links" width="32" height="32" %}</a></li>
@@ -156,9 +161,11 @@
                 <li><a href="{{ site.social.feedly }}">{% image outbound-links/feedly.png alt="Feedly Shared Collections" title="Feedly Shared Collections" class="outbound-links" width="32" height="32" %}</a></li>
                 <li><a href="{{ site.social.feedly_feed }}">{% image outbound-links/feedly2.png alt="Feedly Blog Feed" title="Feedly Blog Feed" class="outbound-links" width="32" height="32" %}</a></li>
               </ul>
-              <div class="title">
-                <h3>Can't find that article?</h3>
-              </div>
+            </div>
+            <div class="title">
+              <h3>Can't find that article?</h3>
+            </div>
+            <div class="body">
               <script>
                 (function() {
                   var cx = '009914769181974819128:fnowzhali3g';

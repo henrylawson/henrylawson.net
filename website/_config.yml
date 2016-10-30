@@ -19,6 +19,7 @@ social:
   linkedin: https://www.linkedin.com/in/hglawson
   feedly: https://feedly.com/henrylawson
   feedly_feed: http://feedly.com/i/subscription/feed/https://henrylawson.net/feed/atom.xml
+ampdir: amp
 assets:
   sources:
     - _assets

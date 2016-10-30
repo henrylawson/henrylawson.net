@@ -41,7 +41,10 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
     mini_magick (4.5.1)
+    mini_portile2 (2.0.0)
     multi_json (1.12.1)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     posix-spawn (0.3.11)
@@ -76,9 +79,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fastimage
   jekyll
   jekyll-assets
   jekyll-sitemap
+  nokogiri
   pygments.rb
   rake
   redcarpet

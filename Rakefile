@@ -105,8 +105,8 @@ task :b3 => :build_s3
 
 desc "Deploy the website to PROD on S3"
 task :deploy => [:build_s3] do
-  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --cache-control \"max-age = 1209600\" --content-type \"text/html\"")
-  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\" --cache-control \"max-age = 1209600\"")
+  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --cache-control \"max-age = 43200\" --content-type \"text/html\"")
+  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\" --cache-control \"max-age = 43200\"")
 end
 task :dp => :deploy
 
