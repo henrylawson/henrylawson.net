@@ -22,7 +22,8 @@ resource "aws_s3_bucket" "s3_bucket" {
 
 resource "aws_iam_server_certificate" "cert" {
   name = "henrylawson.net-production"
-  certificate_body = "${file("../ssl/2016-03-12/fullchain.pem.gitcrypt")}"
+  certificate_body = "${file("../ssl/2016-03-12/www_henrylawson_net.crt")}"
+  certificate_chain = "${file("../ssl/2016-03-12/fullchain.pem.gitcrypt")}"
   private_key = "${file("../ssl/2016-03-12/privkey.key.gitcrypt")}"
   path = "/cloudfront/henrylawsonnet/"
 }
