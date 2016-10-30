@@ -113,6 +113,12 @@ task :deploy => [:build] do
 end
 task :dp => :deploy
 
+desc "Invalidate CloudFront cache"
+task :invalidate do
+  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths \"/*\"")
+end
+task :iv => :invalidate
+
 desc 'Create a new draft post'
 task :draft, [:date, :title] do |_t, args|
   args.with_defaults(
