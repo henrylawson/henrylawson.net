@@ -90,6 +90,12 @@ task :serve, [:host, :port] => [:clean] do |t, args|
 end
 task :s, [:host, :port] => :serve
 
+desc "Update the AWS infrastructure"
+task :infra do
+  execute("bin/terraform.sh apply")
+end
+task :i => :infra
+
 desc "Deploy the website to PROD on S3"
 task :deploy => [:build] do
   puts "#{Time.new}: Publishing website"
