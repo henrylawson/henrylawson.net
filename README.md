@@ -53,6 +53,7 @@ Manual Review
 1. [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/)
 1. [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 1. [Google+ Snippets](https://developers.google.com/+/web/snippet/)
+1. [Security Headers](https://securityheaders.io/)
 
 Testing
 -------
