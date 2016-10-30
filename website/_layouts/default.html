@@ -91,8 +91,8 @@
       "name":"{{ site.name }}",
       "url": "{{ site.url }}",
       "sameAs": [
-        "{{ social.twitter }}",
-        "{{ social.linkedin }}"
+        "{{ site.social.twitter }}",
+        "{{ site.social.linkedin }}"
       ]
     }
     </script>
@@ -149,12 +149,12 @@
                 interesting topics, feel free to get in contact below:<p>
               </p>
               <ul class="outbound-links-list">
-                <li><a href="{{ social.github }}">{% image outbound-links/github.png alt="Github" title="Github" class="outbound-links" width="32" height="32" %}</a></li>
-                <li><a href="{{ social.keybase }}">{% image outbound-links/keybase.png alt="Keybase" title="Keybase" class="outbound-links" width="32" height="32" %}</a></li>
-                <li><a href="{{ social.linkedin }}">{% image outbound-links/ldn.png alt="LinkedIn" title="LinkedIn" class="outbound-links" width="32" height="32" %}</a></li>
-                <li><a href="{{ social.twitter }}">{% image outbound-links/twr.png alt="Twitter" title="Twitter" class="outbound-links" width="32" height="32" %}</a></li>
-                <li><a href="{{ social.feedly }}">{% image outbound-links/feedly.png alt="Feedly Shared Collections" title="Feedly Shared Collections" class="outbound-links" width="32" height="32" %}</a></li>
-                <li><a href="{{ social.feedly_feed }}">{% image outbound-links/feedly2.png alt="Feedly Blog Feed" title="Feedly Blog Feed" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="{{ site.social.github }}">{% image outbound-links/github.png alt="Github" title="Github" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="{{ site.social.keybase }}">{% image outbound-links/keybase.png alt="Keybase" title="Keybase" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="{{ site.social.linkedin }}">{% image outbound-links/ldn.png alt="LinkedIn" title="LinkedIn" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="{{ site.social.twitter }}">{% image outbound-links/twr.png alt="Twitter" title="Twitter" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="{{ site.social.feedly }}">{% image outbound-links/feedly.png alt="Feedly Shared Collections" title="Feedly Shared Collections" class="outbound-links" width="32" height="32" %}</a></li>
+                <li><a href="{{ site.social.feedly_feed }}">{% image outbound-links/feedly2.png alt="Feedly Blog Feed" title="Feedly Blog Feed" class="outbound-links" width="32" height="32" %}</a></li>
               </ul>
               <div class="title">
                 <h3>Can't find that article?</h3>
