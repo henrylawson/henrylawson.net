@@ -26,4 +26,38 @@
     {% include disqus.html %}
     {% endif %}
   </div>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ post.url }}"
+    },
+    "headline": "{{ post.title }}",
+    "image": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ 'henry_lawson_bw.jpg' | asset_path }}",
+      "height": 759,
+      "width": 800
+    },
+    "datePublished": "2015-02-05T08:00:00+08:00",
+    "dateModified": "2015-02-05T09:20:00+08:00",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.name }}"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ 'henry_lawson_bw_60x60.png' | asset_path }}",
+        "height": 60,
+        "width": 60
+      }
+    },
+    "description": "{{ post.excerpt | strip_html }}"
+  }
+  </script>
 </div>
