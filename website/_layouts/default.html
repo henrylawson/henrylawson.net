@@ -1,114 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="author" href="https://plus.google.com/117420814347348419892"/>
-    <link rel="publisher" href="https://plus.google.com/117420814347348419892"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <meta name="google-site-verification" content="LNHJ48nFZKxsjYl4l_akZErpMWkf3lCL6LXPA0xVS5c"/>
-    <meta name="msvalidate.01" content="6E276F27A71009C0541D41F0A6C20D51"/>
+    {% include head_meta.html %}
 
-    <link rel="apple-touch-icon" href="{% asset_path 'henry_lawson_bw_60x60.png' %}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path 'henry_lawson_bw_76x76.png' %}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path 'henry_lawson_bw_120x120.png' %}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path 'henry_lawson_bw_152x152.png' %}">
-    <link rel="apple-touch-startup-image" href="{{ site.meta.image | asset_path }}">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     {% if page.path contains '_posts' %}
       <link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: '/' | prepend: site.baseurl | prepend: site.url  }}">
     {% endif %}
 
-    {% if page.title %}
-      {% capture page_title %}{{ page.title }} | {{ site.name }}{% endcapture %}
-    {% else %}
-      {% capture page_title %}{{ site.meta.title }}{% endcapture %}
-    {% endif %}
-    {% if page.excerpt %}
-      {% capture page_description %}{{ page.excerpt | strip_html }}{% endcapture %}
-    {% else %}
-      {% assign page_description = site.meta.description %}
-    {% endif %}
-    {% capture page_url %}{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}{% endcapture %}
-    {% capture page_image %}{{ site.url }}{{ site.meta.image | asset_path }}{% endcapture %}
-    {% capture copyright %}Copyright &copy; 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.{% endcapture %}
-
-    <link rel="canonical" href="{{ page_url }}" />
-    <meta http-equiv="last-modified" content="{{ site.time }}" />
-
-    <title>{{ page_title }}</title>
-    <meta name="description" content="{{ page_description }}"/>
-    <meta name="author" content="{{ site.name }}">
-    <meta name="robots" content="index,folow"/>
-    <meta name="copyright" content="{{ copyright }}"/>
-    <meta name="revisit-after" content="3 days">
-
-    <meta property="og:title" content="{{ page_title }}"/>
-    <meta property="og:type" content="article"/>
-    <meta property="og:image" content="{{ page_image }}"/>
-    <meta property="og:url" content="{{ page_url }}"/>
-    <meta property="og:description" content="{{ page_description }}"/>
-    <meta property="fb:admins" content="hen3rz"/>
-
-    <meta name="twitter:title" content="{{ page_title }}"/>
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:url" content="{{ page_url }}"/>
-    <meta name="twitter:site" content="@henryglawson"/>
-    <meta name="twitter:description" content="{{ page_description }}"/>
-    <meta name=”twitter:image” content="{{ page_image }}"/>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" href="/favicon.ico"/>
     {% if page.is_js_needed %}
       <script>
         {% asset onload %}
       </script>
       {% javascript app async %}
     {% endif %}
-    <style type="text/css">
-      {% asset app.css %}
-    </style>
-    <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
-    <script type="application/ld+json">
-    {
-      "@context":"http://schema.org",
-      "@type":"WebSite",
-      "name":"{{ site.name }}",
-      "alternateName":"{{ site.alternativeName }}",
-      "url":"{{ site.url }}"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "{{ site.url }}",
-      "logo": "{{ site.url }}{{ site.meta.image | asset_path }}"
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name":"{{ site.name }}",
-      "url": "{{ site.url }}",
-      "sameAs": [
-        "{{ site.social.twitter }}",
-        "{{ site.social.linkedin }}"
-      ]
-    }
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-20045516-3', 'auto');
-      ga('require', 'linkid');
-      ga('send', 'pageview');
-    </script>
+    {% include head_styles.html %}
+    {% include head_analytics.html %}
   </head>
   <body {% if page.is_js_needed %} onload="OnLoad.execute()" {% endif %}>
     <div>
