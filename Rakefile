@@ -84,7 +84,6 @@ task :serve, [:host, :port] => [:clean] do |t, args|
           "--port #{args.port} " +
           "--drafts " +
           "--future " +
-          "--verbose " +
           "--watch " +
           "-s #{CONFIG["source"]} -d #{CONFIG["target"]}")
 end
@@ -96,18 +95,16 @@ task :infra do
 end
 task :i => :infra
 
-desc "Deploy the website to PROD on S3"
-task :deploy => [:build] do
-  puts "#{Time.new}: Publishing website"
-
-  execute("mkdir -p s3/_site_deploy")
-  execute("find _site_deploy -name 'index.html' -type f -exec bash -c 'cp -f $1 \"s3/$(dirname $1)\"' -- {} \\\;")
-  execute("find _site_deploy -not -name 'index.html' -type f -exec bash -c 'mkdir -p $(dirname \"s3\/$1\") && cp $1 \"s3/$1\"' -- {} \\\;")
-
+desc "Build for S3"
+task :build_s3 => [:build] do
   execute("rm -rf _site_deploy_s3")
-  execute("mv s3/_site_deploy _site_deploy_s3")
-  execute("rm -rf s3")
+  execute("cp -rf _site_deploy _site_deploy_s3")
+  execute("find _site_deploy_s3 -name '*.html' -type f | while read NAME; do mv \"${NAME}\" \"${NAME%.html}\"; done")
+end
+task :b3 => :build_s3
 
+desc "Deploy the website to PROD on S3"
+task :deploy => [:build_s3] do
   execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --cache-control \"max-age = 1209600\" --content-type \"text/html\"")
   execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\" --cache-control \"max-age = 1209600\"")
 end
