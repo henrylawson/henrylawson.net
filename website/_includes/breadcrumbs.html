@@ -1,35 +1,70 @@
 <div class="breadcrumbs">
-  <ol class="breadcrumbs" vocab="http://schema.org/" typeof="BreadcrumbList">
-    <li property="itemListElement" typeof="ListItem">
-      <a property="item" typeof="WebPage" href="/">
-        <span property="name">Home</span>
+  <ol class="breadcrumbs">
+    <li>
+      <a href="/">
+        <span>Home</span>
       </a>
-      <meta property="position" content="1" />
     </li>
-    <li property="itemListElement" typeof="ListItem"> › </li>
+    <li> › </li>
     {% if include.page_name %}
-      <li property="itemListElement" typeof="ListItem">
-        <a property="item" typeof="WebPage" href="{{ include.page_url }}">
-          <span property="name">{{ include.page_name }}</span>
+      <li>
+        <a href="{{ include.page_url }}">
+          <span>{{ include.page_name }}</span>
         </a>
-        <meta property="position" content="2" />
       </li>
     {% else %}
-      <li property="itemListElement" typeof="ListItem">
-        <a property="item" typeof="WebPage" href="/all">
-          <span property="name">All Articles</span>
+      <li>
+        <a href="/all">
+          <span>All Articles</span>
         </a>
-        <meta property="position" content="2" />
       </li>
     {% endif %}
     {% if post %}
-      <li property="itemListElement" typeof="ListItem"> › </li>
-      <li property="itemListElement" typeof="ListItem">
-        <a property="item" typeof="WebPage" href="{{ post.url }}">
-          <span property="name">{{ post.title }}</span>
+      <li> › </li>
+      <li>
+        <a href="{{ post.url }}">
+          <span>{{ post.title }}</span>
         </a>
-        <meta property="position" content="3" />
       </li>
     {% endif %}
   </ol>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "{{ site.url }}",
+      "name": "{{ site.name }}",
+      "image": "{{ site.url }}{{ site.meta.image | asset_path }}"
+    }
+  },{% if include.page_name %}{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "{{ site.url  }}{{ include.page_url }}",
+      "name": "{{ include.page_name }}",
+      "image": "{{ site.url }}{{ site.meta.image | asset_path }}"
+    }
+  }{% else %}{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "{{ site.url }}/all",
+      "name": "All Articles",
+      "image": "{{ site.url }}{{ site.meta.image | asset_path }}"
+    }
+  }{% endif %}{% if post %},{
+    "@type": "ListItem",
+    "position": 3,
+    "item": {
+      "@id": "{{ site.url }}{{ post.url }}",
+      "name": "{{ post.title }}",
+      "image": "{{ site.url }}{{ site.meta.image | asset_path }}"
+    }
+  }{% endif %}]
+}
+</script>

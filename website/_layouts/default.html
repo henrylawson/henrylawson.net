@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{% asset_path 'henry_lawson_bw_76x76.png' %}">
     <link rel="apple-touch-icon" sizes="120x120" href="{% asset_path 'henry_lawson_bw_120x120.png' %}">
     <link rel="apple-touch-icon" sizes="152x152" href="{% asset_path 'henry_lawson_bw_152x152.png' %}">
-    <link rel="apple-touch-startup-image" href="{% asset_path 'henry_lawson_bw.jpg' %}">
+    <link rel="apple-touch-startup-image" href="{{ site.meta.image | asset_path }}">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -28,7 +28,7 @@
       {% assign page_description = site.meta.description %}
     {% endif %}
     {% capture page_url %}{{ site.url }}{% if page.url != '/index.html' %}{{ page.url }}{% endif %}{% endcapture %}
-    {% capture page_image %}{{ site.url }}{% asset_path 'henry_lawson_bw.jpg' %}{% endcapture %}
+    {% capture page_image %}{{ site.url }}{{ site.meta.image | asset_path }}{% endcapture %}
     {% capture copyright %}Copyright &copy; 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.{% endcapture %}
 
     <link rel="canonical" href="{{ page_url }}" />
@@ -67,7 +67,15 @@
       {% asset app.css %}
     </style>
     <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Henry Lawson","alternateName":"HenryLawson.net","url":"https://henrylawson.net"}</script>
+    <script type="application/ld+json">
+    {
+      "@context":"http://schema.org",
+      "@type":"WebSite",
+      "name":"{{ site.name }}",
+      "alternateName":"{{ site.alternativeName }}",
+      "url":"{{ site.url }}"
+    }
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

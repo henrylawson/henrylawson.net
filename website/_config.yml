@@ -1,4 +1,5 @@
 name: Henry Lawson
+alternativeName: HenryLawson.net
 markdown: redcarpet
 highlighter: pygments
 permalink: /:title
@@ -8,7 +9,7 @@ excerpt_separator: <!--more-->
 url: https://henrylawson.net
 exclude: ["*.bak", "*.swp"]
 meta:
-  image: https://henrylawson.net/images/henry_lawson.jpg
+  image: henry_lawson_bw.jpg
   title: Henry Lawson | A Blog on Software and Business Management
   description: Henry Lawson - Software Consultant, Developer and Business Management enthusiast. A repository of articles and blog posts that cover Agile Principles and Practices, Software Delivery, Programming Languages (C#, Ruby, Java, JavaScript, Python and Clojure). The articles posted here aim to be great references of thoughtful, sometimes random but hopefully informative and insightful information.
 assets:
