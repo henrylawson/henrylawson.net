@@ -49,6 +49,26 @@ Manual Review
 1. [Google Page Speed Tool](https://developers.google.com/speed/pagespeed/insights/)
 1. [Hubpsot Website Grader](https://website.grader.com/results/henrylawson.net)
 1. [Pingdom](https://tools.pingdom.com)
+1. [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/sharing/)
+1. [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+
+Testing
+-------
+1. Design and Layout
+  1. Chrome
+  1. Safari
+  1. Firefox
+  1. Internet Explorer
+  1. Android
+  1. iPad
+  1. iPhone
+  1. Various Resolutions
+1. Google Structured Data
+  1. Sitename
+  1. Breadcrumbs
+1. Social Sharing
+  1. Facebook
+  1. Twitter
 
 Writing Process
 ---------------
