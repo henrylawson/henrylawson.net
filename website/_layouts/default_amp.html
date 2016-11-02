@@ -1,19 +1,31 @@
-<!doctype html>
-<html amp lang="en">
+<!DOCTYPE HTML>
+<html lang="en-US" amp>
   <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+    {% include head_meta.html %}
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-custom>
-    </style>
+    {% include head_styles_amp.html %}
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
-<span>
-{{ page.date }} - {{ page.author }}
-</span>
-{{ page.body | markdownify | amp_images }}
-</body>
+    <div>
+      <div class="container">
+        <div class="header">
+          <div class="wrapper">
+            {% include header_title.html %}
+          </div>
+        </div>
+        <div class="content">
+          <div class="wrapper">
+            {{ content | amp_images }}
+          </div>
+        </div>
+        <div class="footer">
+          <div class="wrapper">
+            {% include footer_about.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

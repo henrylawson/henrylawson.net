@@ -6,7 +6,7 @@ date: 2015-09-20
 
 [The Challenger Sale
 ](http://www.amazon.com/The-Challenger-Sale-Customer-Conversation/dp/1591844355)
-was another great read on sales and sales tactics. Similar to [SPIN 
+was another great read on sales and sales tactics. Similar to [SPIN
 Selling]({% post_url 2015-08-30-book-review-spin-selling %}),
 it focused on the interactions and discussions with the customer and how to
 approach and nurture the relationship for success.

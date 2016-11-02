@@ -3,7 +3,7 @@ $media-fat: "only screen and (max-width:900px)";
 $media-narrow: "only screen and (max-width:700px)";
 $media-very-narrow: "only screen and (max-width:500px)";
 $max-width:1200px;
-$font-body: 'OpenSans', Helvetica, Arial;
+$font-body: 'Open Sans', Helvetica, Arial;
 $font-header: 'LeagueGothic', 'Arial Narrow', Helvetica, Arial;
 $font-body-size: 130%;
 $font-body-size-narrow: 100%;
@@ -11,48 +11,6 @@ $right-padding: 50px;
 $left-padding: 40px;
 $right-padding-narrow: 20px;
 $left-padding-narrow: 10px;
-
-@font-face {
-  font-family: 'LeagueGothic';
-  src: url(asset_path('fonts/League_Gothic/League_Gothic-webfont.woff2')) format('woff2'),
-       url(asset_path('fonts/League_Gothic/League_Gothic-webfont.woff')) format('woff'),
-       url(asset_path('fonts/League_Gothic/League_Gothic-webfont.eot')) format('eot'),
-       url(asset_path('fonts/League_Gothic/League_Gothic-webfont.ttf')) format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url(asset_path('fonts/Open_Sans/OpenSans-Light.woff2')) format('woff2'),
-       url(asset_path('fonts/Open_Sans/OpenSans-Light.woff')) format('woff'),
-       url(asset_path('fonts/Open_Sans/OpenSans-Light.eot')) format('eot'),
-       url(asset_path('fonts/Open_Sans/OpenSans-Light.ttf')) format('truetype');
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url(asset_path('fonts/Open_Sans/OpenSans-LightItalic.woff2')) format('woff2'),
-       url(asset_path('fonts/Open_Sans/OpenSans-LightItalic.woff')) format('woff'),
-       url(asset_path('fonts/Open_Sans/OpenSans-LightItalic.eot')) format('eot'),
-       url(asset_path('fonts/Open_Sans/OpenSans-LightItalic.ttf')) format('truetype');
-  font-style: italic;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url(asset_path('fonts/Open_Sans/OpenSans-Bold.woff2')) format('woff2'),
-       url(asset_path('fonts/Open_Sans/OpenSans-Bold.woff')) format('woff'),
-       url(asset_path('fonts/Open_Sans/OpenSans-Bold.eot')) format('eot'),
-       url(asset_path('fonts/Open_Sans/OpenSans-Bold.ttf')) format('truetype');
-  font-weight: bold;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url(asset_path('fonts/Open_Sans/OpenSans-BoldItalic.woff2')) format('woff2'),
-       url(asset_path('fonts/Open_Sans/OpenSans-BoldItalic.woff')) format('woff'),
-       url(asset_path('fonts/Open_Sans/OpenSans-BoldItalic.eot')) format('eot'),
-       url(asset_path('fonts/Open_Sans/OpenSans-BoldItalic.ttf')) format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
 
 body {
   margin:0;

@@ -1,5 +1,4 @@
 <meta charset="utf-8"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="author" href="https://plus.google.com/117420814347348419892"/>
 <link rel="publisher" href="https://plus.google.com/117420814347348419892"/>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
@@ -28,15 +27,17 @@
 {% capture page_image %}{{ site.url }}{{ site.meta.image | asset_path }}{% endcapture %}
 {% capture copyright %}Copyright &copy; 2012 to {{ site.time | date: '%Y' }}, Henry Lawson; all rights reserved.{% endcapture %}
 
-<link rel="canonical" href="{{ page_url }}" />
-<meta http-equiv="last-modified" content="{{ site.time }}" />
+{% if is_amp %}
+  <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+{% else %}
+  <link rel="canonical" href="{{ page_url }}" />
+{% endif %}
 
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_description }}"/>
 <meta name="author" content="{{ site.name }}">
 <meta name="robots" content="index,folow"/>
 <meta name="copyright" content="{{ copyright }}"/>
-<meta name="revisit-after" content="3 days">
 
 <meta property="og:title" content="{{ page_title }}"/>
 <meta property="og:type" content="article"/>
@@ -52,7 +53,6 @@
 <meta name="twitter:description" content="{{ page_description }}"/>
 <meta name=”twitter:image” content="{{ page_image }}"/>
 
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="shortcut icon" href="/favicon.ico"/>
 <link rel="alternate" type="application/atom+xml" title="Henry Lawson" href="{{ site.url }}/feed/atom.xml">
 

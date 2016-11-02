@@ -6,7 +6,7 @@ module Jekyll
       @dir = dir
       @name = "#{post.id}.html"
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'amp.html')
+      self.read_yaml(File.join(base, '_layouts'), 'post_amp.html')
       self.data['body']          = post.content
       self.data['title']         = post.data['title']
       self.data['date']          = post.data['date']

@@ -1,0 +1,11 @@
+---
+layout: default_amp
+---
+
+{% assign is_amp = true %}
+{% assign post = page %}
+{% capture content %}{{ page.body | markdownify }}{% endcapture %}
+
+{% include breadcrumbs.html %}
+{% include article.html %}
+{% include recent_article_index.html %}

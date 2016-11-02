@@ -2,6 +2,10 @@
 <html lang="en-US">
   <head>
     {% include head_meta.html %}
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="last-modified" content="{{ site.time }}" />
+    <meta name="revisit-after" content="3 days">
 
     {% if page.path contains '_posts' %}
       <link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: '/' | prepend: site.baseurl | prepend: site.url  }}">
@@ -14,7 +18,7 @@
       {% javascript app async %}
     {% endif %}
 
-    {% include head_styles.html %}
+    {% include head_styles_default.html %}
     {% include head_analytics.html %}
   </head>
   <body {% if page.is_js_needed %} onload="OnLoad.execute()" {% endif %}>

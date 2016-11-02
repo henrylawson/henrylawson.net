@@ -5,59 +5,14 @@
   <div class="body">
     {{ content }}
     {% if excerpt == 1 %}
-    <div class="read-more">
-      <p><a href="{{ post.url }}" title="Read more">...Continued</a></p>
-    </div>
+      <div class="read-more">
+        <p><a href="{{ post.url }}" title="Read more">...Continued</a></p>
+      </div>
     {% else %}
-    <div class="date">
-      This article was first noted down on the
-      {% assign d = post.date | date: "%-d"  %}
-      {% case d %}
-      {% when '1' or '21' or '31' %}{{ d }}st
-      {% when '2' or '22' %}{{ d }}nd
-      {% when '3' or '23' %}{{ d }}rd
-      {% else %}{{ d }}th
-      {% endcase %}
-      of
-      {{ post.date | date: "%B" }},
-      {{ post.date | date: "%Y" }}.
-    </div>
-    {% include share.html %}
-    {% include disqus.html %}
+      {% include post_date.html %}
+      {% include post_share.html %}
+      {% include post_disqus.html %}
     {% endif %}
   </div>
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ site.url }}{{ post.url }}"
-    },
-    "headline": "{{ post.title }}",
-    "image": {
-      "@type": "ImageObject",
-      "url": "{{ site.url }}{{ 'henry_lawson_bw.jpg' | asset_path }}",
-      "height": 759,
-      "width": 800
-    },
-    "datePublished": "2015-02-05T08:00:00+08:00",
-    "dateModified": "2015-02-05T09:20:00+08:00",
-    "author": {
-      "@type": "Person",
-      "name": "{{ site.name }}"
-    },
-     "publisher": {
-      "@type": "Organization",
-      "name": "{{ site.name }}",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ site.url }}{{ 'henry_lawson_bw_60x60.png' | asset_path }}",
-        "height": 60,
-        "width": 60
-      }
-    },
-    "description": "{{ post.excerpt | strip_html }}"
-  }
-  </script>
+  {% include post_meta.html %}
 </div>
