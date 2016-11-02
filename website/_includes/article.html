@@ -3,7 +3,11 @@
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   </div>
   <div class="body">
-    {{ content }}
+    {% if is_amp == true %}
+      {{ content | amp_images | markdownify }}
+    {% else %}
+      {{ content }}
+    {% endif %}
     {% if excerpt == 1 %}
       <div class="read-more">
         <p><a href="{{ post.url }}" title="Read more">...Continued</a></p>

@@ -7,7 +7,7 @@ module Jekyll
       @name = "#{post.id}.html"
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'post_amp.html')
-      self.data['body']          = post.content
+      self.content               = post.content
       self.data['title']         = post.data['title']
       self.data['date']          = post.data['date']
       self.data['author']        = post.data['author']
@@ -21,10 +21,10 @@ module Jekyll
     def generate(site)
       dir = site.config['ampdir'] || 'amp'
       site.posts.docs.each do |post|
-        index = AmpPost.new(site, site.source, dir, post)
-        index.render(site.layouts, site.site_payload)
-        index.write(site.dest)
-        site.pages << index
+        ampPost = AmpPost.new(site, site.source, dir, post)
+        ampPost.render(site.layouts, site.site_payload)
+        ampPost.write(site.dest)
+        site.pages << ampPost
       end
     end
   end
