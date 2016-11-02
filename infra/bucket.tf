@@ -40,7 +40,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   enabled             = true
   comment             = "henrylawson.net"
-  default_root_object = "index.html"
+  default_root_object = "index"
   aliases             = ["henrylawson.net"]
 
   default_cache_behavior {
@@ -71,8 +71,6 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       restriction_type = "none"
     }
   }
-
-  default_root_object = "index.html"
 
   custom_error_response {
     error_code = "404"

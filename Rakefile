@@ -113,9 +113,15 @@ task :dp => :deploy
 
 desc "Invalidate CloudFront cache"
 task :invalidate do
-  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths \"/*\"")
+  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths / /sitemap.xml /feed/atom.xml")
 end
 task :iv => :invalidate
+
+desc "Invalidate ALL CloudFront cache"
+task :invalidate_all do
+  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths \"/*\"")
+end
+task :iva => :invalidate_all
 
 desc 'Create a new draft post'
 task :draft, [:date, :title] do |_t, args|
