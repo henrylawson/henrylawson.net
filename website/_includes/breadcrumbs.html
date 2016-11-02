@@ -1,3 +1,4 @@
+{% capture page_url %}{% if is_amp == true %}{{ post.canonical_url  }}{% else %}{{ post.url  }}{% endif %}{% endcapture %}
 <div class="breadcrumbs">
   <ol class="breadcrumbs">
     <li>
@@ -22,7 +23,7 @@
     {% if post %}
       <li> › </li>
       <li>
-        <a href="{{ post.url }}">
+        <a href="{{ page_url }}">
           <span>{{ post.title }}</span>
         </a>
       </li>
@@ -61,7 +62,7 @@
     "@type": "ListItem",
     "position": 3,
     "item": {
-      "@id": "{{ site.url }}{{ post.url }}",
+      "@id": "{{ site.url }}{{ page_url }}",
       "name": "{{ post.title }}",
       "image": "{{ site.url }}{{ site.meta.image | asset_path }}"
     }
