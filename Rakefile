@@ -112,7 +112,7 @@ task :dp => :deploy
 
 desc "Invalidate CloudFront cache"
 task :invalidate do
-  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths / /sitemap.xml /feed/atom.xml")
+  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths / /sitemap.xml /feed/atom.xml /all")
 end
 task :iv => :invalidate
 
