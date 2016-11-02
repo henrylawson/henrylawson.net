@@ -69,7 +69,6 @@ task :build => [:clean_deploy] do
           "--verbose")
   execute("java -jar bin/htmlcompressor-1.5.3.jar " +
           "--recursive " +
-          "--compress-css " +
           "--compress-js " +
           "--output #{CONFIG["deploy_target"]} #{CONFIG["deploy_target"]}")
 end
