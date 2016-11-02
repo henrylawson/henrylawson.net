@@ -1,3 +1,9 @@
-<style type="text/css">
-  {% asset default.css %}
-</style>
+{% if is_amp == true %}
+  <style amp-custom>
+    {% asset default.css %}
+  </style>
+{% else %}
+  <style type="text/css">
+    {% asset default.css %}
+  </style>
+{% endif %}
