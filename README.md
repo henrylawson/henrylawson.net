@@ -41,10 +41,14 @@ Deploying
 
 Manual Review
 -------------
-1. [Google Analytics](https://www.google.com/analytics/)
-1. [Google Custom Search](https://cse.google.com/)
 1. [Disqus](https://disqus.com/admin)
+1. [Amazon Affiliate Program](https://affiliate-program.amazon.com/)
+1. [Google Analytics](https://www.google.com/analytics/)
 1. [Google Webmaster Tools (Search Console)](https://www.google.com/webmasters/tools/home)
+1. [Google Custom Search](https://cse.google.com/)
+
+Testing Review
+--------------
 1. [Google Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool)
 1. [Google Mobile Friendly Testing Tool](https://search.google.com/search-console/mobile-friendly)
 1. [Google Page Speed Tool](https://developers.google.com/speed/pagespeed/insights/)
@@ -67,8 +71,11 @@ Testing
   1. iPhone
   1. Various Resolutions
 1. Google Structured Data
-  1. Sitename
-  1. Breadcrumbs
+  1. Organization
+  1. BreadcrumbList
+  1. WebSite
+  1. Person
+  1. BlogPosting
 1. Social Sharing
   1. Facebook
   1. Twitter
