@@ -21,7 +21,7 @@ party the information to argue over the number - rather than understand why we
 believe it is worth $20 or $50 dollars and what could be done to satisfy the
 underlying interests that are supporting our stated positions.
 
-[Getting to Yes](http://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0140157352)
+[Getting to Yes](http://amzn.to/2flBYwx)
 provides a simple set of four steps to apply to any negotiation
 scenario to help achieve an outcome that both parties can be satisfied with and
 that explores all options.

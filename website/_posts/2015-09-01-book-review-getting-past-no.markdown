@@ -5,7 +5,7 @@ date: 2015-09-01
 ---
 
 [Getting Past No by William
-Ury](http://www.amazon.com/Getting-Past-Negotiating-Difficult-Situations/dp/0553371312)
+Ury](http://amzn.to/2eav3cx)
 built on some of the ideas presented in [Getting To Yes]({% post_url 2015-08-31-book-review-getting-to-yes %}).
 The book went deeper on the topic of
 dealing with a difficult counter party who has immediately taken the position

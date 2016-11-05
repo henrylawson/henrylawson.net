@@ -7,7 +7,7 @@ categories: software
 
 When pairing with other people I always find it interesting to see what their
 programming workflow is like. Most people I know
-[TDD](http://www.amazon.com/Test-Driven-Development-By-Example/dp/0321146530)
+[TDD](http://amzn.to/2fmk3bu)
 out their code and like to follow some form of the _Boy Scout Rule_:
 
 <!--more-->
@@ -21,7 +21,7 @@ When this common _Boy Scout Rule_ is applied to computer programming, the camp
 ground becomes your code base and cleanness typically refers to the traits that
 [Bob Martin](http://www.objectmentor.com/omTeam/martin_r.html) talks about in
 his book [Clean
-Code](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882).
+Code](http://amzn.to/2eaqqPy).
 That is, code that does not violate
 [YAGNI](http://c2.com/cgi/wiki?YouArentGonnaNeedIt),
 [KISS](http://catb.org/jargon/html/K/KISS-Principle.html), is well

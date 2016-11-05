@@ -9,10 +9,10 @@ simple acronym to apply when presenting an idea that needs to stick. The
 acronym is SUCCESS.
 
 [Made to Stick: Why Some Ideas Survive and Others
-Die](http://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287) is
+Die](http://amzn.to/2enyHuL) is
 true to it's title. When presenting ideas we often get caught up in expert
 speak, we present the details, the facts, the information but often leave our
-audience disengaged and uncertain about our message. 
+audience disengaged and uncertain about our message.
 
 <!--more-->
 

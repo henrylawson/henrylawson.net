@@ -1,15 +1,15 @@
---- 
+---
 layout: post
 title: Book Review - The Fifth Discipline
-date: 2015-07-05 
+date: 2015-07-05
 ---
 
 Having heard a lot recently about [Systems
 Thinking](https://en.wikipedia.org/wiki/Systems_thinking), I thought it best to re
 prioritize my reading list and place some popular Systems thinking books at the
-top of my list. One of those books was 
+top of my list. One of those books was
 [The Fifth
-Discipline by Peter Senge](http://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/B0000640E9).
+Discipline by Peter Senge](http://amzn.to/2eapiLK).
 
 <!--more-->
 
@@ -24,7 +24,7 @@ overlaps greatly with what I had learned from lean principles, I didn't feel
 that the ideas were new to me but I did find it very valuable to see similar
 ideas presented from another view point. I also liked the language used when
 talking about systems thinking, [Dynamic vs. Detail Complexity](
-{% post_url 2015-07-05-dynamic-vs-detail-complexity %}), 
+{% post_url 2015-07-05-dynamic-vs-detail-complexity %}),
 [Reinforcing vs. Balancing Feedback](
 {% post_url 2015-07-05-reinforcing-vs-balancing-feedback %}),
 [Circles of Causality](

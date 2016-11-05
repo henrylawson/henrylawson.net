@@ -6,7 +6,7 @@ date: 2015-02-20
 
 Below is a fantastic quote I came across when reading [The Art of Motorcycle Maintenance by
 Robert
-Pirsig](http://www.amazon.com/Zen-Motorcycle-Maintenance-Robert-Pirsig-ebook/dp/B0026772N8).
+Pirsig](http://amzn.to/2ensFKz).
 A fantastic read that is full of wisdom.
 
 <!--more-->
@@ -24,15 +24,15 @@ A fantastic read that is full of wisdom.
 > understanding. **Robert M. Pirsig (Zen and the Art of Motorcycle Maintenance)**
 
 Whether it is [Taiichi Ohno and Toyota Production
-System](http://www.amazon.com/Toyota-Production-System-Beyond-Large-Scale/dp/0915299143)
+System](http://amzn.to/2exC1qs)
 - urging workers to address problems at their root cause, [Peter Senge in The
 Fifth
-Discipline](http://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/B0000640E9)
+Discipline](http://amzn.to/2eapiLK)
 - asserting that to resolve a problem the problem needs to be addressed in terms
 of a whole system and not just the immediately observable parts of the sub
 system, or whether it is me - [blogging about the root problem](
 {% post_url 2014-05-10-root-problem %}). The same message occurs again and
-again. 
+again.
 
 Of all the quotes I have come across on this topic though, this quote
 by Robert Pirsig is one of the best

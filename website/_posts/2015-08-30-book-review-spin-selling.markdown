@@ -6,7 +6,7 @@ date: 2015-08-30
 
 In an effort to learn more about selling and sales I picked up [SPIN Selling by
 Neil Rackham and Bob
-Kalomeer](http://www.amazon.com/SPIN-Selling-Neil-Rackham/dp/1565114205). The
+Kalomeer](http://amzn.to/2eau5gr). The
 book is a fantastic read as it brings a pragmatic, well researched approach to
 sales conversations that can be immediately applied, not just to sales but to
 everyday life and consulting as well.

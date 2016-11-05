@@ -27,7 +27,7 @@ working with.
 Some of these ideas are presented in [Object-Oriented Re-engineering
 Patterns](http://scg.unibe.ch/download/oorp/) and [Michael Feathers - Working
 with Legacy
-Code](http://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052).
+Code](http://amzn.to/2exEOzV).
 If you are after more information I suggest checking out those resources. Note
 that the steps below are mix of hard (code/technology) and soft (people) items.
 Working with legacy code is just as much about understanding the people and

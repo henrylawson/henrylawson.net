@@ -5,7 +5,7 @@ date: 2015-09-10
 ---
 
 [Switch by Chip and Dan
-Heath](http://www.amazon.com/Switch-Change-Things-When-Hard/dp/0385528752) is a book
+Heath](http://amzn.to/2fmiVVn) is a book
 on influencing and driving changes in behavior. The book uses the metaphor of
 an elephant and it's rider. In their metaphor, the rider represents our
 logically thinking mind, the elephant our internal _do-what-I-feel-like_

@@ -5,7 +5,7 @@ date:   2013-09-25 21:00:00
 categories: software
 ---
 
-_Whitespace_ in our code is something that many developers don't spend much time thinking about, however it is a powerful aspect that can have a large impact on the readability of code. [Kent Beck] (http://en.wikipedia.org/wiki/Kent_Beck) talks about this topic quite briefly in his book [Implementation Patterns] (http://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091).
+_Whitespace_ in our code is something that many developers don't spend much time thinking about, however it is a powerful aspect that can have a large impact on the readability of code. [Kent Beck] (http://en.wikipedia.org/wiki/Kent_Beck) talks about this topic quite briefly in his book [Implementation Patterns] (http://amzn.to/2fNiyDW).
 
 <!--more-->
 

@@ -5,12 +5,12 @@ date: 2016-02-11
 ---
 
 In [Are You Fully
-Charged?](http://www.amazon.com/Are-You-Fully-Charged-Energizing/dp/1939714036)
+Charged?](http://amzn.to/2envlrw)
 Tom Rath quotes a study on Pro Social Incentives for teams. I had come across a
 similar idea presented before in
-[Drive](http://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805)
+[Drive](http://amzn.to/2exCZ6c)
 by Dan Pink. My own experiences participating in sporting teams and at
-ThoughtWorks further emphasized the argument for it. 
+ThoughtWorks further emphasized the argument for it.
 
 <!--more-->
 
@@ -26,7 +26,7 @@ reward ourselves.
 > (which is a traditionally competitive profession), the team that had
 > incentive to do good for someone else saw greater gains in performance than
 > the team with a more selfish incentive. **[Are You Fully
-Charged?](http://www.amazon.com/Are-You-Fully-Charged-Energizing/dp/1939714036) by Tom Rath**
+Charged?](http://amzn.to/2envlrw) by Tom Rath**
 
 From my personal experiences I have found my work to be much more rewarding
 when the result of my work allows me to provide a benefit to another person and

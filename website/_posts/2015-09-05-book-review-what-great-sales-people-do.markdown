@@ -5,7 +5,7 @@ date: 2015-09-05
 ---
 
 [What great sales people
-do](http://www.amazon.com/What-Great-Salespeople-Emotional-Connection/dp/0071769714)
+do](http://amzn.to/2fNfzeG)
 by Ben Zoldan and Michael Bosworth was a good read on selling through the use
 of emotional connection by listening and sharing stories.
 

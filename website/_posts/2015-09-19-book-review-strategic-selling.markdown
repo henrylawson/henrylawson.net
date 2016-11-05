@@ -5,7 +5,7 @@ date: 2015-09-19
 ---
 
 [The New Strategic Selling
-](http://www.amazon.com/The-New-Strategic-Selling-Successful/dp/044669519X)
+](http://amzn.to/2flFLdh)
 provides a firm framework for classifying and following through sales in a
 structured way that can be repeated and standardized in an organisation.
 
@@ -38,8 +38,8 @@ types to classify what mode an influencer in the sale is in and some advice on
 how to structure and approach an influencer in one of these modes.
 
 Overall, I found The New Strategic Selling to be a great "macro" selling book.
-Unlike [The Challenger 
-Sale]({% post_url 2015-09-20-book-review-the-challenger-sale %}) or [SPIN 
+Unlike [The Challenger
+Sale]({% post_url 2015-09-20-book-review-the-challenger-sale %}) or [SPIN
 Selling]({% post_url 2015-08-30-book-review-spin-selling %}), it does not focus
 on the details of interactions and conversations of the sale but instead takes
 a step back and looks at the entire process. The provide a structured format to
