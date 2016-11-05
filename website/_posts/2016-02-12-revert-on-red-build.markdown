@@ -6,7 +6,7 @@ date: 2016-02-12
 
 A typical action when working in [Trunk Based
 Development](http://paulhammant.com/2013/04/05/what-is-trunk-based-development/)
-is to revert a commit that caused a red build. Sometimes this is the appropriate
+(TBD) is to revert a commit that caused a red build. Sometimes this is the appropriate
 action to take.  Sometimes it is not. This article provides some learning's and
 discussion points to consider before mandating that all commits that caused a
 red build should be reverted.
@@ -77,3 +77,7 @@ this situation?
 - [andrewcare](https://www.reddit.com/user/andrewcare) for his insightful
   feedback on
   [reddit](https://www.reddit.com/r/programming/comments/45l0fp/revert_on_red_build/).
+- [Paul
+  Hammant](http://paulhammant.com/2016/02/15/ci-breaking-builds-bisecting-and-reverting/)
+  has taken these points to the next level and provided an even deeper
+  commentary on the topic.
