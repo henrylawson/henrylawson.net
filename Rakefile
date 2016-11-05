@@ -102,22 +102,27 @@ task :build_s3 => [:build] do
 end
 task :b3 => :build_s3
 
+def with_args(arg, values)
+  values.map{|p|"#{arg} \"#{p}\""}.join(" ")
+end
+
 desc "Deploy the website to PROD on S3"
 task :deploy => [:build_s3] do
   max_age_assets   = 2628000 # 1 month
   max_age_articles = 604800  # 1 week
   max_age_indexes  = 86400   # 1 day
 
-  index_pages_xml  = "\"*.xml\""
-  index_pages_html = "index all"
-  index_pages      = [index_pages_xml, index_pages_html].join(" ")
+  asset_files      = ["*.js", "*.js.gz", "*.png", "*.woff", "*.woff2", "*.eot", "*.ttf", "*.jpg", "*.ico", "*.txt"]
+  index_files_xml  = ["*.xml"]
+  index_files_html = ["index", "all"]
+  all_files        = [asset_files, index_files_xml, index_files_html].flatten
 
-  base_command   = "aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production"
+  base_command   = "aws s3 cp _site_deploy_s3/ s3://henrylawson.net-production --recursive"
 
-  execute("#{base_command} --include \"*.*\" --exclude #{index_pages} --cache-control \"max-age = #{max_age_assets}\"")
-  execute("#{base_command} --exclude \"*.*\" --exclude #{index_pages} --cache-control \"max-age = #{max_age_articles}\" --content-type \"text/html\"")
-  execute("#{base_command} --include #{index_pages_xml} --cache-control \"max-age = #{max_age_indexes}\"")
-  execute("#{base_command} --include #{index_pages_html} --cache-control \"max-age = #{max_age_indexes}\" --content-type \"text/html\"")
+  execute("#{base_command} --exclude \"*\" #{with_args("--include", asset_files)} --cache-control \"max-age = #{max_age_assets}\"")
+  execute("#{base_command} --exclude \"*\" #{with_args("--include", index_files_xml)} --cache-control \"max-age = #{max_age_indexes}\"")
+  execute("#{base_command} --exclude \"*\" #{with_args("--include", index_files_html)} --cache-control \"max-age = #{max_age_indexes}\" --content-type \"text/html\"")
+  execute("#{base_command} --include \"*\" #{with_args("--exclude", all_files)} --cache-control \"max-age = #{max_age_articles}\" --content-type \"text/html\"")
 end
 task :dp => :deploy
 
