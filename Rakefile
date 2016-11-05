@@ -104,9 +104,20 @@ task :b3 => :build_s3
 
 desc "Deploy the website to PROD on S3"
 task :deploy => [:build_s3] do
-  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --exclude \"*.*\" --cache-control \"max-age = 43200\" --content-type \"text/html\"")
-  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.*\" --exclude \"*.xml\" --cache-control \"max-age = 2628000 \"")
-  execute("aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production --include \"*.xml\" --cache-control \"max-age = 43200\"")
+  max_age_assets   = 2628000 # 1 month
+  max_age_articles = 604800  # 1 week
+  max_age_indexes  = 86400   # 1 day
+
+  index_pages_xml  = "\"*.xml\""
+  index_pages_html = "index all"
+  index_pages      = [index_pages_xml, index_pages_html].join(" ")
+
+  base_command   = "aws s3 sync _site_deploy_s3/ s3://henrylawson.net-production"
+
+  execute("#{base_command} --include \"*.*\" --exclude #{index_pages} --cache-control \"max-age = #{assets_max_age}\"")
+  execute("#{base_command} --exclude \"*.*\" --exclude #{index_pages} --cache-control \"max-age = #{max_age_articles}\" --content-type \"text/html\"")
+  execute("#{base_command} --include #{index_pages_xml} --cache-control \"max-age = #{max_age_indexes}\"")
+  execute("#{base_command} --include #{index_pages_html} --cache-control \"max-age = #{max_age_indexes}\" --content-type \"text/html\"")
 end
 task :dp => :deploy
 
