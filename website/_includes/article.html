@@ -1,22 +1,37 @@
-<div class="article">
-  <div class="title">
-    <h2><a href="{% if is_amp == true %}{{ post.canonical_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
-  </div>
-  <div class="body">
-    {% if is_amp == true %}
-      {{ content | amp_images | markdownify }}
-    {% else %}
-      {{ content }}
-    {% endif %}
-    {% if excerpt == 1 %}
-      <div class="read-more">
-        <p><a href="{{ post.url }}" title="Read more">...Continued</a></p>
+<article>
+  <div class="article">
+    <header>
+      <div class="title">
+        <h2><a href="{% if is_amp == true %}{{ post.canonical_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a></h2>
       </div>
-    {% else %}
-      {% include post_date.html %}
-      {% include post_share.html %}
-      {% include post_disqus.html %}
+    </header>
+    <aside>
+    {% if excerpt != 1 %}
+      {% include post_time.html %}
     {% endif %}
+    </aside>
+    <section>
+      <div class="body">
+      {% if is_amp == true %}
+        {{ content | amp_images | markdownify }}
+      {% else %}
+        {{ content }}
+      {% endif %}
+      </div>
+    </section>
+    <footer>
+      <div class="body">
+      {% if excerpt == 1 %}
+        <div class="read-more">
+          <p><a href="{{ post.url }}" title="Read more">...Continued</a></p>
+        </div>
+      {% else %}
+        {% include post_date.html %}
+        {% include post_share.html %}
+        {% include post_disqus.html %}
+      {% endif %}
+      {% include post_meta.html %}
+      </div>
+    </footer>
   </div>
-  {% include post_meta.html %}
-</div>
+</article>
