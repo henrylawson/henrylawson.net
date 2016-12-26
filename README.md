@@ -58,6 +58,8 @@ Testing Review
 1. [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 1. [Google+ Snippets](https://developers.google.com/+/web/snippet/)
 1. [Security Headers](https://securityheaders.io/)
+1. [Web Page Test](http://www.webpagetest.org/)
+1. [lighthouse](https://github.com/GoogleChrome/lighthouse)
 
 Testing
 -------
