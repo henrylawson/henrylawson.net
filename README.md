@@ -102,4 +102,4 @@ Writing Process
 1. Check for dead links `rake lc`
 1. Review the article AGAIN deployed `rake s`
 1. Push the changes to remote
-1. Deploy it `rake p`
+1. Deploy it `rake dp`
