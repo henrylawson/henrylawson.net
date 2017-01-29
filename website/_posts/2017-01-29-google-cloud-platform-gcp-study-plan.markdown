@@ -27,46 +27,46 @@ get the ball rolling.
   1. Follow GCP developer advocates - twitter, medium, blogs
   1. Follow any popular non googler GCP - twitter, medium, blogs
   1. [GCP YouTube Channel](https://www.youtube.com/user/googlecloudplatform/)
-1. Search for any books on GCP or GCP products, add them to reading list
+1. Search for any books on GCP or GCP products, add them to the reading list
   1. [Google Cloud Platform in Action](http://amzn.to/2jiqmzS)
   1. [Site Reliability Engineering](http://amzn.to/2kfFDjZ)
 1. Review the certifications and study guides, record resources for deeper learning later
   1. [Cloud Architect](https://cloud.google.com/certification/cloud-architect)
   1. [Data Engineer](https://cloud.google.com/certification/data-engineer)
-1. [Read over to a shallow depth GCP's services and offerings](https://cloud.google.com/products)
-1. Compare and contrast popular cloud offerings, identify gaps strengths
+1. [Read over to a shallow depth, GCP's services and offerings](https://cloud.google.com/products)
+1. Compare and contrast popular cloud offerings, identify gaps and strengths
   1. [Azure](https://azure.microsoft.com/en-us/services/)
   1. [AWS](https://aws.amazon.com/products/)
-1. Rank GCP services by ubiquity and begin studying and building with them
-  1. For each service:
-    1. Read over marketing content, client stories, GCP website pitch
-    1. Read over GCP documentation
-    1. Identity and watch any popular GCP or third party how-to videos or tech
-       talks on the product, GCP Next vids, udemy, quicklabs, safari books
-       online, google code labs etc.
-    1. Configure using GCP web console
-    1. Configure using GCP API
-    1. Configure using GCP Cloud Deployment Manager
-    1. Go over configuring service with Terraform, Puppet, Chef, Salt
-       understand maturity and flexibility of integration with GCP or third
-       party products/clouds, are any features missing etc.
-    1. Determine how product integrates with other GCP products, IAM, Load
-       Balancers etc. integrate and try, understand best practices and
-       improvements
-    1. Contrast experience with AWS/Azure equivalent product
-    1. Analyse the "business and tech problems" this product can help solve
-    1. Determine the elevator pitch for this service
-    1. How can it be used by a development team in DEV, UAT, PROD; how can
-       config and changes be promoted through environments, think through
-       scenarios and devise answers
-    1. How can it be tested?, can the testing be automated?
-    1. How is it monitored? what can be monitored?
-    1. How is it secured? how can a large organisation isolate and provide this
-       service to teams? with manageable blast radiuses?
-    1. How can it be configured to be highly available?
-    1. What does the "perfect setup/best practice" look like for an enterprise
-       organisation?
-    1. How is the billing formulated? how can the cost be reduced by users?
+1. Rank GCP services by ubiquity and begin studying and building solutions with
+   them. For each service:
+  1. Read over marketing content, client stories, GCP website pitch
+  1. Read over GCP documentation
+  1. Identity and watch any popular GCP or third party how-to videos or tech
+     talks on the product, GCP Next videos, Udemy, Quicklabs, safari books
+     online, Google code labs etc.
+  1. Configure using GCP web console
+  1. Configure using GCP API
+  1. Configure using GCP Cloud Deployment Manager
+  1. Go over configuring service with Terraform, Puppet, Chef, Salt
+     understand maturity and flexibility of integration with GCP or third
+     party products/clouds, are any features missing etc.
+  1. Determine how product integrates with other GCP products, IAM, Load
+     Balancers etc. integrate and try, understand best practices and
+     improvements
+  1. Contrast experience with AWS/Azure equivalent product
+  1. Analyze the *business and tech problems* this product can help solve
+  1. Determine the elevator pitch for this service
+  1. How can it be used by a development team in DEV, UAT, PROD; how can
+     config and changes be promoted through environments? Think through
+     scenarios and devise answers
+  1. How can it be tested? Can the testing be automated?
+  1. How is it monitored? What can be monitored?
+  1. How is it secured? How can a large organisation isolate and provide this
+     service to teams? With manageable blast radiuses?
+  1. How can it be configured to be highly available?
+  1. What does the *perfect setup/best practice* look like for an enterprise
+     organisation?
+  1. How is the billing formulated? How can the cost be reduced by users?
 
 As for the study order for services:
 
