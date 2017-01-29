@@ -6,9 +6,9 @@ date: 2017-01-29
 
 Recently, for various reasons, my interest in [Google Cloud Platform
 (GCP)](https://cloud.google.com/) has peaked.  I have had exposure to [Amazon
-Web Services (AWS)](https://aws.amazon.com/) and as such am fairly comfortable
+Web Services (AWS)](https://aws.amazon.com/) and as such, I am fairly comfortable
 with their offering, platform and services. However I have not had the chance
-to be exposed to the same level to GCP.
+to be exposed at the same level to GCP.
 
 <!--more-->
 
@@ -42,19 +42,19 @@ get the ball rolling.
   1. Read over marketing content, client stories, GCP website pitch
   1. Read over GCP documentation
   1. Identity and watch any popular GCP or third party how-to videos or tech
-     talks on the product, GCP Next videos, Udemy, Quicklabs, safari books
-     online, Google code labs etc.
+     talks on the product, GCP Next vids, udemy, quicklabs, safari books
+     online, google code labs etc.
   1. Configure using GCP web console
   1. Configure using GCP API
   1. Configure using GCP Cloud Deployment Manager
   1. Go over configuring service with Terraform, Puppet, Chef, Salt
      understand maturity and flexibility of integration with GCP or third
-     party products/clouds, are any features missing etc.
+     party products and clouds, are any features missing etc.
   1. Determine how product integrates with other GCP products, IAM, Load
      Balancers etc. integrate and try, understand best practices and
      improvements
-  1. Contrast experience with AWS/Azure equivalent product
-  1. Analyze the *business and tech problems* this product can help solve
+  1. Contrast experience with AWS and Azure equivalent product
+  1. Analyse the *business and tech problems* this product can help solve
   1. Determine the elevator pitch for this service
   1. How can it be used by a development team in DEV, UAT, PROD; how can
      config and changes be promoted through environments? Think through
@@ -64,19 +64,22 @@ get the ball rolling.
   1. How is it secured? How can a large organisation isolate and provide this
      service to teams? With manageable blast radiuses?
   1. How can it be configured to be highly available?
-  1. What does the *perfect setup/best practice* look like for an enterprise
-     organisation?
+  1. What does the *perfect setup and or best practice* look like for an
+     enterprise organisation?
   1. How is the billing formulated? How can the cost be reduced by users?
 
 As for the study order for services:
 
-1. [GCE - Google Compute Engine](https://cloud.google.com/compute/)
+1. [GCE - Google Compute Engine](https://cloud.google.com/compute/) - [GCE
+   Study Notes]({% post_url 2017-01-29-google-compute-engine-gce-study-notes
+   %})
 1. [GAE - Google App Engine](https://cloud.google.com/appengine)
 1. [GKE Container Engine](https://cloud.google.com/container-engine/)
 1. [Container Registry](https://cloud.google.com/container-registry/)
 1. [Cloud Load Balancing](https://cloud.google.com/load-balancing/)
 1. [Cloud DNS](https://cloud.google.com/dns)
-1. [Stackdriver - Monitoring, Logging, Error Reporting, Trace, Debugger](https://cloud.google.com/stackdriver/)
+1. [Stackdriver - Monitoring, Logging, Error Reporting, Trace,
+   Debugger](https://cloud.google.com/stackdriver/)
 1. [Cloud Key Management Store (KMS)](https://cloud.google.com/kms/)
 1. [Cloud Identity and Access Management (IAM)](https://cloud.google.com/iam/)
 1. [Cloud Functions](https://cloud.google.com/functions/)
