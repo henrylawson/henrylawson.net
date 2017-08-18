@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cloud Load Balancing Study Notes
+title: Google Cloud Load Balancer (GCLB) Study Notes
 date: 2017-01-30
 ---
 
