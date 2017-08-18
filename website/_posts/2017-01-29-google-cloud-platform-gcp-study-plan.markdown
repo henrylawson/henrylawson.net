@@ -76,7 +76,9 @@ As for the study order for services:
 1. [GAE - Google App Engine](https://cloud.google.com/appengine)
 1. [GKE Container Engine](https://cloud.google.com/container-engine/)
 1. [Container Registry](https://cloud.google.com/container-registry/)
-1. [Cloud Load Balancing](https://cloud.google.com/load-balancing/)
+1. [Cloud Load Balancing](https://cloud.google.com/load-balancing/) - [Cloud
+   Load Balancing Study Notes]({% post_url
+   2017-01-30-cloud-load-balancing-study-notes %})
 1. [Cloud DNS](https://cloud.google.com/dns)
 1. [Stackdriver - Monitoring, Logging, Error Reporting, Trace,
    Debugger](https://cloud.google.com/stackdriver/)
@@ -84,5 +86,6 @@ As for the study order for services:
 1. [Cloud Identity and Access Management (IAM)](https://cloud.google.com/iam/)
 1. [Cloud Functions](https://cloud.google.com/functions/)
 1. [Cloud SQL](https://cloud.google.com/sql)
+1. [Cloud Spanner](https://cloud.google.com/spanner/)
 1. [Cloud Datastore](https://cloud.google.com/datastore/)
 1. [Cloud Storage](https://cloud.google.com/storage/)
