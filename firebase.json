@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "public": "_site",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "headers": [
+      {
+        "source" : "**/*.@(ico|txt|eot|ttf|woff2|woff|jpg|jpeg|gif|png)",
+        "headers" : [ {
+          "key" : "Cache-Control",
+          "value" : "max-age=2628000"
+        } ]
+      },
+      {
+        "source" : "**/*.@(html|css|js)",
+        "headers" : [ {
+          "key" : "Cache-Control",
+          "value" : "max-age=259200"
+        } ]
+      }
+    ]
+  }
+}
