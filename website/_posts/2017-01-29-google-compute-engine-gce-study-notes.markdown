@@ -30,7 +30,7 @@ post_url 2017-01-29-google-cloud-platform-gcp-study-plan %}) is a good start.
       1. STOPPING - instance being stopped or shutdown before being TERMINATED
       1. TERMINATED - has shutdown, can be deleted or restarted
   1. Instance Scheduling Options
-      1. Triggered when their is a service disruption - hardware failure or
+      1. Triggered when there is a service disruption - hardware failure or
          maintenance
       1. Can Live Migrate move to another VM host and restart
       1. Terminate or optionally restart it at the new location
