@@ -14,7 +14,7 @@ post_url 2017-01-29-google-cloud-platform-gcp-study-plan %}) is a good start.
 1. [GCE Home](https://cloud.google.com/compute/)
 1. [GCE Docs](https://cloud.google.com/compute/docs/)
 1. [GCE Docs - Concepts](https://cloud.google.com/compute/docs/concepts)
-1. [Preemtible Instance](https://cloud.google.com/preemptible-vms/)
+1. [Preemptible Instance](https://cloud.google.com/preemptible-vms/)
   1. Short lived
   1. Max life 24 hours
   1. Much lower pricing
@@ -24,19 +24,19 @@ post_url 2017-01-29-google-cloud-platform-gcp-study-plan %}) is a good start.
      bucket
 1. Compute Instances
   1. Instance States
-      1. PROVISIONING - resources being reserved for instnaces
+      1. PROVISIONING - resources being reserved for instances
       1. STAGING - resources acquired, preparing for launch
       1. RUNNING - booting up or running, can ssh now
       1. STOPPING - instance being stopped or shutdown before being TERMINATED
       1. TERMINATED - has shutdown, can be deleted or restarted
   1. Instance Scheduling Options
       1. Triggered when their is a service disruption - hardware failure or
-         maintenances
+         maintenance
       1. Can Live Migrate move to another VM host and restart
       1. Terminate or optionally restart it at the new location
       1. Can be configured using availability policies onHostMaintenance and
          automicRestart
-  1. Metadata available to instance via http requests
+  1. Meta-data available to instance via HTTP requests
       1. Can long poll for changes
       1. Can store small amounts of Key Value info
       1. Can be used to "self discover" information for usage by the instance
@@ -87,7 +87,7 @@ post_url 2017-01-29-google-cloud-platform-gcp-study-plan %}) is a good start.
      opportunistic - will wait for instances to die or be scaled up or down by
      an autoscaler. Instance Group Updater can also do restarts or recreations
   1. Managed instance groups can be updated via rolling updates, they can be
-     paused, continued, rolled back or cancelled
+     paused, continued, rolled back or canceled
   1. Managed instance groups can have health checks applied to them
   1. Instances in a Managed instance group can be abandoned from the group to
      allow you to debug and tweak the services, they will also be removed from

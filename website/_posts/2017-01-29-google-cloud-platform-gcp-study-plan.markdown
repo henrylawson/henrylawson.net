@@ -42,7 +42,7 @@ get the ball rolling.
   1. Read over marketing content, client stories, GCP website pitch
   1. Read over GCP documentation
   1. Identity and watch any popular GCP or third party how-to videos or tech
-     talks on the product, GCP Next vids, udemy, quicklabs, safari books
+     talks on the product, GCP Next videos, Udemy, Qwiklabs, safari books
      online, google code labs etc.
   1. Configure using GCP web console
   1. Configure using GCP API
@@ -54,7 +54,7 @@ get the ball rolling.
      Balancers etc. integrate and try, understand best practices and
      improvements
   1. Contrast experience with AWS and Azure equivalent product
-  1. Analyse the *business and tech problems* this product can help solve
+  1. Analyze the *business and tech problems* this product can help solve
   1. Determine the elevator pitch for this service
   1. How can it be used by a development team in DEV, UAT, PROD; how can
      config and changes be promoted through environments? Think through
