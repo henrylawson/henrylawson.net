@@ -1,8 +1,6 @@
 require 'yaml'
 require './lib/execute.rb'
-require 'kramdown'
 require 'nokogiri'
-require './lib/plain_text.rb'
 
 task :default => [:build]
 

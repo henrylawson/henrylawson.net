@@ -1,6 +1,5 @@
 target: ./_site
 deploy_target: ./_site_deploy
-deploy_target_compress: ./site.tar.gz
 source: ./website
 host: henrylawson.net
 link_checker_log: linkchecker.log
