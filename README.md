@@ -6,15 +6,14 @@ Getting Started
 ---------------
 1. Install rbenv
 1. Make sure correct Ruby version has been loaded (check .ruby-version)
-1. gem install bundler
-1. bundle install
-1. git-crypt unlock
-1. Install LinkChecker `pip install linkchecker`
-1. Install Readability `pip install readability`
-1. Install Firebase `npm install -g firebase-tools`
-1. Login Firebase `firebase login`
-1. Install brew dependencies `brew tap Homebrew/brewdler && brew brewdle`
-1. rake Rakefile --describe
+1. `gem install bundler`
+1. `bundle install`
+1. `git-crypt unlock`
+1. `pip install -r requirements.txt`
+1. `npm install -g firebase-tools`
+1. `firebase login`
+1. `brew tap Homebrew/brewdler && brew brewdle`
+1. `rake Rakefile --describe`
 
 Updating Fonts
 --------------
