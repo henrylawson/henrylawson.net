@@ -10,12 +10,6 @@
       <link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: '/' | prepend: site.baseurl | prepend: site.url  }}">
     {% endif %}
     {% include head_styles.html %}
-    {% if page.is_js_needed %}
-      <script>
-        {% asset onload %}
-      </script>
-      {% javascript app async %}
-    {% endif %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,7 +21,7 @@
       ga('send', 'pageview');
     </script>
   </head>
-  <body {% if page.is_js_needed %} onload="OnLoad.execute()" {% endif %}>
+  <body>
     <div>
       <div class="container">
         <div class="header">

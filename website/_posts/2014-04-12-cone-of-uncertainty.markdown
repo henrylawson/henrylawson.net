@@ -2,7 +2,6 @@
 layout: post
 title:  "Cone of Uncertainty"
 date:   2014-04-12 21:00:00
-is_js_needed: true
 ---
 
 [{% image articles/ConeOfUncertainty.png alt="Cone of Uncertainty" title="Cone of Uncertainty" class="article-image webfeedsFeaturedVisual" %}](

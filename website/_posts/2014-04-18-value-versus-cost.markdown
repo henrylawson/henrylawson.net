@@ -1,14 +1,11 @@
 ---
 layout: post
-title:  "Value versus Cost"
+title:  "Value Versus Cost"
 date:   2014-04-18 21:00:00
-is_js_needed: true
 ---
 
-<div id="value-versus-cost" class="graph"></div>
-<script>
-  {% asset posts/value-versus-cost.js %}
-</script>
+[{% image articles/ValueVersusCost.png alt="Value Versus Cost" title="Value Versus Cost" class="article-image webfeedsFeaturedVisual" %}](
+{% asset_path 'articles/ValueVersusCost.png' %})
 
 Almost everyday during software development we constantly find ourselves
 asking if a story, feature, functionality and/or fix is worth doing. A diagram
