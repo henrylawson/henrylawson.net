@@ -30,5 +30,5 @@ assets:
   cache: false
   js_compressor:  uglifier
   css_compressor: sass
-gems:
+plugins:
     - jekyll-sitemap
