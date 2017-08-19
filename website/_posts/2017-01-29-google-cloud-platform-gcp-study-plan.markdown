@@ -76,9 +76,7 @@ As for the study order for services:
 1. [GAE - Google App Engine](https://cloud.google.com/appengine)
 1. [GKE Container Engine](https://cloud.google.com/container-engine/)
 1. [Container Registry](https://cloud.google.com/container-registry/)
-1. [Cloud Load Balancing](https://cloud.google.com/load-balancing/) - [Cloud
-   Load Balancing Study Notes]({% post_url
-   2017-01-30-google-cloud-load-balancer-gclb-study-notes %})
+1. [GCLB - Google Cloud Load Balancer](https://cloud.google.com/load-balancing/)
 1. [Cloud DNS](https://cloud.google.com/dns)
 1. [Stackdriver - Monitoring, Logging, Error Reporting, Trace,
    Debugger](https://cloud.google.com/stackdriver/)

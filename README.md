@@ -11,6 +11,8 @@ Getting Started
 1. git-crypt unlock
 1. Install LinkChecker `pip install linkchecker`
 1. Install Readability `pip install readability`
+1. Install Firebase `npm install -g firebase-tools`
+1. Login Firebase `firebase login`
 1. Install brew dependencies `brew tap Homebrew/brewdler && brew brewdle`
 1. rake Rakefile --describe
 

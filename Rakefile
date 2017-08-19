@@ -21,7 +21,7 @@ task :clean_deploy do
 end
 task :cd => :clean_deploy
 
-desc "Cleans the deploy target folder"
+desc "Checks the spelling of articles"
 task :spelling do
   execute("find #{CONFIG['posts']} -name '*.markdown' " +
           "-exec aspell --dont-backup --home-dir=./ -d en_US -c '{}' \\;")
@@ -88,55 +88,15 @@ task :serve, [:host, :port] => [:clean] do |t, args|
 end
 task :s, [:host, :port] => :serve
 
-desc "Update the AWS infrastructure"
-task :infra do
-  execute("bin/terraform.sh apply")
-end
-task :i => :infra
-
-desc "Build for S3"
-task :build_s3 => [:build] do
-  execute("rm -rf _site_deploy_s3")
-  execute("cp -rf _site_deploy _site_deploy_s3")
-  execute("find _site_deploy_s3 -name '*.html' -type f | while read NAME; do mv \"${NAME}\" \"${NAME%.html}\"; done")
-end
-task :b3 => :build_s3
-
 def with_args(arg, values)
   values.map{|p|"#{arg} \"#{p}\""}.join(" ")
 end
 
-desc "Deploy the website to PROD on S3"
-task :deploy => [:build_s3] do
-  max_age_assets   = 2628000 # 1 month
-  max_age_articles = 604800  # 1 week
-  max_age_indexes  = 86400   # 1 day
-
-  asset_files      = ["*.js", "*.js.gz", "*.png", "*.woff", "*.woff2", "*.eot", "*.ttf", "*.jpg", "*.ico", "*.txt"]
-  index_files_xml  = ["*.xml"]
-  index_files_html = ["index", "all"]
-  all_files        = [asset_files, index_files_xml, index_files_html].flatten
-
-  base_command   = "aws s3 cp _site_deploy_s3/ s3://henrylawson.net-production --recursive"
-
-  execute("#{base_command} --exclude \"*\" #{with_args("--include", asset_files)} --cache-control \"max-age = #{max_age_assets}\"")
-  execute("#{base_command} --exclude \"*\" #{with_args("--include", index_files_xml)} --cache-control \"max-age = #{max_age_indexes}\"")
-  execute("#{base_command} --exclude \"*\" #{with_args("--include", index_files_html)} --cache-control \"max-age = #{max_age_indexes}\" --content-type \"text/html\"")
-  execute("#{base_command} --include \"*\" #{with_args("--exclude", all_files)} --cache-control \"max-age = #{max_age_articles}\" --content-type \"text/html\"")
+desc "Deploy the website to PROD on Firebase"
+task :deploy => [:build] do
+  execute("firebase deploy")
 end
 task :dp => :deploy
-
-desc "Invalidate CloudFront cache"
-task :invalidate do
-  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths / /sitemap.xml /feed/atom.xml /all")
-end
-task :iv => :invalidate
-
-desc "Invalidate ALL CloudFront cache"
-task :invalidate_all do
-  execute("aws cloudfront create-invalidation --distribution-id \"$(cd infra && terraform output aws_cloudfront_distribution)\" --paths \"/*\"")
-end
-task :iva => :invalidate_all
 
 desc 'Create a new draft post'
 task :draft, [:date, :title] do |_t, args|
