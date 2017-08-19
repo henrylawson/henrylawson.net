@@ -5,10 +5,8 @@ date:   2014-04-12 21:00:00
 is_js_needed: true
 ---
 
-<div id="cone-of-uncertainty" class="graph"></div>
-<script>
-  {% asset posts/cone-of-uncertainty.js %}
-</script>
+[{% image articles/ConeOfUncertainty.png alt="Cone of Uncertainty" title="Cone of Uncertainty" class="article-image webfeedsFeaturedVisual" %}](
+{% asset_path 'articles/ConeOfUncertainty.png' %})
 
 The **cone of uncertainty** is a great diagram to explain the **level of confidence
 that a software development team typically has at various stages of a project**.
