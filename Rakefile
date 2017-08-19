@@ -1,6 +1,7 @@
 require 'yaml'
 require './lib/execute.rb'
 require 'kramdown'
+require 'nokogiri'
 require './lib/plain_text.rb'
 
 task :default => [:build]
@@ -35,11 +36,8 @@ task :writing_stats, [:article] do |t, args|
 
   article_file = File.open(article_path)
   contents = article_file.read.gsub(/---.*---\n/m, '')
-  text = Kramdown::Document.new(contents)
-    .to_plain_text
-    .gsub(/\n/m, ' ')
-    .gsub(/\.\s*/, ".\n")
-    .gsub(/\n$/, '')
+  text = Nokogiri::HTML(contents)
+    .text
 
   execute("echo -e '#{text}' | readability")
 end
