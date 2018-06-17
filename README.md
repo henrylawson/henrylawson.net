@@ -12,7 +12,7 @@ Getting Started
 1. `pip install -r requirements.txt`
 1. `npm install -g firebase-tools`
 1. `firebase login`
-1. `brew tap Homebrew/brewdler && brew brewdle`
+1. `brew bundle`
 1. `rake Rakefile --describe`
 
 Updating Fonts
