@@ -10,7 +10,7 @@ helpful:
 
 <!--more-->
 
-1. Play [vimtutor](http://linuxcommand.org/man_pages/vimtutor1.html), finish
+1. Play [vimtutor](http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor), finish
    it, it doesn't take too long
 1. Start with a blank vimrc, slowly customize the basic settings to your liking
 1. Once you are happy with your basic customization's, start learning various

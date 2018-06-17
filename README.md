@@ -11,6 +11,7 @@ Getting Started
 1. `git-crypt unlock`
 1. `pip install -r requirements.txt`
 1. `npm install -g firebase-tools`
+1. `npm install -g broken-link-checker`
 1. `firebase login`
 1. `brew bundle`
 1. `rake Rakefile --describe`

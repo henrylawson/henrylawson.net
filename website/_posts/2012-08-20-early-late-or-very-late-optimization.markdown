@@ -65,7 +65,7 @@ conduct some experiments to prove that it will be a problem, Once proven, and
 only once proven, you should start considering how to speed things up"_.
 
 Validation that it is needed can be done using tools like
-[JMeter](http://jmeter.apache.org/), [Gatling](http://gatling-tool.org/) and
+[JMeter](http://jmeter.apache.org/), [Gatling](https://gatling.io/download/) and
 [Apache Benchmark](http://httpd.apache.org/docs/2.2/programs/ab.html). Once the
 functionality has been benchmarked, **if the results indicate that the
 performance does not meet a business need, then optimization should be carried

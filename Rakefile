@@ -45,15 +45,12 @@ desc "Checks all the links against local instance"
 task :link_check, [:host, :port] do |t, args|
   args.with_defaults(:host => CONFIG["default_host"], :port => CONFIG["default_port"])
   url = "http://#{args.host}:#{args.port}"
-  execute("linkchecker " +
+  execute("blc " +
           "#{url} " +
-          "--check-extern " +
-          "-v " +
-          "-t 10 " +
-          "&> #{CONFIG['link_checker_log']}; " +
-          "cat #{CONFIG['link_checker_log']} " +
-          "| grep 'Error:' -B6; " +
-          "tail -2 #{CONFIG['link_checker_log']}")
+          "-ro " +
+          "--filter-level 3 " +
+          "--exclude www.linkedin.com/in/hglawson " +
+          "--exclude feedly.com/henrylawson")
 end
 task :lc, [:host, :port] => :link_check
 

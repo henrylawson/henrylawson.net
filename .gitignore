@@ -11,3 +11,4 @@ linkchecker.log
 *.bak
 .terraform
 .idea
+node_modules/
