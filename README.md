@@ -94,4 +94,3 @@ Writing Process
 1. Review the article AGAIN deployed `rake s`
 1. Push the changes to remote
 1. Deploy it `rake dp`
-1. Clear CDN cache `rake iv`
