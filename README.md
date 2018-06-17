@@ -5,7 +5,7 @@ A simple blog powered by Jekyll.
 Getting Started
 ---------------
 1. Install rbenv
-1. Make sure correct Ruby version has been loaded (check .ruby-version)
+1. Make sure correct Ruby version has been loaded (check .ruby-version), otherwise `rbenv install`
 1. `gem install bundler`
 1. `bundle install`
 1. `git-crypt unlock`
@@ -55,37 +55,37 @@ Testing Review
 Testing
 -------
 1. Design and Layout
-  1. Chrome
-  1. Safari
-  1. Firefox
-  1. Internet Explorer
-  1. Android
-  1. iPad
-  1. iPhone
-  1. Various Resolutions
+    1. Chrome
+    1. Safari
+    1. Firefox
+    1. Internet Explorer
+    1. Android
+    1. iPad
+    1. iPhone
+    1. Various Resolutions
 1. Google Structured Data
-  1. Organization
-  1. BreadcrumbList
-  1. WebSite
-  1. Person
-  1. BlogPosting
+    1. Organization
+    1. BreadcrumbList
+    1. WebSite
+    1. Person
+    1. BlogPosting
 1. Social Sharing
-  1. Facebook
-  1. Twitter
-  1. Google+
+    1. Facebook
+    1. Twitter
+    1. Google+
 
 Writing Process
 ---------------
 1. Pick a topic
 1. Create a draft `rake 'd[date,title]'`
 1. Create the article
-  1. Plan
-  1. Research
-  1. Rethink
-  1. Find a lede
-  1. Write fast (write don't edit)
-  1. Let it incubate
-  1. Revise and copy edit
+    1. Plan
+    1. Research
+    1. Rethink
+    1. Find a lede
+    1. Write fast (write don't edit)
+    1. Let it incubate
+    1. Revise and copy edit
 1. Move the article to be live `mv ./website/_drafts/*.markdown ./website/_posts/`
 1. Review the article deployed `rake s`
 1. Run the spelling check `rake sp`
