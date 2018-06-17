@@ -11,7 +11,6 @@ Java and many other languages allow you to assert that the input parameters to a
 
 A typical usage of assertions on a method parameter looks like the following:
 
-<nospellcheck>
 {% highlight java %}
 public double divideEvenNumberAndAddFive(int numerator, int denominator) {
 	assert denominator > 0;
@@ -19,7 +18,6 @@ public double divideEvenNumberAndAddFive(int numerator, int denominator) {
 	return (numerator / denominator) + 5;
 }
 {% endhighlight %} 
-</nospellcheck>
 
 For most typical usages of assertions, or similar aggressive input validation as part of Defensive Programming, **I have observed that the validation logic is actually a code smell for a lost domain concept**.
 
@@ -27,11 +25,8 @@ For example, _the first parameter in the above method, must be an even number_, 
 
 Using tiny types, encapsulating the validation logic and introducing the domain concepts. The above method could instead become:
 
-<nospellcheck>
 {% highlight java %}
 public double divideEvenNumberAndAddFive(EvenInteger evenNumber, PositiveInteger positiveNumber) {
 	return evenNumber.divideBy(positiveNumber).plus(5);
 }
 {% endhighlight %} 
-</nospellcheck>
-

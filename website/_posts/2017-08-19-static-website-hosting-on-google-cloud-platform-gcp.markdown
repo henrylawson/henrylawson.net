@@ -22,7 +22,7 @@ services:
 1. [Amazon Route53](https://aws.amazon.com/route53/) with [Google Cloud
    DNS](https://cloud.google.com/dns/)
 
-However after exploring further I realised two things:
+However after exploring further I realized two things:
 
 1. To use [Google Cloud CDN](https://cloud.google.com/cdn/), you need to use
    [Google Cloud Load Balancer
@@ -33,9 +33,9 @@ However after exploring further I realised two things:
    Cloud Storage leverages Google's caching network and your objects are cached
    close to your users as part of the service.
 
-After discovering this, I realised that the CDN was not needed. I just needed
+After discovering this, I realized that the CDN was not needed. I just needed
 to point the DNS records of my domain to a Google Cloud Storage bucket.
-However, I then realised that when using a custom DNS record in front of a
+However, I then realized that when using a custom DNS record in front of a
 Google Cloud Storage bucket, only HTTP is supported, your content will not be
 served over HTTPS - you can of course use a Google Cloud Load Balancer in front
 of the bucket and use your own certificate, but HTTPS is not served when using
@@ -45,17 +45,17 @@ Even though I do not have any sensitive content, I prefer to serve all my
 content over HTTPS by default. Not being able to do that from a bucket was a
 show stopper.
 
-It didn't take long before I realised that the solution to serving a static
+It didn't take long before I realized that the solution to serving a static
 website on [Google Cloud Platform](https://cloud.google.com/) is to use [Google
 Firebase Hosting](https://firebase.google.com/docs/hosting/).
 
 [Google Firebase Hosting](https://firebase.google.com/docs/hosting/) provides
-static content hosting via a global content delivery network using a firebase
+static content hosting via a global content delivery network using a Firebase
 domain or a custom domain, over HTTPS.
 
-Using the firebase SDK, I had my static [Jekyll](https://jekyllrb.com/) blog
+Using the Firebase SDK, I had my static [Jekyll](https://jekyllrb.com/) blog
 website deployed in seconds, serving over HTTPS on my own custom domain. With
-firebase's genourous free tier, this blog will probably cost me nothing per
+Firebase's generous free tier, this blog will probably cost me nothing per
 month, versus the few dollars it used to cost me per month on Amazon.
 
 The final setup was:

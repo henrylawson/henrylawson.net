@@ -1,10 +1,11 @@
-personal_ws-1.1 en 149 
+personal_ws-1.1 en 165 
 runtime
 cyclomatic
 NFR's
 API
 deterministically
 GCP's
+SDK
 logarithmically
 whitespace
 readme
@@ -12,6 +13,7 @@ Stackdriver
 unachievable
 GettingToYes
 Terraform
+divideEvenNumberAndAddFive
 stochastically
 SpinSelling
 TBD
@@ -44,6 +46,7 @@ Metz
 YAML
 composable
 Rackham
+ValueVersusCost
 dotvim
 tories
 js
@@ -51,9 +54,11 @@ ramping
 googler
 vCPUs
 GAE
+evenNumber
 organisation
 ThoughtWorks
 modularized
+DNS
 params
 CSV
 Huthwaite
@@ -67,9 +72,11 @@ SSL
 radiuses
 foundational
 ProductOrder
+HTTPS
 variabilities
 imple
 StrategicSelling
+Firebase's
 refactor
 Pirsig
 unquantified
@@ -84,6 +91,7 @@ priori
 SUT
 oncrete
 bootloader
+PositiveInteger
 Unmanaged
 SolrNet
 BATNA
@@ -101,6 +109,7 @@ GKE
 Microservices
 API's
 Ries
+USD
 url
 runnable
 WS
@@ -109,13 +118,15 @@ Situational
 GettingPastNo
 MVC
 Bosworth
-VMs
 VM's
+VMs
 vimrc
 IDE
 Ury
+endhighlight
 MadeToStick
 QA's
+CNAME
 vCPU
 Cohn
 balancer
@@ -135,16 +146,21 @@ README's
 Tweakable
 Taiichi
 Autoscaling
+ConeOfUncertainty
 png
 OSI
-Github
+EvenInteger
 GitHub
+Github
+positiveNumber
 refactored
 refactoring
 nexpected
 Qwiklabs
 Rath
 empathic
+Firebase
 Jez
 pre
+CDN
 IOC
