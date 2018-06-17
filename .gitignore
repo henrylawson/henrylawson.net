@@ -10,3 +10,4 @@ site.tar.gz
 linkchecker.log
 *.bak
 .terraform
+.idea
